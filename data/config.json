@@ -1,11 +1,11 @@
 {
   "ai": {
     "provider": "gemini",
-    "model": "gemini-2.0-flash",
+    "model": "gemini-2.5-flash",
     "api_key_env": "GOOGLE_API_KEY",
     "temperature": 0.3,
     "max_tokens": 4096,
-    "throttle_sec": 2,
+    "throttle_sec": 3,
     "analysis_concurrency": 1,
     "enrichment_concurrency": 1
   },
@@ -48,18 +48,11 @@
         "username": "torvalds",
         "enabled": true,
         "profile": "tech-news"
-      },
-      {
-        "type": "repo_releases",
-        "owner": "astral-sh",
-        "repo": "uv",
-        "enabled": true,
-        "profile": "tech-news"
       }
     ],
     "hackernews": {
       "enabled": true,
-      "fetch_top_stories": 20,
+      "fetch_top_stories": 10,
       "min_score": 100,
       "profile": "tech-news"
     },
