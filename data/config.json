@@ -6,9 +6,7 @@
     "base_url": "https://aihubmix.com/v1",
     "temperature": 0.3,
     "max_tokens": 4096,
-    "throttle_sec": 1,
-    "analysis_concurrency": 1,
-    "enrichment_concurrency": 1
+    "throttle_sec": 1
   },
   "processing": {
     "profiles_dir": "profiles",
@@ -27,13 +25,12 @@
     "enabled": true,
     "smtp_server": "smtp.qq.com",
     "smtp_port": 465,
-    "imap_server": "imap.qq.com",
-    "imap_port": 993,
-    "email_address": "2953261168@qq.com",
+    "use_ssl": true,
+    "sender": "2953261168@qq.com",
     "password_env": "SMTP_PASSWORD",
-    "sender_name": "Horizon Daily",
-    "subscribe_keyword": "SUBSCRIBE",
-    "unsubscribe_keyword": "UNSUBSCRIBE"
+    "recipients": [
+      "2953261168@qq.com"
+    ]
   },
   "sources": {
     "hackernews": {
@@ -62,8 +59,8 @@
         "profile": "tech-news"
       },
       {
-        "name": "Reddit - Technology (via RSSHub)",
-        "url": "https://rsshub.app/reddit/r/technology/hot",
+        "name": "Simon Willison",
+        "url": "https://simonwillison.net/atom/everything/",
         "enabled": true,
         "profile": "tech-news"
       }
