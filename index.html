@@ -30,7 +30,8 @@
     </div>
 
     <script>
-        fetch('https://api.github.com/repos/2953261168-dot/Horizon/contents/_posts?ref=gh-pages')
+        // 加了一个时间戳，防止浏览器用旧缓存
+        fetch('https://api.github.com/repos/2953261168-dot/Horizon/contents/_posts?ref=gh-pages&t=' + new Date().getTime())
             .then(response => response.json())
             .then(data => {
                 const contentDiv = document.getElementById('content');
@@ -54,12 +55,12 @@
                             currentDate = date;
                         }
                         
-                        // 美化文件名
-                        let displayName = file.name.replace('.md', '');
-                        if (displayName.includes('-zh')) {
-                            displayName = '🇨🇳 中文版日报';
-                        } else if (displayName.includes('-en')) {
+                        // 强制汉化文件名
+                        let displayName = file.name;
+                        if (displayName.includes('-en')) {
                             displayName = '🇬🇧 英文版日报';
+                        } else if (displayName.includes('-zh')) {
+                            displayName = '🇨🇳 中文版日报';
                         }
 
                         const rawUrl = file.download_url;
@@ -83,14 +84,18 @@
             fetch(url)
                 .then(res => res.text())
                 .then(text => {
-                    // 核心修复：把 Horizon 吐出来的恶心乱码替换成正常标点
-                    const decodedText = text.replace(/&#x27;/g, "'")
+                    // 1. 剃掉头部没用的布局代码 (--- 包围的部分)
+                    let cleanText = text.replace(/^---[\s\S]*?---/, '');
+                    
+                    // 2. 彻底清洗乱码
+                    cleanText = cleanText.replace(/&#x27;/g, "'")
                                            .replace(/&quot;/g, '"')
                                            .replace(/&amp;/g, '&')
                                            .replace(/&lt;/g, '<')
                                            .replace(/&gt;/g, '>');
                                            
-                    articleContent.innerHTML = marked.parse(decodedText);
+                    // 3. 渲染
+                    articleContent.innerHTML = marked.parse(cleanText);
                 })
                 .catch(err => {
                     articleContent.innerHTML = '<p>内容加载失败。</p>';
