@@ -1,9 +1,9 @@
 {
   "ai": {
     "provider": "openai",
-    "model": "gpt-4o-free",
-    "api_key_env": "AIHUBMIX_API_KEY",
-    "base_url": "https://aihubmix.com/v1",
+    "model": "glm-4-flash",
+    "api_key_env": "ZHIPU_API_KEY",
+    "base_url": "https://open.bigmodel.cn/api/paas/v4/",
     "temperature": 0.1,
     "max_tokens": 4096,
     "throttle_sec": 1
