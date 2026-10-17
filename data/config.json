@@ -37,23 +37,6 @@
     "unsubscribe_keyword": "UNSUBSCRIBE"
   },
   "sources": {
-    "google_news": [
-      {
-        "query": "Artificial Intelligence OR 人工智能",
-        "limit": 5,
-        "profile": "tech-news"
-      },
-      {
-        "query": "Tesla OR 特斯拉 OR Elon Musk",
-        "limit": 5,
-        "profile": "tech-news"
-      },
-      {
-        "query": "Global Economy OR 宏观经济",
-        "limit": 5,
-        "profile": "tech-news"
-      }
-    ],
     "ossinsight": {
       "enabled": true,
       "period": "past_24_hours",
