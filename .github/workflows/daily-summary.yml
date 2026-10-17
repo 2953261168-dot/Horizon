@@ -2,8 +2,8 @@ name: Daily Horizon Summary
 
 on:
   schedule:
-    - cron: '0 0 * * *'   # 每天北京时间早上8点自动运行
-  workflow_dispatch:      # 允许你在网页上手动点击运行
+    - cron: '0 0 * * *'
+  workflow_dispatch:
 
 permissions:
   contents: write
@@ -35,3 +35,9 @@ jobs:
         with:
           name: daily-summary
           path: data/summaries/
+
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./docs
