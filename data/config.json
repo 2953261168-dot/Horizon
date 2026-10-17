@@ -4,7 +4,7 @@
     "model": "glm-4-flash",
     "api_key_env": "ZHIPU_API_KEY",
     "base_url": "https://open.bigmodel.cn/api/paas/v4/",
-    "temperature": 0.1,
+    "temperature": 0.3,
     "max_tokens": 4096,
     "throttle_sec": 1
   },
@@ -25,10 +25,13 @@
     "enabled": true,
     "smtp_server": "smtp.qq.com",
     "smtp_port": 465,
-    "imap_server": "imap.qq.com",
-    "imap_port": 993,
+    "use_ssl": true,
+    "sender": "2953261168@qq.com",
     "email_address": "2953261168@qq.com",
     "password_env": "SMTP_PASSWORD",
+    "recipients": [
+      "2953261168@qq.com"
+    ],
     "sender_name": "Horizon Daily",
     "subscribe_keyword": "SUBSCRIBE",
     "unsubscribe_keyword": "UNSUBSCRIBE"
