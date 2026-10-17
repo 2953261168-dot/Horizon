@@ -21,6 +21,12 @@
   "display": {
     "icon_style": "emoji"
   },
+  "publish": {
+    "github_pages": {
+      "enabled": true,
+      "output_dir": "docs"
+    }
+  },
   "email": {
     "enabled": true,
     "smtp_server": "smtp.qq.com",
@@ -56,6 +62,12 @@
       {
         "name": "OpenAI 官方博客",
         "url": "https://openai.com/news/rss.xml",
+        "enabled": true,
+        "profile": "tech-news"
+      },
+      {
+        "name": "Reddit - Technology (via RSSHub)",
+        "url": "https://rsshub.app/reddit/r/technology/hot",
         "enabled": true,
         "profile": "tech-news"
       }
