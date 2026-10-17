@@ -8,18 +8,19 @@
         a { color: #0366d6; text-decoration: none; }
         a:hover { text-decoration: underline; }
         h1 { border-bottom: 1px solid #eaecef; padding-bottom: 10px; }
-        .date { font-weight: 600; margin-top: 30px; color: #586069; }
-        ul { padding-left: 20px; }
-        li { margin-bottom: 10px; }
+        .date { font-weight: 600; margin-top: 30px; color: #586069; font-size: 1.2em; }
+        ul { padding-left: 20px; margin-top: 10px; }
+        li { margin-bottom: 10px; font-size: 1.1em; }
+        #content { min-height: 200px; }
     </style>
 </head>
 <body>
     <h1>📰 Horizon 新闻雷达</h1>
     <p>你的专属 AI 驱动信息聚合日报</p>
-    <div id="content">正在加载日报...</div>
+    <div id="content">正在加载日报列表...</div>
     <script>
-        // 使用 GitHub 的 API 获取 _posts 文件夹下的文件列表
-        fetch('https://api.github.com/repos/2953261168-dot/Horizon/contents/docs/_posts?ref=gh-pages')
+        // 修复后的路径：直接请求 _posts，因为在 gh-pages 分支中，根目录就是 docs
+        fetch('https://api.github.com/repos/2953261168-dot/Horizon/contents/_posts?ref=gh-pages')
             .then(response => response.json())
             .then(data => {
                 const contentDiv = document.getElementById('content');
@@ -33,7 +34,7 @@
                 let html = '';
                 let currentDate = '';
                 data.forEach(file => {
-                    // 文件名格式: 2026-10-17-summary-en.md
+                    // 提取文件名里的日期，比如 2026-10-17-summary-en.md
                     const match = file.name.match(/(\d{4}-\d{2}-\d{2})/);
                     if (match) {
                         const date = match[1];
@@ -42,8 +43,9 @@
                             html += `<div class="date">${date}</div><ul>`;
                             currentDate = date;
                         }
-                        // 构造页面链接
-                        const pageUrl = `https://2953261168-dot.github.io/Horizon/_posts/${file.name.replace('.md', '.html')}`;
+                        // 生成对应页面的链接，GitHub Pages 会自动把 .md 转为网页
+                        const pageUrl = `./_posts/${file.name.replace('.md', '.html')}`;
+                        // 如果生成的是 en 文件，显示英文，否则显示中文（此处直接显示文件名）
                         html += `<li><a href="${pageUrl}" target="_blank">${file.name.replace('.md', '')}</a></li>`;
                     }
                 });
@@ -51,7 +53,7 @@
                 contentDiv.innerHTML = html;
             })
             .catch(error => {
-                document.getElementById('content').innerHTML = '<p>加载日报列表失败，请稍后重试。</p>';
+                document.getElementById('content').innerHTML = '<p>加载失败，请刷新页面重试。可能是 GitHub API 限流。</p>';
                 console.error('Error:', error);
             });
     </script>
