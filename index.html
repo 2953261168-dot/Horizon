@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>Horizon 新闻雷达</title>
+    <style>
+        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; line-height: 1.6; max-width: 800px; margin: 40px auto; padding: 0 20px; color: #333; }
+        a { color: #0366d6; text-decoration: none; }
+        a:hover { text-decoration: underline; }
+        h1 { border-bottom: 1px solid #eaecef; padding-bottom: 10px; }
+        .date { font-weight: 600; margin-top: 30px; color: #586069; }
+        ul { padding-left: 20px; }
+        li { margin-bottom: 10px; }
+    </style>
+</head>
+<body>
+    <h1>📰 Horizon 新闻雷达</h1>
+    <p>你的专属 AI 驱动信息聚合日报</p>
+    <div id="content">正在加载日报...</div>
+    <script>
+        // 使用 GitHub 的 API 获取 _posts 文件夹下的文件列表
+        fetch('https://api.github.com/repos/2953261168-dot/Horizon/contents/docs/_posts?ref=gh-pages')
+            .then(response => response.json())
+            .then(data => {
+                const contentDiv = document.getElementById('content');
+                if (data.length === 0) {
+                    contentDiv.innerHTML = '<p>暂无日报，请等待下次运行。</p>';
+                    return;
+                }
+                // 按日期倒序排列
+                data.sort((a, b) => b.name.localeCompare(a.name));
+                
+                let html = '';
+                let currentDate = '';
+                data.forEach(file => {
+                    // 文件名格式: 2026-10-17-summary-en.md
+                    const match = file.name.match(/(\d{4}-\d{2}-\d{2})/);
+                    if (match) {
+                        const date = match[1];
+                        if (date !== currentDate) {
+                            if (currentDate !== '') html += '</ul>';
+                            html += `<div class="date">${date}</div><ul>`;
+                            currentDate = date;
+                        }
+                        // 构造页面链接
+                        const pageUrl = `https://2953261168-dot.github.io/Horizon/_posts/${file.name.replace('.md', '.html')}`;
+                        html += `<li><a href="${pageUrl}" target="_blank">${file.name.replace('.md', '')}</a></li>`;
+                    }
+                });
+                if (currentDate !== '') html += '</ul>';
+                contentDiv.innerHTML = html;
+            })
+            .catch(error => {
+                document.getElementById('content').innerHTML = '<p>加载日报列表失败，请稍后重试。</p>';
+                console.error('Error:', error);
+            });
+    </script>
+</body>
+</html>
