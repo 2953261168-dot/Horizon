@@ -13,31 +13,72 @@
     "default_profile": "tech-news",
     "profile_settings": {
       "tech-news": {
-        "threshold": 1.0,
+        "threshold": 5.0,
         "topic_dedup": true
       }
     }
+  },
+  "digest": {
+    "max_items": 15
   },
   "display": {
     "icon_style": "emoji"
   },
   "email": {
     "enabled": true,
-    "smtp_server": "smtp.qq.com",
+    "smtp_server": "smtp.163.com",
     "smtp_port": 465,
-    "imap_server": "imap.qq.com",
+    "imap_server": "imap.163.com",
     "imap_port": 993,
-    "email_address": "2953261168@qq.com",
+    "email_address": "19141079030@163.com",
     "password_env": "SMTP_PASSWORD",
     "sender_name": "Horizon Daily",
     "subscribe_keyword": "SUBSCRIBE",
     "unsubscribe_keyword": "UNSUBSCRIBE"
   },
   "sources": {
+    "google_news": [
+      {
+        "query": "Artificial Intelligence OR 人工智能",
+        "limit": 5,
+        "profile": "tech-news"
+      },
+      {
+        "query": "Tesla OR 特斯拉 OR Elon Musk",
+        "limit": 5,
+        "profile": "tech-news"
+      },
+      {
+        "query": "Global Economy OR 宏观经济",
+        "limit": 5,
+        "profile": "tech-news"
+      }
+    ],
+    "ossinsight": {
+      "enabled": true,
+      "period": "past_24_hours",
+      "profile": "tech-news"
+    },
+    "github": [
+      {
+        "type": "repo_releases",
+        "owner": "openai",
+        "repo": "openai-python",
+        "enabled": true,
+        "profile": "tech-news"
+      },
+      {
+        "type": "repo_releases",
+        "owner": "huggingface",
+        "repo": "transformers",
+        "enabled": true,
+        "profile": "tech-news"
+      }
+    ],
     "hackernews": {
       "enabled": true,
-      "fetch_top_stories": 10,
-      "min_score": 50,
+      "fetch_top_stories": 20,
+      "min_score": 100,
       "profile": "tech-news"
     },
     "rss": [
@@ -48,8 +89,38 @@
         "profile": "tech-news"
       },
       {
-        "name": "36氪",
+        "name": "华尔街日报 (WSJ) - 市场",
+        "url": "https://feeds.a.dj.com/rss/RSSMarketsMain.xml",
+        "enabled": true,
+        "profile": "tech-news"
+      },
+      {
+        "name": "哈佛商业评论 (HBR)",
+        "url": "https://feeds.harvardbusiness.org/harvardbusiness/",
+        "enabled": true,
+        "profile": "tech-news"
+      },
+      {
+        "name": "经济学人 - 财经",
+        "url": "https://www.economist.com/finance-and-economics/rss.xml",
+        "enabled": true,
+        "profile": "tech-news"
+      },
+      {
+        "name": "36氪 - 深度",
         "url": "https://36kr.com/feed",
+        "enabled": true,
+        "profile": "tech-news"
+      },
+      {
+        "name": "TechCrunch",
+        "url": "https://techcrunch.com/feed/",
+        "enabled": true,
+        "profile": "tech-news"
+      },
+      {
+        "name": "MIT 科技评论",
+        "url": "https://www.technologyreview.com/feed/",
         "enabled": true,
         "profile": "tech-news"
       },
@@ -60,14 +131,26 @@
         "profile": "tech-news"
       },
       {
-        "name": "Simon Willison",
-        "url": "https://simonwillison.net/atom/everything/",
+        "name": "机器之心",
+        "url": "https://www.jiqizhixin.com/rss",
         "enabled": true,
         "profile": "tech-news"
       },
       {
-        "name": "Reddit - Technology",
-        "url": "https://rsshub.app/reddit/r/technology/hot",
+        "name": "Threads - Sam Altman",
+        "url": "https://rsshub.app/threads/sama",
+        "enabled": true,
+        "profile": "tech-news"
+      },
+      {
+        "name": "Threads - Mark Zuckerberg",
+        "url": "https://rsshub.app/threads/zuck",
+        "enabled": true,
+        "profile": "tech-news"
+      },
+      {
+        "name": "BBC 国际新闻",
+        "url": "https://feeds.bbci.co.uk/news/world/rss.xml",
         "enabled": true,
         "profile": "tech-news"
       }
