@@ -1,11 +1,12 @@
 {
   "ai": {
-    "provider": "gemini",
-    "model": "gemini-2.5-flash",
-    "api_key_env": "GOOGLE_API_KEY",
+    "provider": "openai",
+    "model": "glm-4.7-flash-free",
+    "api_key_env": "AIHUBMIX_API_KEY",
+    "base_url": "https://aihubmix.com/v1",
     "temperature": 0.3,
     "max_tokens": 4096,
-    "throttle_sec": 3,
+    "throttle_sec": 1,
     "analysis_concurrency": 1,
     "enrichment_concurrency": 1
   },
@@ -16,14 +17,6 @@
       "tech-news": {
         "threshold": 1.0,
         "topic_dedup": true
-      },
-      "tech-blog": {
-        "threshold": 1.0,
-        "topic_dedup": false
-      },
-      "finance-news": {
-        "threshold": 1.0,
-        "topic_dedup": true
       }
     }
   },
@@ -31,41 +24,46 @@
     "icon_style": "emoji"
   },
   "email": {
-    "enabled": false,
+    "enabled": true,
     "smtp_server": "smtp.qq.com",
     "smtp_port": 465,
     "imap_server": "imap.qq.com",
     "imap_port": 993,
-    "email_address": "你的QQ邮箱@qq.com",
+    "email_address": "2953261168@qq.com",
+    "password_env": "SMTP_PASSWORD",
     "sender_name": "Horizon Daily",
     "subscribe_keyword": "SUBSCRIBE",
     "unsubscribe_keyword": "UNSUBSCRIBE"
   },
   "sources": {
-    "github": [
-      {
-        "type": "user_events",
-        "username": "torvalds",
-        "enabled": true,
-        "profile": "tech-news"
-      }
-    ],
     "hackernews": {
       "enabled": true,
       "fetch_top_stories": 10,
-      "min_score": 100,
+      "min_score": 50,
       "profile": "tech-news"
     },
     "rss": [
       {
-        "name": "Simon Willison",
-        "url": "https://simonwillison.net/atom/everything/",
+        "name": "金融时报 (FT)",
+        "url": "https://www.ft.com/rss/home",
         "enabled": true,
         "profile": "tech-news"
       },
       {
-        "name": "Hacker News Best",
-        "url": "https://hnrss.org/best",
+        "name": "36氪",
+        "url": "https://36kr.com/feed",
+        "enabled": true,
+        "profile": "tech-news"
+      },
+      {
+        "name": "OpenAI 官方博客",
+        "url": "https://openai.com/news/rss.xml",
+        "enabled": true,
+        "profile": "tech-news"
+      },
+      {
+        "name": "Reddit - Technology (via RSSHub)",
+        "url": "https://rsshub.app/reddit/r/technology/hot",
         "enabled": true,
         "profile": "tech-news"
       }
