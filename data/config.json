@@ -11,6 +11,7 @@
   "processing": {
     "profiles_dir": "profiles",
     "default_profile": "tech-news",
+    "language": "zh",
     "profile_settings": {
       "tech-news": {
         "threshold": 1.0,
@@ -60,7 +61,13 @@
         "profile": "tech-news"
       },
       {
-        "name": "Reddit - Technology (via RSSHub)",
+        "name": "Simon Willison (AI 深度博客)",
+        "url": "https://simonwillison.net/atom/everything/",
+        "enabled": true,
+        "profile": "tech-news"
+      },
+      {
+        "name": "Reddit - Technology",
         "url": "https://rsshub.app/reddit/r/technology/hot",
         "enabled": true,
         "profile": "tech-news"
