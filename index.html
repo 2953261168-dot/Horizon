@@ -3,7 +3,6 @@
 <head>
     <meta charset="UTF-8">
     <title>Horizon 新闻雷达</title>
-    <!-- 引入 Markdown 解析库 -->
     <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
     <style>
         body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; line-height: 1.6; max-width: 800px; margin: 40px auto; padding: 0 20px; color: #333; }
@@ -31,7 +30,6 @@
     </div>
 
     <script>
-        // 获取文件列表
         fetch('https://api.github.com/repos/2953261168-dot/Horizon/contents/_posts?ref=gh-pages')
             .then(response => response.json())
             .then(data => {
@@ -40,16 +38,13 @@
                     contentDiv.innerHTML = '<p>暂无日报，请等待下次运行。</p>';
                     return;
                 }
-                // 按日期倒序排列
+                
                 data.sort((a, b) => b.name.localeCompare(a.name));
                 
                 let html = '';
                 let currentDate = '';
                 
-                // 过滤出 .md 文件
-                const mdFiles = data.filter(file => file.name.endsWith('.md'));
-
-                mdFiles.forEach(file => {
+                data.filter(file => file.name.endsWith('.md')).forEach(file => {
                     const match = file.name.match(/(\d{4}-\d{2}-\d{2})/);
                     if (match) {
                         const date = match[1];
@@ -58,20 +53,27 @@
                             html += `<div class="date">${date}</div><ul>`;
                             currentDate = date;
                         }
-                        // 直接传入原始文件的下载链接
+                        
+                        // 美化文件名
+                        let displayName = file.name.replace('.md', '');
+                        if (displayName.includes('-zh')) {
+                            displayName = '🇨🇳 中文版日报';
+                        } else if (displayName.includes('-en')) {
+                            displayName = '🇬🇧 英文版日报';
+                        }
+
                         const rawUrl = file.download_url;
-                        html += `<li><a onclick="loadArticle('${rawUrl}')">${file.name.replace('.md', '')}</a></li>`;
+                        html += `<li><a onclick="loadArticle('${rawUrl}')">${displayName}</a></li>`;
                     }
                 });
                 if (currentDate !== '') html += '</ul>';
                 contentDiv.innerHTML = html;
             })
             .catch(error => {
-                document.getElementById('content').innerHTML = '<p>加载失败，请刷新页面重试。可能是 GitHub API 限流。</p>';
+                document.getElementById('content').innerHTML = '<p>加载失败，请刷新页面重试。</p>';
                 console.error('Error:', error);
             });
 
-        // 加载并渲染 Markdown
         function loadArticle(url) {
             document.getElementById('list-view').style.display = 'none';
             document.getElementById('article-view').style.display = 'block';
@@ -81,8 +83,14 @@
             fetch(url)
                 .then(res => res.text())
                 .then(text => {
-                    // 使用 marked 将 Markdown 转换为 HTML 渲染出来
-                    articleContent.innerHTML = marked.parse(text);
+                    // 核心修复：把 Horizon 吐出来的恶心乱码替换成正常标点
+                    const decodedText = text.replace(/&#x27;/g, "'")
+                                           .replace(/&quot;/g, '"')
+                                           .replace(/&amp;/g, '&')
+                                           .replace(/&lt;/g, '<')
+                                           .replace(/&gt;/g, '>');
+                                           
+                    articleContent.innerHTML = marked.parse(decodedText);
                 })
                 .catch(err => {
                     articleContent.innerHTML = '<p>内容加载失败。</p>';
@@ -90,7 +98,6 @@
                 });
         }
 
-        // 返回列表
         function showList() {
             document.getElementById('article-view').style.display = 'none';
             document.getElementById('list-view').style.display = 'block';
