@@ -1,3 +1,4 @@
+请务必使用简体中文输出所有内容。
 # Evaluation goal
 
 Evaluate the importance of timely technology news for readers interested in software engineering, artificial intelligence, machine learning, computer systems, hardware, open source, and the technology industry.
