@@ -25,12 +25,13 @@
     "enabled": true,
     "smtp_server": "smtp.qq.com",
     "smtp_port": 465,
-    "use_ssl": true,
-    "sender": "2953261168@qq.com",
+    "imap_server": "imap.qq.com",
+    "imap_port": 993,
+    "email_address": "2953261168@qq.com",
     "password_env": "SMTP_PASSWORD",
-    "recipients": [
-      "2953261168@qq.com"
-    ]
+    "sender_name": "Horizon Daily",
+    "subscribe_keyword": "SUBSCRIBE",
+    "unsubscribe_keyword": "UNSUBSCRIBE"
   },
   "sources": {
     "hackernews": {
@@ -55,12 +56,6 @@
       {
         "name": "OpenAI 官方博客",
         "url": "https://openai.com/news/rss.xml",
-        "enabled": true,
-        "profile": "tech-news"
-      },
-      {
-        "name": "Simon Willison",
-        "url": "https://simonwillison.net/atom/everything/",
         "enabled": true,
         "profile": "tech-news"
       }
