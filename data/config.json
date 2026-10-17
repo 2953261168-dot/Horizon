@@ -32,6 +32,9 @@
     "imap_port": 993,
     "email_address": "19141079030@163.com",
     "password_env": "SMTP_PASSWORD",
+    "recipients": [
+      "19141079030@163.com"
+    ],
     "sender_name": "Horizon Daily",
     "subscribe_keyword": "SUBSCRIBE",
     "unsubscribe_keyword": "UNSUBSCRIBE"
@@ -90,6 +93,12 @@
         "profile": "tech-news"
       },
       {
+        "name": "麦肯锡洞察",
+        "url": "https://www.mckinsey.com/Insights/rss.aspx",
+        "enabled": true,
+        "profile": "tech-news"
+      },
+      {
         "name": "36氪 - 深度",
         "url": "https://36kr.com/feed",
         "enabled": true,
@@ -98,6 +107,12 @@
       {
         "name": "TechCrunch",
         "url": "https://techcrunch.com/feed/",
+        "enabled": true,
+        "profile": "tech-news"
+      },
+      {
+        "name": "Wired - 科技与文化",
+        "url": "https://www.wired.com/feed/rss",
         "enabled": true,
         "profile": "tech-news"
       },
@@ -134,6 +149,18 @@
       {
         "name": "BBC 国际新闻",
         "url": "https://feeds.bbci.co.uk/news/world/rss.xml",
+        "enabled": true,
+        "profile": "tech-news"
+      },
+      {
+        "name": "The Guardian - 国际",
+        "url": "https://www.theguardian.com/world/rss",
+        "enabled": true,
+        "profile": "tech-news"
+      },
+      {
+        "name": "路透社 - 科技",
+        "url": "https://feeds.reuters.com/reuters/technologyNews",
         "enabled": true,
         "profile": "tech-news"
       }
