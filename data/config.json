@@ -1,76 +1,43 @@
-{
-  "ai": {
-    "provider": "openai",
-    "model": "glm-4.7-flash-free",
-    "api_key_env": "AIHUBMIX_API_KEY",
-    "base_url": "https://aihubmix.com/v1",
-    "temperature": 0.3,
-    "max_tokens": 4096,
-    "throttle_sec": 1
-  },
-  "processing": {
-    "profiles_dir": "profiles",
-    "default_profile": "tech-news",
-    "profile_settings": {
-      "tech-news": {
-        "threshold": 1.0,
-        "topic_dedup": true
-      }
-    }
-  },
-  "display": {
-    "icon_style": "emoji"
-  },
-  "publish": {
-    "github_pages": {
-      "enabled": true,
-      "output_dir": "docs"
-    }
-  },
-  "email": {
-    "enabled": true,
-    "smtp_server": "smtp.qq.com",
-    "smtp_port": 465,
-    "imap_server": "imap.qq.com",
-    "imap_port": 993,
-    "email_address": "2953261168@qq.com",
-    "password_env": "SMTP_PASSWORD",
-    "sender_name": "Horizon Daily",
-    "subscribe_keyword": "SUBSCRIBE",
-    "unsubscribe_keyword": "UNSUBSCRIBE"
-  },
-  "sources": {
-    "hackernews": {
-      "enabled": true,
-      "fetch_top_stories": 10,
-      "min_score": 50,
-      "profile": "tech-news"
-    },
-    "rss": [
-      {
-        "name": "金融时报 (FT)",
-        "url": "https://www.ft.com/rss/home",
-        "enabled": true,
-        "profile": "tech-news"
-      },
-      {
-        "name": "36氪",
-        "url": "https://36kr.com/feed",
-        "enabled": true,
-        "profile": "tech-news"
-      },
-      {
-        "name": "OpenAI 官方博客",
-        "url": "https://openai.com/news/rss.xml",
-        "enabled": true,
-        "profile": "tech-news"
-      },
-      {
-        "name": "Reddit - Technology (via RSSHub)",
-        "url": "https://rsshub.app/reddit/r/technology/hot",
-        "enabled": true,
-        "profile": "tech-news"
-      }
-    ]
-  }
-}
+name: Daily Horizon Summary
+
+on:
+  schedule:
+    - cron: '0 0 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  run-horizon:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Install uv
+        uses: astral-sh/setup-uv@v3
+        with:
+          enable-cache: true
+
+      - name: Install dependencies
+        run: uv sync
+
+      - name: Run Horizon
+        env:
+          AIHUBMIX_API_KEY: ${{ secrets.AIHUBMIX_API_KEY }}
+          SMTP_PASSWORD: ${{ secrets.SMTP_PASSWORD }}
+        run: |
+          uv run horizon --hours 24
+
+      - name: Upload Daily Summary
+        uses: actions/upload-artifact@v4
+        with:
+          name: daily-summary
+          path: data/summaries/
+
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./docs
