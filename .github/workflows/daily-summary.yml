@@ -25,8 +25,10 @@ jobs:
 
       - name: Run Horizon
         env:
-          GOOGLE_API_KEY: ${{ secrets.GOOGLE_API_KEY }}
-        run: uv run horizon --hours 24
+          AIHUBMIX_API_KEY: ${{ secrets.AIHUBMIX_API_KEY }}
+          SMTP_PASSWORD: ${{ secrets.SMTP_PASSWORD }}
+        run: |
+          uv run horizon --hours 24
 
       - name: Upload Daily Summary
         uses: actions/upload-artifact@v4
