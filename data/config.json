@@ -25,8 +25,8 @@
     "enabled": true,
     "smtp_server": "smtp.qq.com",
     "smtp_port": 465,
-    "use_ssl": true,
-    "sender": "2953261168@qq.com",
+    "imap_server": "imap.qq.com",
+    "imap_port": 993,
     "email_address": "2953261168@qq.com",
     "password_env": "SMTP_PASSWORD",
     "recipients": [
