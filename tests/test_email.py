@@ -217,3 +217,41 @@ def test_check_subscriptions_skips_imap_when_disabled(monkeypatch):
     manager.check_subscriptions(storage_manager=object())
 
     assert FakeIMAP.instances == []
+
+
+def test_explicit_recipients_work_without_subscription_file():
+    config = _email_config(recipients=['reader@example.com'])
+    assert config.resolve_recipients([]) == ['reader@example.com']
+    assert config.resolve_recipients(['reader@example.com', 'other@example.com']) == [
+        'reader@example.com', 'other@example.com'
+    ]
+
+
+def test_enabled_email_requires_credential_and_recipient(monkeypatch):
+    monkeypatch.delenv('EMAIL_PASSWORD', raising=False)
+    manager = EmailManager(_email_config())
+    with pytest.raises(ValueError, match='no recipients'):
+        manager.send_daily_summary('Daily', 'Daily', [])
+    with pytest.raises(ValueError, match='Missing email credential'):
+        manager.send_daily_summary('Daily', 'Daily', ['reader@example.com'])
+
+
+def test_smtp_failure_is_reported_to_workflow(monkeypatch):
+    monkeypatch.setenv('EMAIL_PASSWORD', 'secret')
+    def unavailable(*args, **kwargs):
+        raise OSError('server unavailable')
+    monkeypatch.setattr('src.services.email.smtplib.SMTP_SSL', unavailable)
+    with pytest.raises(RuntimeError, match='SMTP delivery failed'):
+        EmailManager(_email_config()).send_daily_summary('Daily', 'Daily', ['reader@example.com'])
+
+
+def test_partial_delivery_failure_is_not_silently_successful(monkeypatch):
+    monkeypatch.setenv('EMAIL_PASSWORD', 'secret')
+    class RejectingSMTP(FakeSMTP):
+        def send_message(self, message):
+            if message['To'] == 'bad@example.com':
+                raise OSError('recipient rejected')
+            super().send_message(message)
+    monkeypatch.setattr('src.services.email.smtplib.SMTP_SSL', RejectingSMTP)
+    with pytest.raises(RuntimeError, match='1 recipient'):
+        EmailManager(_email_config()).send_daily_summary('Daily', 'Daily', ['good@example.com', 'bad@example.com'])
