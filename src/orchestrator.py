@@ -14,6 +14,7 @@ from .console_icons import get_icons
 from .models import Config, ContentItem
 from .storage.manager import StorageManager, safe_output_path
 from .services.email import EmailManager
+from zoneinfo import ZoneInfo
 from .services.webhook import WebhookNotifier
 from .services.wechat import WeChatNotifier
 from .scrapers.github import GitHubScraper
@@ -299,7 +300,7 @@ class HorizonOrchestrator:
             await self.enrich_items(important_items)
 
             # 7. Generate and save daily summaries for each configured language
-            today = datetime.now(timezone.utc).strftime("%Y-%m-%d")
+            today = datetime.now(ZoneInfo("Asia/Shanghai")).strftime("%Y-%m-%d")
             for lang in self.config.ai.languages:
                 summarizer = DailySummarizer(
                     profile_names=self.profiles.names,
@@ -355,11 +356,12 @@ class HorizonOrchestrator:
                     )
 
                 # Send email if configured
-                if self.email_manager and self.config.email and self.config.email.enabled:
+                if (self.email_manager and self.config.email and self.config.email.enabled
+                    and (self.config.email.languages is None or lang in self.config.email.languages)):
                     self.console.print(
                         f"{self.icons['email']} Sending {lang.upper()} email summary..."
                     )
-                    subscribers = self.storage.load_subscribers()
+                    subscribers = self.config.email.resolve_recipients(self.storage.load_subscribers())
                     subject = f"Horizon Summary ({lang.upper()}) - {today}"
                     self.email_manager.send_daily_summary(summary, subject, subscribers)
 

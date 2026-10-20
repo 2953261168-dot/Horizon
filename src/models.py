@@ -544,6 +544,12 @@ class EmailConfig(BaseModel):
     subscribe_keyword: str = "SUBSCRIBE"
     unsubscribe_keyword: str = "UNSUBSCRIBE"
     enabled: bool = False
+    recipients: List[str] = Field(default_factory=list)
+    languages: Optional[List[str]] = None
+
+    def resolve_recipients(self, subscribers: List[str]) -> List[str]:
+        """Combine explicit recipients with subscriptions without duplicate deliveries."""
+        return list(dict.fromkeys(self.recipients + subscribers))
 
 
 class CategoryGroupConfig(BaseModel):

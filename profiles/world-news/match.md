@@ -1,0 +1,1 @@
+Match substantive international news, public policy, diplomacy, global health, climate and major societal events. Exclude celebrity gossip and promotional content. Official statements qualify as primary evidence of what an institution announced, not independent verification of its claims.

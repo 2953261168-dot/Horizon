@@ -5,6 +5,10 @@ on:
     branches: [main]
     paths: ['docs/**']
 
+concurrency:
+  group: horizon-publish
+  cancel-in-progress: false
+
 jobs:
   deploy:
     runs-on: ubuntu-latest
@@ -18,10 +22,12 @@ jobs:
         uses: actions/checkout@v6
 
       - name: Deploy to GitHub Pages
+        run: bash scripts/restore-history.sh
+
+      - name: Publish updated site
         uses: peaceiris/actions-gh-pages@v4
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./docs
-          keep_files: true
           publish_branch: gh-pages
           enable_jekyll: true

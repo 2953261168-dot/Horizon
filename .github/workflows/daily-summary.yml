@@ -1,148 +1,43 @@
-name: Daily Horizon Summary
-
+name: Prepare Daily Briefing
 on:
   schedule:
-    - cron: '0 0 * * *'
+    # 06:30 Beijing: allow time for AI analysis before the 08:00 email job.
+    - cron: '30 22 * * *'
   workflow_dispatch:
-
 permissions:
   contents: write
-
+concurrency:
+  group: horizon-publish
+  cancel-in-progress: false
 jobs:
-  run-horizon:
+  briefing:
     runs-on: ubuntu-latest
+    timeout-minutes: 80
+    env:
+      TZ: Asia/Shanghai
     steps:
-      - name: Checkout repository
-        uses: actions/checkout@v4
-
-      - name: Install uv
-        uses: astral-sh/setup-uv@v3
+      - uses: actions/checkout@v4
+      - uses: astral-sh/setup-uv@v6
         with:
-          enable-cache: true
-
-      - name: Install dependencies
-        run: uv sync
-
-      - name: Run Horizon
+          python-version: '3.12'
+      - run: uv sync --frozen
+      - name: Preserve published briefing history
+        run: bash scripts/restore-history.sh
+      - name: Generate briefing without early email
         env:
           ZHIPU_API_KEY: ${{ secrets.ZHIPU_API_KEY }}
-          SMTP_PASSWORD: ${{ secrets.SMTP_PASSWORD }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
+          python -c "import json; p='data/config.json'; c=json.load(open(p)); c['email']['enabled']=False; json.dump(c,open(p,'w'),ensure_ascii=False)"
           uv run horizon --hours 24
-
-      - name: Generate index.html
-        run: |
-          mkdir -p docs
-          cat << 'EOF' > docs/index.html
-          <!DOCTYPE html>
-          <html lang="zh-CN">
-          <head>
-              <meta charset="UTF-8">
-              <title>Horizon 新闻雷达</title>
-              <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
-              <style>
-                  body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; line-height: 1.6; max-width: 800px; margin: 40px auto; padding: 0 20px; color: #333; }
-                  a { color: #0366d6; text-decoration: none; cursor: pointer; }
-                  a:hover { text-decoration: underline; }
-                  h1 { border-bottom: 1px solid #eaecef; padding-bottom: 10px; }
-                  .date { font-weight: 600; margin-top: 30px; color: #586069; font-size: 1.2em; }
-                  ul { padding-left: 20px; margin-top: 10px; }
-                  li { margin-bottom: 10px; font-size: 1.1em; }
-                  #content { min-height: 200px; }
-                  .back-btn { display: inline-block; margin-bottom: 20px; font-weight: 600; }
-                  img { max-width: 100%; }
-                  blockquote { border-left: 4px solid #dfe2e5; padding-left: 15px; color: #6a737d; margin-left: 0; }
-              </style>
-          </head>
-          <body>
-              <div id="list-view">
-                  <h1>📰 Horizon 新闻雷达</h1>
-                  <p>你的专属 AI 驱动信息聚合日报</p>
-                  <div id="content">正在加载日报列表...</div>
-              </div>
-              <div id="article-view" style="display:none;">
-                  <a class="back-btn" onclick="showList()">← 返回日报列表</a>
-                  <div id="article-content"></div>
-              </div>
-              <script>
-                  fetch('https://api.github.com/repos/2953261168-dot/Horizon/contents/_posts?ref=gh-pages&t=' + new Date().getTime())
-                      .then(response => response.json())
-                      .then(data => {
-                          const contentDiv = document.getElementById('content');
-                          if (!Array.isArray(data) || data.length === 0) {
-                              contentDiv.innerHTML = '<p>暂无日报，请等待下次运行。</p>';
-                              return;
-                          }
-                          data.sort((a, b) => b.name.localeCompare(a.name));
-                          let html = '';
-                          let currentDate = '';
-                          data.filter(file => file.name.endsWith('.md')).forEach(file => {
-                              const match = file.name.match(/(\d{4}-\d{2}-\d{2})/);
-                              if (match) {
-                                  const date = match[1];
-                                  if (date !== currentDate) {
-                                      if (currentDate !== '') html += '</ul>';
-                                      html += `<div class="date">${date}</div><ul>`;
-                                      currentDate = date;
-                                  }
-                                  let displayName = file.name;
-                                  if (displayName.includes('-en')) {
-                                      displayName = '🇬🇧 [EN] 英文版日报';
-                                  } else if (displayName.includes('-zh')) {
-                                      displayName = '🇨🇳 [ZH] 中文版日报';
-                                  }
-                                  html += `<li><a onclick="loadArticle('${file.download_url}')">${displayName}</a></li>`;
-                              }
-                          });
-                          if (currentDate !== '') html += '</ul>';
-                          contentDiv.innerHTML = html;
-                      })
-                      .catch(error => {
-                          document.getElementById('content').innerHTML = '<p>加载失败，请刷新页面重试。</p>';
-                          console.error('Error:', error);
-                      });
-
-                  function loadArticle(url) {
-                      document.getElementById('list-view').style.display = 'none';
-                      document.getElementById('article-view').style.display = 'block';
-                      const articleContent = document.getElementById('article-content');
-                      articleContent.innerHTML = '<p>正在加载内容...</p>';
-                      fetch(url)
-                          .then(res => res.text())
-                          .then(text => {
-                              let cleanText = text.replace(/^---[\s\S]*?---/, '');
-                              let finalHtml = marked.parse(cleanText);
-                              finalHtml = finalHtml.replace(/&#x27;/g, "'")
-                                                   .replace(/&#39;/g, "'")
-                                                   .replace(/&quot;/g, '"')
-                                                   .replace(/&amp;/g, '&')
-                                                   .replace(/&lt;/g, '<')
-                                                   .replace(/&gt;/g, '>');
-                              articleContent.innerHTML = finalHtml;
-                          })
-                          .catch(err => {
-                              articleContent.innerHTML = '<p>内容加载失败。</p>';
-                              console.error(err);
-                          });
-                  }
-
-                  function showList() {
-                      document.getElementById('article-view').style.display = 'none';
-                      document.getElementById('list-view').style.display = 'block';
-                  }
-              </script>
-          </body>
-          </html>
-          EOF
-
-      - name: Upload Daily Summary
-        uses: actions/upload-artifact@v4
+      - uses: actions/upload-artifact@v4
         with:
           name: daily-summary
           path: data/summaries/
-
-      - name: Deploy to GitHub Pages
-        uses: peaceiris/actions-gh-pages@v4
+          if-no-files-found: error
+      - uses: peaceiris/actions-gh-pages@v4
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./docs
+          publish_branch: gh-pages
+          enable_jekyll: true
