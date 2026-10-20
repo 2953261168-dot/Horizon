@@ -1,0 +1,167 @@
+[
+  {
+    "name": "金融时报 (FT)",
+    "status": "ok",
+    "entries": 9,
+    "url": "https://www.ft.com/rss/home"
+  },
+  {
+    "name": "华尔街日报 (WSJ) - 市场",
+    "status": "ok",
+    "entries": 20,
+    "url": "https://feeds.a.dj.com/rss/RSSMarketsMain.xml"
+  },
+  {
+    "name": "哈佛商业评论 (HBR)",
+    "status": "disabled-after-check",
+    "error": "<urlopen error [SSL: SSLV3_ALERT_HANDSHAKE_FAILURE] ssl/tls alert handshake failure (_ssl.c:1010)>",
+    "url": "https://feeds.harvardbusiness.org/harvardbusiness/"
+  },
+  {
+    "name": "经济学人 - 财经",
+    "status": "ok",
+    "entries": 300,
+    "url": "https://www.economist.com/finance-and-economics/rss.xml"
+  },
+  {
+    "name": "麦肯锡洞察",
+    "status": "ok",
+    "entries": 50,
+    "url": "https://www.mckinsey.com/Insights/rss.aspx"
+  },
+  {
+    "name": "36氪 - 深度",
+    "status": "disabled-after-check",
+    "error": "not well-formed (invalid token): line 10, column 168",
+    "url": "https://36kr.com/feed"
+  },
+  {
+    "name": "TechCrunch",
+    "status": "ok",
+    "entries": 20,
+    "url": "https://techcrunch.com/feed/"
+  },
+  {
+    "name": "Wired - 科技与文化",
+    "status": "ok",
+    "entries": 50,
+    "url": "https://www.wired.com/feed/rss"
+  },
+  {
+    "name": "MIT 科技评论",
+    "status": "ok",
+    "entries": 10,
+    "url": "https://www.technologyreview.com/feed/"
+  },
+  {
+    "name": "OpenAI 官方博客",
+    "status": "ok",
+    "entries": 1300,
+    "url": "https://openai.com/news/rss.xml"
+  },
+  {
+    "name": "机器之心",
+    "status": "disabled-after-check",
+    "error": "not well-formed (invalid token): line 7, column 82",
+    "url": "https://www.jiqizhixin.com/rss"
+  },
+  {
+    "name": "Threads - Sam Altman",
+    "status": "disabled",
+    "url": "https://rsshub.app/threads/sama"
+  },
+  {
+    "name": "Threads - Mark Zuckerberg",
+    "status": "disabled",
+    "url": "https://rsshub.app/threads/zuck"
+  },
+  {
+    "name": "BBC 国际新闻",
+    "status": "ok",
+    "entries": 32,
+    "url": "https://feeds.bbci.co.uk/news/world/rss.xml"
+  },
+  {
+    "name": "The Guardian - 国际",
+    "status": "ok",
+    "entries": 45,
+    "url": "https://www.theguardian.com/world/rss"
+  },
+  {
+    "name": "路透社 - 科技",
+    "status": "disabled",
+    "url": "https://feeds.reuters.com/reuters/technologyNews"
+  },
+  {
+    "name": "Google Research",
+    "status": "ok",
+    "entries": 100,
+    "url": "https://research.google/blog/rss/"
+  },
+  {
+    "name": "Google DeepMind",
+    "status": "disabled-after-check",
+    "error": "not well-formed (invalid token): line 1, column 0",
+    "url": "https://deepmind.google/blog/rss.xml"
+  },
+  {
+    "name": "Microsoft Research",
+    "status": "ok",
+    "entries": 10,
+    "url": "https://www.microsoft.com/en-us/research/feed/"
+  },
+  {
+    "name": "Nature — Research",
+    "status": "ok",
+    "entries": 75,
+    "url": "https://www.nature.com/nature.rss"
+  },
+  {
+    "name": "MIT News — AI",
+    "status": "ok",
+    "entries": 50,
+    "url": "https://news.mit.edu/rss/topic/artificial-intelligence2"
+  },
+  {
+    "name": "NVIDIA 官方博客",
+    "status": "ok",
+    "entries": 18,
+    "url": "https://blogs.nvidia.com/feed/"
+  },
+  {
+    "name": "Cloudflare 官方博客",
+    "status": "ok",
+    "entries": 20,
+    "url": "https://blog.cloudflare.com/rss/"
+  },
+  {
+    "name": "美联储 — 新闻发布",
+    "status": "ok",
+    "entries": 20,
+    "url": "https://www.federalreserve.gov/feeds/press_all.xml"
+  },
+  {
+    "name": "欧洲央行 — 新闻发布",
+    "status": "ok",
+    "entries": 15,
+    "url": "https://www.ecb.europa.eu/rss/press.html"
+  },
+  {
+    "name": "IMF — 新闻",
+    "status": "disabled-after-check",
+    "error": "HTTP Error 403: Forbidden",
+    "url": "https://www.imf.org/en/News/RSS"
+  },
+  {
+    "name": "联合国新闻 — 中文",
+    "status": "disabled-after-check",
+    "error": "not well-formed (invalid token): line 1, column 0",
+    "url": "https://news.un.org/feed/subscribe/zh/news/all/rss.xml"
+  },
+  {
+    "name": "世界卫生组织 — 新闻",
+    "status": "ok",
+    "entries": 126,
+    "url": "https://www.who.int/rss-feeds/news-english.xml"
+  }
+]
