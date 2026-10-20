@@ -146,10 +146,10 @@ class EmailManager:
         context = ssl.create_default_context()
         if self.config.smtp_port == 465:
             return smtplib.SMTP_SSL(
-                self.config.smtp_server, self.config.smtp_port, context=context
+                self.config.smtp_server, self.config.smtp_port, context=context, timeout=30
             )
 
-        server = smtplib.SMTP(self.config.smtp_server, self.config.smtp_port)
+        server = smtplib.SMTP(self.config.smtp_server, self.config.smtp_port, timeout=30)
         try:
             server.ehlo()
             server.starttls(context=context)
@@ -161,8 +161,12 @@ class EmailManager:
 
     def send_daily_summary(self, summary_md: str, subject: str, subscribers: List[str]):
         """Sends the daily summary to all subscribers."""
-        if not self.config.enabled or not subscribers:
+        if not self.config.enabled:
             return
+        if not subscribers:
+            raise ValueError("Email enabled but no recipients or subscribers configured")
+        if not self.pwd:
+            raise ValueError(f"Missing email credential: {self.config.password_env}")
 
         cleaned_summary = clean_app_summary_markdown(summary_md)
         safe_summary = html.escape(cleaned_summary)
@@ -189,13 +193,14 @@ class EmailManager:
         <body>
             {html_content}
             <div class="footer">
-                <p>Sent by {self.config.sender_name}</p>
-                <p>To unsubscribe, please reply with "{self.config.unsubscribe_keyword}"</p>
+                <p>Sent by {html.escape(self.config.sender_name)}</p>
+                <p>{'To unsubscribe, reply with ' + html.escape(self.config.unsubscribe_keyword) if self.config.imap_enabled else 'Personal daily briefing · Manage recipients in Horizon settings.'}</p>
             </div>
         </body>
         </html>
         """
 
+        failures = 0
         try:
             with self._open_smtp() as server:
                 server.login(
@@ -221,9 +226,13 @@ class EmailManager:
                         logger.info(f"Sent summary to {subscriber}")
                     except Exception as e:
                         logger.error(f"Failed to send to {subscriber}: {e}")
+                        failures += 1
 
         except Exception as e:
             logger.error(f"SMTP Error: {e}")
+            raise RuntimeError("SMTP delivery failed; check mail server credentials and connectivity") from e
+        if failures:
+            raise RuntimeError(f"Email delivery failed for {failures} recipient(s)")
 
     def _send_reply(self, to_email: str, subject: str, body: str):
         """Helper to send a simple reply."""
