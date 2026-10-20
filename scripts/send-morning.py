@@ -20,6 +20,13 @@ def main():
     data.update(email_address=address, recipients=[address])
     config = EmailConfig(**data)
     today = datetime.now(ZoneInfo('Asia/Shanghai')).strftime('%Y-%m-%d')
+    if os.environ.get('HORIZON_EMAIL_TEST') == '1':
+        EmailManager(config).send_daily_summary(
+            '# Horizon 邮件连通性测试\n\n这是一封测试邮件。每日中文简报已安排在北京时间早上 8 点发送。\n\n首份新版简报生成后可在 [Horizon 日报网站](https://2953261168-dot.github.io/Horizon/) 阅读。',
+            f'Horizon 邮件测试 · {today}', config.resolve_recipients([]),
+        )
+        print('Test message accepted by SMTP server')
+        return
     post = subprocess.run(
         ['git', 'show', f'origin/gh-pages:_posts/{today}-summary-zh.md'],
         check=True, capture_output=True, encoding='utf-8',
