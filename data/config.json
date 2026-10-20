@@ -6,7 +6,11 @@
     "base_url": "https://open.bigmodel.cn/api/paas/v4/",
     "temperature": 0.1,
     "max_tokens": 4096,
-    "throttle_sec": 2
+    "throttle_sec": 2,
+    "languages": [
+      "zh",
+      "en"
+    ]
   },
   "processing": {
     "profiles_dir": "profiles",
@@ -15,11 +19,48 @@
       "tech-news": {
         "threshold": 5.0,
         "topic_dedup": true
+      },
+      "finance-news": {
+        "threshold": 6.0,
+        "topic_dedup": true
+      },
+      "world-news": {
+        "threshold": 6.0,
+        "topic_dedup": true
       }
     }
   },
   "digest": {
-    "max_items": 15
+    "max_items": 24,
+    "profile_order": [
+      "world-news",
+      "finance-news",
+      "tech-news"
+    ],
+    "category_groups": {
+      "world": {
+        "name": "国际与公共事务",
+        "limit": 8,
+        "categories": [
+          "world"
+        ]
+      },
+      "finance": {
+        "name": "财经与政策",
+        "limit": 8,
+        "categories": [
+          "finance"
+        ]
+      },
+      "tech": {
+        "name": "科技与研究",
+        "limit": 8,
+        "categories": [
+          "tech"
+        ]
+      }
+    },
+    "default_group_limit": 4
   },
   "display": {
     "icon_style": "emoji"
@@ -30,14 +71,18 @@
     "smtp_port": 465,
     "imap_server": "imap.163.com",
     "imap_port": 993,
-    "email_address": "19141079030@163.com",
+    "email_address": "${HORIZON_EMAIL_ADDRESS}",
     "password_env": "SMTP_PASSWORD",
     "recipients": [
-      "19141079030@163.com"
+      "${HORIZON_EMAIL_ADDRESS}"
     ],
     "sender_name": "Horizon Daily",
     "subscribe_keyword": "SUBSCRIBE",
-    "unsubscribe_keyword": "UNSUBSCRIBE"
+    "unsubscribe_keyword": "UNSUBSCRIBE",
+    "imap_enabled": false,
+    "languages": [
+      "zh"
+    ]
   },
   "sources": {
     "ossinsight": {
@@ -72,97 +117,197 @@
         "name": "金融时报 (FT)",
         "url": "https://www.ft.com/rss/home",
         "enabled": true,
-        "profile": "tech-news"
+        "profile": "finance-news",
+        "category": "finance"
       },
       {
         "name": "华尔街日报 (WSJ) - 市场",
         "url": "https://feeds.a.dj.com/rss/RSSMarketsMain.xml",
         "enabled": true,
-        "profile": "tech-news"
+        "profile": "finance-news",
+        "category": "finance"
       },
       {
         "name": "哈佛商业评论 (HBR)",
         "url": "https://feeds.harvardbusiness.org/harvardbusiness/",
-        "enabled": true,
-        "profile": "tech-news"
+        "enabled": false,
+        "profile": "finance-news",
+        "category": "finance"
       },
       {
         "name": "经济学人 - 财经",
         "url": "https://www.economist.com/finance-and-economics/rss.xml",
         "enabled": true,
-        "profile": "tech-news"
+        "profile": "finance-news",
+        "category": "finance"
       },
       {
         "name": "麦肯锡洞察",
         "url": "https://www.mckinsey.com/Insights/rss.aspx",
         "enabled": true,
-        "profile": "tech-news"
+        "profile": "finance-news",
+        "category": "finance"
       },
       {
         "name": "36氪 - 深度",
         "url": "https://36kr.com/feed",
-        "enabled": true,
-        "profile": "tech-news"
+        "enabled": false,
+        "profile": "finance-news",
+        "category": "finance"
       },
       {
         "name": "TechCrunch",
         "url": "https://techcrunch.com/feed/",
         "enabled": true,
-        "profile": "tech-news"
+        "profile": "tech-news",
+        "category": "tech"
       },
       {
         "name": "Wired - 科技与文化",
         "url": "https://www.wired.com/feed/rss",
         "enabled": true,
-        "profile": "tech-news"
+        "profile": "tech-news",
+        "category": "tech"
       },
       {
         "name": "MIT 科技评论",
         "url": "https://www.technologyreview.com/feed/",
         "enabled": true,
-        "profile": "tech-news"
+        "profile": "tech-news",
+        "category": "tech"
       },
       {
         "name": "OpenAI 官方博客",
         "url": "https://openai.com/news/rss.xml",
         "enabled": true,
-        "profile": "tech-news"
+        "profile": "tech-news",
+        "category": "tech"
       },
       {
         "name": "机器之心",
         "url": "https://www.jiqizhixin.com/rss",
-        "enabled": true,
-        "profile": "tech-news"
+        "enabled": false,
+        "profile": "tech-news",
+        "category": "tech"
       },
       {
         "name": "Threads - Sam Altman",
         "url": "https://rsshub.app/threads/sama",
-        "enabled": true,
-        "profile": "tech-news"
+        "enabled": false,
+        "profile": "tech-news",
+        "category": "tech"
       },
       {
         "name": "Threads - Mark Zuckerberg",
         "url": "https://rsshub.app/threads/zuck",
-        "enabled": true,
-        "profile": "tech-news"
+        "enabled": false,
+        "profile": "tech-news",
+        "category": "tech"
       },
       {
         "name": "BBC 国际新闻",
         "url": "https://feeds.bbci.co.uk/news/world/rss.xml",
         "enabled": true,
-        "profile": "tech-news"
+        "profile": "world-news",
+        "category": "world"
       },
       {
         "name": "The Guardian - 国际",
         "url": "https://www.theguardian.com/world/rss",
         "enabled": true,
-        "profile": "tech-news"
+        "profile": "world-news",
+        "category": "world"
       },
       {
         "name": "路透社 - 科技",
         "url": "https://feeds.reuters.com/reuters/technologyNews",
+        "enabled": false,
+        "profile": "tech-news",
+        "category": "tech"
+      },
+      {
+        "name": "Google Research",
+        "url": "https://research.google/blog/rss/",
         "enabled": true,
+        "category": "tech",
         "profile": "tech-news"
+      },
+      {
+        "name": "Google DeepMind",
+        "url": "https://deepmind.google/blog/rss.xml",
+        "enabled": false,
+        "category": "tech",
+        "profile": "tech-news"
+      },
+      {
+        "name": "Microsoft Research",
+        "url": "https://www.microsoft.com/en-us/research/feed/",
+        "enabled": true,
+        "category": "tech",
+        "profile": "tech-news"
+      },
+      {
+        "name": "Nature — Research",
+        "url": "https://www.nature.com/nature.rss",
+        "enabled": true,
+        "category": "tech",
+        "profile": "tech-news"
+      },
+      {
+        "name": "MIT News — AI",
+        "url": "https://news.mit.edu/rss/topic/artificial-intelligence2",
+        "enabled": true,
+        "category": "tech",
+        "profile": "tech-news"
+      },
+      {
+        "name": "NVIDIA 官方博客",
+        "url": "https://blogs.nvidia.com/feed/",
+        "enabled": true,
+        "category": "tech",
+        "profile": "tech-news"
+      },
+      {
+        "name": "Cloudflare 官方博客",
+        "url": "https://blog.cloudflare.com/rss/",
+        "enabled": true,
+        "category": "tech",
+        "profile": "tech-news"
+      },
+      {
+        "name": "美联储 — 新闻发布",
+        "url": "https://www.federalreserve.gov/feeds/press_all.xml",
+        "enabled": true,
+        "category": "finance",
+        "profile": "finance-news"
+      },
+      {
+        "name": "欧洲央行 — 新闻发布",
+        "url": "https://www.ecb.europa.eu/rss/press.html",
+        "enabled": true,
+        "category": "finance",
+        "profile": "finance-news"
+      },
+      {
+        "name": "IMF — 新闻",
+        "url": "https://www.imf.org/en/News/RSS",
+        "enabled": false,
+        "category": "finance",
+        "profile": "finance-news"
+      },
+      {
+        "name": "联合国新闻 — 中文",
+        "url": "https://news.un.org/feed/subscribe/zh/news/all/rss.xml",
+        "enabled": false,
+        "category": "world",
+        "profile": "world-news"
+      },
+      {
+        "name": "世界卫生组织 — 新闻",
+        "url": "https://www.who.int/rss-feeds/news-english.xml",
+        "enabled": true,
+        "category": "world",
+        "profile": "world-news"
       }
     ]
   }
