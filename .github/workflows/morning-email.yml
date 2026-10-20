@@ -4,6 +4,11 @@ on:
     # 00:00 UTC = 08:00 Beijing. GitHub may delay scheduled jobs.
     - cron: '0 0 * * *'
   workflow_dispatch:
+    inputs:
+      test_mode:
+        description: 'Send a connection test instead of the daily briefing'
+        type: boolean
+        default: false
 permissions:
   contents: read
 concurrency:
@@ -24,4 +29,5 @@ jobs:
         env:
           SMTP_PASSWORD: ${{ secrets.SMTP_PASSWORD }}
           HORIZON_EMAIL_ADDRESS: ${{ secrets.HORIZON_EMAIL_ADDRESS }}
+          HORIZON_EMAIL_TEST: ${{ inputs.test_mode && '1' || '0' }}
         run: uv run python scripts/send-morning.py
