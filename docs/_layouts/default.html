@@ -8,16 +8,18 @@
   <link rel="stylesheet" href="{{ '/assets/css/briefing.css' | relative_url }}">
   <link rel="alternate" type="application/atom+xml" title="中文日报" href="{{ '/feed-zh.xml' | relative_url }}">
 </head>
-<body>
+<body class="{% if page.home %}home-page{% else %}inner-page{% endif %}">
+  <div class="reading-progress" aria-hidden="true"></div>
   <a class="skip" href="#main">跳到正文</a>
   <header class="masthead wrap">
-    <a class="brand" href="{{ '/' | relative_url }}"><span class="sun" aria-hidden="true">◒</span> HORIZON<span class="brand-note">每日视野</span></a>
-    <nav aria-label="主导航"><a href="{{ '/' | relative_url }}">早间简报</a><a href="{{ '/sources' | relative_url }}">信息来源</a><a href="{{ '/feed-zh.xml' | relative_url }}">RSS ↗</a></nav>
+    <a class="brand" href="{{ '/' | relative_url }}"><span class="brand-sun" aria-hidden="true"></span> HORIZON<span class="brand-note">每日视野</span></a>
+    <nav aria-label="主导航"><a href="{{ '/' | relative_url }}">每日视野</a><a href="{{ '/sources' | relative_url }}">信息来源</a><a href="{{ '/feed-zh.xml' | relative_url }}">RSS ↗</a></nav>
   </header>
-  <main id="main" class="wrap main-content">
+  <main id="main" class="{% unless page.home %}wrap{% endunless %} main-content">
     {% if page.date %}<div class="article-heading"><a href="{{ '/' | relative_url }}">← 所有简报</a><p class="eyebrow">DAILY BRIEFING / {{ page.date | date: '%Y.%m.%d' }}</p><h1>{{ page.title | escape }}</h1></div>{% endif %}
     <div class="{% if page.date %}reading{% endif %}">{{ content }}</div>
   </main>
-  <footer class="wrap footer"><span>HORIZON · 保持好奇，拓宽视野</span><span>AI 辅助筛选与摘要 · 请以原始报道为准</span></footer>
+  <footer class="wrap footer"><a class="footer-wordmark" href="{{ '/' | relative_url }}">HORIZON<span>每日视野</span></a><span>AI 辅助筛选与摘要 · 请以原始报道为准</span></footer>
+  <script src="{{ '/assets/js/observatory.js' | relative_url }}" defer></script>
 </body>
 </html>
