@@ -7,19 +7,29 @@
   <title>{{ page.title | escape }} · Horizon</title>
   <link rel="stylesheet" href="{{ '/assets/css/briefing.css' | relative_url }}?v={{ site.github.build_revision | default: 'observatory-v1' }}">
   <link rel="alternate" type="application/atom+xml" title="中文日报" href="{{ '/feed-zh.xml' | relative_url }}">
+  <link rel="stylesheet" href="{{ "/assets/css/experience.css" | relative_url }}?v={{ site.github.build_revision }}">
 </head>
-<body class="{% if page.home %}home-page{% else %}inner-page{% endif %}">
+<body data-edition="{{ page.date | date: '%Y.%m.%d' }}" class="{% if page.home %}home-page{% else %}inner-page{% endif %}">
   <div class="reading-progress" aria-hidden="true"></div>
   <a class="skip" href="#main">跳到正文</a>
   <header class="masthead wrap">
     <a class="brand" href="{{ '/' | relative_url }}"><span class="brand-sun" aria-hidden="true"></span> HORIZON<span class="brand-note">每日视野</span></a>
-    <nav aria-label="主导航"><a href="{{ '/' | relative_url }}">每日视野</a><a href="{{ '/sources' | relative_url }}">信息来源</a><a href="{{ '/feed-zh.xml' | relative_url }}">RSS ↗</a></nav>
+    <nav aria-label="主导航"><a href="{{ '/' | relative_url }}">每日视野</a><a href="{{ '/sources' | relative_url }}">信息来源</a><a href="{{ '/subscribe' | relative_url }}" data-subscribe>订阅简报 ↗</a></nav>
   </header>
   <main id="main" class="{% unless page.home %}wrap{% endunless %} main-content">
-    {% if page.date %}<div class="article-heading"><a href="{{ '/' | relative_url }}">← 所有简报</a><p class="eyebrow">DAILY BRIEFING / {{ page.date | date: '%Y.%m.%d' }}</p><h1>{{ page.title | escape }}</h1></div>{% endif %}
+    {% if page.date %}<div class="article-heading"><a href="{{ '/' | relative_url }}">← 所有简报</a><p class="eyebrow">DAILY BRIEFING / {{ page.date | date: '%Y.%m.%d' }}</p><h1>{% if page.lang == "en" %}A clearer view,<br><span class="serif">every morning.</span>{% else %}今日世界，<br><span class="serif">慢慢看清。</span>{% endif %}</h1><p class="reading-deck">{% if page.lang == "en" %}World, economy and technology. Read the essentials, then explore the context.{% else %}世界、经济与科技。一条一条读懂变化，保留追问的空间。{% endif %}</p></div>{% endif %}
     <div class="{% if page.date %}reading{% endif %}">{{ content }}</div>
   </main>
   <footer class="wrap footer"><a class="footer-wordmark" href="{{ '/' | relative_url }}">HORIZON<span>每日视野</span></a><span>AI 辅助筛选与摘要 · 请以原始报道为准</span></footer>
   <script src="{{ '/assets/js/observatory.js' | relative_url }}?v={{ site.github.build_revision | default: 'observatory-v1' }}" defer></script>
+  <dialog id="subscribe-dialog" class="subscribe-dialog" closedby="any" aria-labelledby="subscribe-title">
+    <form method="dialog"><button class="dialog-close" aria-label="关闭订阅面板">×</button></form>
+    <p class="eyebrow">YOUR DAILY PERSPECTIVE</p><h2 id="subscribe-title">把视野，<span class="serif">留给每个清晨。</span></h2>
+    <p>用 RSS 阅读器订阅，每日简报会自动出现在你的阅读列表中。无需注册，也不会收集你的邮箱。</p>
+    <ol class="subscribe-steps"><li>打开你常用的 RSS 阅读器。</li><li>选择「添加订阅」，粘贴下面的地址。</li><li>等待阅读器更新，即可阅读新一期简报。</li></ol>
+    <label for="feed-address">中文简报订阅地址</label><div class="feed-field"><input id="feed-address" readonly value="{{ site.url }}{{ site.baseurl }}/feed-zh.xml"><button type="button" data-copy-feed>复制地址</button></div>
+    <p class="copy-status" role="status" aria-live="polite"></p><p class="subscription-note">邮箱推送目前由项目维护者单独配置；网页暂不提供公开邮件注册。</p>
+  </dialog>
+  <script src="{{ '/assets/js/experience.js' | relative_url }}?v={{ site.github.build_revision }}" defer></script>
 </body>
 </html>
