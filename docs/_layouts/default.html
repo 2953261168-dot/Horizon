@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="{{ page.lang | default: 'zh-CN' }}">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Horizon 早间简报：从国际、财经与科技来源中筛选每日值得阅读的新闻。">
+  <title>{{ page.title | escape }} · Horizon</title>
+  <link rel="stylesheet" href="{{ '/assets/css/briefing.css' | relative_url }}">
+  <link rel="alternate" type="application/atom+xml" title="中文日报" href="{{ '/feed-zh.xml' | relative_url }}">
+</head>
+<body>
+  <a class="skip" href="#main">跳到正文</a>
+  <header class="masthead wrap">
+    <a class="brand" href="{{ '/' | relative_url }}"><span class="sun" aria-hidden="true">◒</span> HORIZON<span class="brand-note">每日视野</span></a>
+    <nav aria-label="主导航"><a href="{{ '/' | relative_url }}">早间简报</a><a href="{{ '/sources' | relative_url }}">信息来源</a><a href="{{ '/feed-zh.xml' | relative_url }}">RSS ↗</a></nav>
+  </header>
+  <main id="main" class="wrap main-content">
+    {% if page.date %}<div class="article-heading"><a href="{{ '/' | relative_url }}">← 所有简报</a><p class="eyebrow">DAILY BRIEFING / {{ page.date | date: '%Y.%m.%d' }}</p><h1>{{ page.title | escape }}</h1></div>{% endif %}
+    <div class="{% if page.date %}reading{% endif %}">{{ content }}</div>
+  </main>
+  <footer class="wrap footer"><span>HORIZON · 保持好奇，拓宽视野</span><span>AI 辅助筛选与摘要 · 请以原始报道为准</span></footer>
+</body>
+</html>
