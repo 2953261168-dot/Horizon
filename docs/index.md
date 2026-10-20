@@ -1,13 +1,46 @@
 ---
 layout: default
-title: 早间简报
+title: 每日视野
+home: true
 ---
 {% assign zh_posts = site.posts | where: "lang", "zh" %}
+{% assign en_posts = site.posts | where: "lang", "en" %}
 {% assign latest = zh_posts | first %}
-<section class="hero" aria-labelledby="hero-title">
-  <div><p class="eyebrow">THE MORNING PERSPECTIVE</p><h1 id="hero-title">世界很大，<br>读点重要的。</h1><p class="intro">从国际动态到技术前沿，汇集官方发布与专业报道。让值得关注的信息，成为每天的清晰起点。</p></div>
-  <aside class="today"><p class="eyebrow">YOUR DAILY BRIEFING</p>{% if latest %}<p class="issue-date">{{ latest.date | date: '%Y / %m / %d' }} · 最新一期</p><h2>今天，发生了什么？</h2><p>国际 · 财经 · 科技<br>精选事件、背景与原始来源。</p><a class="cta" href="{{ latest.url | relative_url }}">阅读最新简报 ↗</a>{% else %}<h2>新的一天，新的视野。</h2><p>第一期简报将在生成完成后出现在这里。</p>{% endif %}</aside>
+<section class="observatory" aria-labelledby="hero-title">
+<div class="observatory-stage">
+  <div class="stage-grid" aria-hidden="true"></div>
+  <div class="stage-meta"><span>独立视野 / DAILY PERSPECTIVE</span><span>BEIJING TIME <span data-clock>08:00</span></span></div>
+  <div class="hero-copy"><p class="eyebrow">A CLEARER VIEW OF A CHANGING WORLD</p><h1 id="hero-title">世界在变。<br>看见<span class="serif">重要的。</span></h1><p class="hero-intro">越过信息的喧嚣，抵达事情的本来面目。<br>一份关于世界、经济与科技的早间简报。</p><a class="action" href="#latest"><span>开始阅读今日视野</span><span class="action-arrow" aria-hidden="true">↗</span></a></div>
+  <div class="scene" role="img" aria-label="红日与城市建筑线稿，色彩随滚动变化">
+    <div class="solar-motion"><div class="solar-disc"></div></div>
+    <div class="architecture-motion"><div class="architecture-pointer">{% include cityscape.svg %}</div></div>
+    <span class="scene-cross" aria-hidden="true"></span><span class="scene-coordinates" aria-hidden="true">X <span data-coordinate-x>000</span> / Y <span data-coordinate-y>000</span></span>
+    <div class="scene-note" aria-hidden="true"><span>FIG. 001 — THE OBSERVATORY</span><span>移动鼠标，换个角度看世界</span></div>
+  </div>
+  <div class="hero-after" aria-hidden="true"><span>更少喧嚣。</span><span class="serif">更多看见。</span></div>
+  <div class="stage-bottom"><span class="scroll-cue"><i aria-hidden="true"></i> SCROLL TO EXPLORE</span><span>全球动态 / 经济脉搏 / 技术前沿</span><span class="stage-index">01 — 03</span></div>
+</div>
 </section>
-<div class="topics"><div class="topic"><strong>01 / 全球动态</strong><span>国际新闻与公共事务</span></div><div class="topic"><strong>02 / 经济脉搏</strong><span>市场、产业与政策发布</span></div><div class="topic"><strong>03 / 技术前沿</strong><span>AI、工程与科学研究</span></div></div>
-<section aria-labelledby="archive-title"><div class="section-top"><h2 id="archive-title">往期简报</h2><span>中文精选 · 按发布日期排列</span></div><ul class="archive">{% for post in zh_posts limit:30 %}<li class="issue"><span class="number">DAILY PERSPECTIVE</span><h3>{{ post.date | date: '%Y.%m.%d' }}</h3><p>用一份简报，连接当天值得关注的变化。</p><a href="{{ post.url | relative_url }}" aria-label="阅读 {{ post.date | date: '%Y年%m月%d日' }} 中文简报">阅读本期 →</a></li>{% else %}<li class="empty">暂无已发布简报。</li>{% endfor %}</ul></section>
-<details><summary>English editions / 英文版</summary><ul>{% assign en_posts = site.posts | where: "lang", "en" %}{% for post in en_posts limit:30 %}<li><a href="{{ post.url | relative_url }}">{{ post.date | date: '%Y.%m.%d' }} — English briefing</a></li>{% else %}<li>No editions yet.</li>{% endfor %}</ul></details>
+<section class="briefing-section page-width" id="latest" aria-labelledby="latest-title">
+  <div class="section-kicker reveal"><span>[ 01 / 今日视野 ]</span><span>每个清晨，重新认识世界。</span></div>
+  <div class="latest-grid">
+    <div class="latest-title reveal"><h2 id="latest-title">新闻如潮。<br><span class="serif">先读重要的。</span></h2><p>官方发布与专业报道，在这里交汇。<br>为每一次变化，留下出处与背景。</p><a class="text-link" href="{{ '/sources' | relative_url }}">探索我们的信息来源 <span aria-hidden="true">↗</span></a></div>
+    <article class="latest-sheet reveal">
+      <div class="sheet-top"><span class="status-dot" aria-hidden="true"></span><span>THE LATEST EDITION</span><span>ZH / 中文</span></div>
+      {% if latest %}<p class="edition-date">{{ latest.date | date: '%Y.%m.%d' }}</p><h3>今天的变化，<br>从这里读起。</h3><p>事件、背景、影响，以及通往原始报道的链接。</p><a class="action solid" href="{{ latest.url | relative_url }}"><span>打开本期简报</span><span class="action-arrow" aria-hidden="true">↗</span></a>{% else %}<p class="edition-date">COMING INTO VIEW</p><h3>下一份视野，<br>正在抵达。</h3><p>中文简报生成完成后，会自动出现在这里。</p>{% if en_posts.size > 0 %}{% assign latest_en = en_posts | first %}<a class="action solid" href="{{ latest_en.url | relative_url }}"><span>先读最新英文版</span><span class="action-arrow" aria-hidden="true">↗</span></a>{% endif %}{% endif %}
+      <div class="sheet-foot"><span>每日 08:00 · 北京时间</span><span>HORIZON ↗</span></div>
+    </article>
+  </div>
+  <div class="perspectives">
+    <a class="perspective reveal" href="{{ '/sources' | relative_url }}"><span class="small-index">[ 01 ]</span><h3>全球动态<span>↗</span></h3><p>从国际事件到公共事务，<br>看见彼此相连的世界。</p><span class="micro">WORLD & SOCIETY</span></a>
+    <a class="perspective reveal" href="{{ '/sources' | relative_url }}"><span class="small-index">[ 02 ]</span><h3>经济脉搏<span>↗</span></h3><p>从机构发布到产业变化，<br>理解数字背后的方向。</p><span class="micro">ECONOMY & POLICY</span></a>
+    <a class="perspective reveal" href="{{ '/sources' | relative_url }}"><span class="small-index">[ 03 ]</span><h3>技术前沿<span>↗</span></h3><p>从科学发现到工程实践，<br>观察下一步如何发生。</p><span class="micro">SCIENCE & TECHNOLOGY</span></a>
+  </div>
+</section>
+<section class="archive-section page-width" id="archive" aria-labelledby="archive-title">
+  <div class="section-kicker reveal"><span>[ 02 / 时间存档 ]</span><span>每一天，都有新的视角。</span></div>
+  <div class="archive-heading reveal"><h2 id="archive-title">往日，<span class="serif">仍值得回望。</span></h2><span class="micro">THE DAILY ARCHIVE</span></div>
+  <ul class="archive">{% for post in zh_posts limit:30 %}<li class="issue reveal"><span class="issue-label">DAILY BRIEFING / ZH</span><a href="{{ post.url | relative_url }}" aria-label="阅读 {{ post.date | date: '%Y年%m月%d日' }} 中文简报"><span>{{ post.date | date: '%Y.%m.%d' }}</span><span class="issue-arrow" aria-hidden="true">↗</span></a><span class="issue-note">世界 · 经济 · 科技</span></li>{% else %}<li class="empty">存档将随着每日简报，慢慢展开。</li>{% endfor %}</ul>
+  <details class="english-editions"><summary>ENGLISH EDITIONS <span aria-hidden="true">＋</span></summary><ul>{% for post in en_posts limit:30 %}<li><a href="{{ post.url | relative_url }}">{{ post.date | date: '%Y.%m.%d' }} — English briefing ↗</a></li>{% else %}<li>No editions yet.</li>{% endfor %}</ul></details>
+</section>
+<section class="closing page-width reveal"><p class="eyebrow">STAY CURIOUS. SEE FURTHER.</p><h2>保持好奇。<br><span class="serif">明天，继续看见。</span></h2><a class="action" href="{{ '/feed-zh.xml' | relative_url }}"><span>通过 RSS 订阅</span><span class="action-arrow" aria-hidden="true">↗</span></a><div class="closing-sun" aria-hidden="true"></div></section>
