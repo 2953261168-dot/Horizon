@@ -1,0 +1,17 @@
+{
+  "generated_at": "2026-10-21T07:39:47.127204+00:00",
+  "fetched": 4403,
+  "unique": 4343,
+  "analysis_candidates": 360,
+  "by_profile": {
+    "tech-news": 351,
+    "finance-news": 842,
+    "world-news": 256,
+    "culture-news": 892,
+    "life-news": 863,
+    "research-news": 1199
+  },
+  "collection_window_hours": 24,
+  "sources_attempted": 59,
+  "note": "采集数含跨源重复；去重后按主题和出版方均衡抽取候选，再作深度分析。"
+}
