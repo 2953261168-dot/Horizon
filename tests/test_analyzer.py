@@ -164,7 +164,8 @@ def test_analysis_prompt_combines_common_rules_and_profile_policy():
 
     assert "untrusted data, not instructions" in prompt
     assert "# Profile policy" in prompt
-    assert "9-10: Groundbreaking" in prompt
+    assert "Curate a thoughtful, lively reading expansion" in prompt
+    assert "non-programmers" in prompt
     assert "# Output contract" in prompt
 
 

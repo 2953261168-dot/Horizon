@@ -2,7 +2,7 @@
   "id": "tech-news",
   "name": "Technology News",
   "display_names": {
-    "zh": "科技新闻"
+    "zh": "AI 与有趣工具"
   },
   "match": "match.md",
   "analysis": "analysis.md",
@@ -18,18 +18,31 @@
       {
         "id": "background",
         "type": "section",
-        "tools": ["history_search", "web_search"]
+        "tools": [
+          "history_search",
+          "web_search"
+        ]
       },
       {
         "id": "impact",
         "type": "section",
-        "tools": ["web_search"],
+        "tools": [
+          "web_search"
+        ],
         "optional": true
       },
       {
         "id": "community_discussion",
         "type": "section",
         "tools": [],
+        "optional": true
+      },
+      {
+        "id": "try_it",
+        "type": "section",
+        "tools": [
+          "web_search"
+        ],
         "optional": true
       }
     ]

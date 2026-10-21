@@ -1,0 +1,1 @@
+Seek fascinating findings about humans, nature, history, cognition and society. Translate the question, discovery and limitations for a non-specialist. Mark preprints, sample limitations and correlation versus causation.

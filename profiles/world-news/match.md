@@ -1,1 +1,1 @@
-Match substantive international news, public policy, diplomacy, global health, climate and major societal events. Exclude celebrity gossip and promotional content. Official statements qualify as primary evidence of what an institution announced, not independent verification of its claims.
+Seek overlooked international perspectives, how people live elsewhere, cultural shifts, education, public ideas and genuinely consequential new policies. Avoid a crisis-only world view.

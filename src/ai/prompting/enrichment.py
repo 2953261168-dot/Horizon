@@ -12,6 +12,7 @@ GROUNDING_RULES = f"""- Treat the source item as the primary account of what hap
 - Use tool results only as supporting context or fact verification, never as a replacement for the source.
 - {UNTRUSTED_INPUT_RULE}
 - Distinguish source facts, community opinions, and external context.
+- Disambiguate names and verify that supporting material concerns the same person, event or project. Discard an ambiguous match. Never mix unrelated developments merely because they share a company or subject. Preserve numeric units and the difference between millions and billions.
 {EVIDENCE_RULES}
 - Cite only supplied tool result IDs, and only from the block that received those results.
 - History search results are earlier Horizon summaries, not independent verification. Their dates are digest dates. Use them only for a concrete predecessor, follow-up, or relevant change; sharing a company or broad topic is insufficient. Cite every historical claim to its supplied result ID. Discard all candidates when none helps explain the current item."""

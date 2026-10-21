@@ -452,6 +452,7 @@ class SourcesConfig(BaseModel):
     ossinsight: OSSInsightConfig = Field(default_factory=OSSInsightConfig)
     gdelt: Optional[GDELTConfig] = None
     google_news: Optional[GoogleNewsConfig] = None
+    google_news_queries: List[GoogleNewsConfig] = Field(default_factory=list)
 
 
 class WebhookConfig(BaseModel):
@@ -593,6 +594,8 @@ class CollectionConfig(BaseModel):
     model_config = ConfigDict(extra="forbid")
 
     time_window_hours: int = 24
+    max_analysis_items: Optional[int] = Field(default=None, ge=30, le=2000)
+    search_concurrency: int = Field(default=4, ge=1, le=8)
 
 
 class DigestConfig(BaseModel):

@@ -10,7 +10,8 @@
     "languages": [
       "zh",
       "en"
-    ]
+    ],
+    "analysis_concurrency": 3
   },
   "processing": {
     "profiles_dir": "profiles",
@@ -27,36 +28,72 @@
       "world-news": {
         "threshold": 6.0,
         "topic_dedup": true
+      },
+      "culture-news": {
+        "threshold": 6,
+        "topic_dedup": true
+      },
+      "life-news": {
+        "threshold": 6,
+        "topic_dedup": true
+      },
+      "research-news": {
+        "threshold": 6,
+        "topic_dedup": true
       }
     }
   },
   "digest": {
-    "max_items": 24,
+    "max_items": 30,
     "profile_order": [
+      "life-news",
+      "culture-news",
+      "tech-news",
+      "research-news",
       "world-news",
-      "finance-news",
-      "tech-news"
+      "finance-news"
     ],
     "category_groups": {
       "world": {
         "name": "国际与公共事务",
-        "limit": 8,
+        "limit": 2,
         "categories": [
           "world"
         ]
       },
       "finance": {
         "name": "财经与政策",
-        "limit": 8,
+        "limit": 3,
         "categories": [
           "finance"
         ]
       },
       "tech": {
         "name": "科技与研究",
-        "limit": 8,
+        "limit": 6,
         "categories": [
           "tech"
+        ]
+      },
+      "culture": {
+        "name": "文化与热议",
+        "limit": 7,
+        "categories": [
+          "culture"
+        ]
+      },
+      "life": {
+        "name": "生活与社会",
+        "limit": 7,
+        "categories": [
+          "life"
+        ]
+      },
+      "research": {
+        "name": "研究与新知",
+        "limit": 5,
+        "categories": [
+          "research"
         ]
       }
     },
@@ -90,22 +127,7 @@
       "period": "past_24_hours",
       "profile": "tech-news"
     },
-    "github": [
-      {
-        "type": "repo_releases",
-        "owner": "openai",
-        "repo": "openai-python",
-        "enabled": true,
-        "profile": "tech-news"
-      },
-      {
-        "type": "repo_releases",
-        "owner": "huggingface",
-        "repo": "transformers",
-        "enabled": true,
-        "profile": "tech-news"
-      }
-    ],
+    "github": [],
     "hackernews": {
       "enabled": true,
       "fetch_top_stories": 20,
@@ -308,7 +330,825 @@
         "enabled": true,
         "category": "world",
         "profile": "world-news"
+      },
+      {
+        "name": "BBC 文化娱乐",
+        "url": "https://feeds.bbci.co.uk/news/entertainment_and_arts/rss.xml",
+        "enabled": true,
+        "profile": "culture-news",
+        "category": "culture"
+      },
+      {
+        "name": "BBC 健康",
+        "url": "https://feeds.bbci.co.uk/news/health/rss.xml",
+        "enabled": true,
+        "profile": "life-news",
+        "category": "life"
+      },
+      {
+        "name": "BBC 教育",
+        "url": "https://feeds.bbci.co.uk/news/education/rss.xml",
+        "enabled": true,
+        "profile": "life-news",
+        "category": "life"
+      },
+      {
+        "name": "BBC 科学环境",
+        "url": "https://feeds.bbci.co.uk/news/science_and_environment/rss.xml",
+        "enabled": true,
+        "profile": "research-news",
+        "category": "research"
+      },
+      {
+        "name": "The Guardian 电影",
+        "url": "https://www.theguardian.com/film/rss",
+        "enabled": true,
+        "profile": "culture-news",
+        "category": "culture"
+      },
+      {
+        "name": "The Guardian 音乐",
+        "url": "https://www.theguardian.com/music/rss",
+        "enabled": true,
+        "profile": "culture-news",
+        "category": "culture"
+      },
+      {
+        "name": "The Guardian 图书",
+        "url": "https://www.theguardian.com/books/rss",
+        "enabled": true,
+        "profile": "culture-news",
+        "category": "culture"
+      },
+      {
+        "name": "The Guardian 体育",
+        "url": "https://www.theguardian.com/sport/rss",
+        "enabled": true,
+        "profile": "culture-news",
+        "category": "culture"
+      },
+      {
+        "name": "The Guardian 生活",
+        "url": "https://www.theguardian.com/lifeandstyle/rss",
+        "enabled": true,
+        "profile": "life-news",
+        "category": "life"
+      },
+      {
+        "name": "The Guardian 环境",
+        "url": "https://www.theguardian.com/environment/rss",
+        "enabled": true,
+        "profile": "life-news",
+        "category": "life"
+      },
+      {
+        "name": "The Guardian 科学",
+        "url": "https://www.theguardian.com/science/rss",
+        "enabled": true,
+        "profile": "research-news",
+        "category": "research"
+      },
+      {
+        "name": "Variety 娱乐产业",
+        "url": "https://variety.com/feed/",
+        "enabled": true,
+        "profile": "culture-news",
+        "category": "culture"
+      },
+      {
+        "name": "Deadline 影视",
+        "url": "https://deadline.com/feed/",
+        "enabled": true,
+        "profile": "culture-news",
+        "category": "culture"
+      },
+      {
+        "name": "Hollywood Reporter",
+        "url": "https://www.hollywoodreporter.com/feed/",
+        "enabled": true,
+        "profile": "culture-news",
+        "category": "culture"
+      },
+      {
+        "name": "Pitchfork 音乐",
+        "url": "https://pitchfork.com/feed/feed-news/rss",
+        "enabled": true,
+        "profile": "culture-news",
+        "category": "culture"
+      },
+      {
+        "name": "Smithsonian 历史与文化",
+        "url": "https://www.smithsonianmag.com/rss/latest_articles/",
+        "enabled": true,
+        "profile": "culture-news",
+        "category": "culture"
+      },
+      {
+        "name": "The Conversation",
+        "url": "https://theconversation.com/global/articles.atom",
+        "enabled": true,
+        "profile": "life-news",
+        "category": "life"
+      },
+      {
+        "name": "NPR 文化与新闻",
+        "url": "https://feeds.npr.org/1001/rss.xml",
+        "enabled": true,
+        "profile": "world-news",
+        "category": "world"
+      },
+      {
+        "name": "NPR 健康",
+        "url": "https://feeds.npr.org/1128/rss.xml",
+        "enabled": true,
+        "profile": "life-news",
+        "category": "life"
+      },
+      {
+        "name": "NASA 最新消息",
+        "url": "https://www.nasa.gov/rss/dyn/breaking_news.rss",
+        "enabled": true,
+        "profile": "research-news",
+        "category": "research"
+      },
+      {
+        "name": "ESA 空间探索",
+        "url": "https://www.esa.int/rssfeed/Our_Activities/Space_Science",
+        "enabled": true,
+        "profile": "research-news",
+        "category": "research"
+      },
+      {
+        "name": "Nature Astronomy",
+        "url": "https://www.nature.com/natastron.rss",
+        "enabled": true,
+        "profile": "research-news",
+        "category": "research"
+      },
+      {
+        "name": "Nature Ecology & Evolution",
+        "url": "https://www.nature.com/natecolevol.rss",
+        "enabled": true,
+        "profile": "research-news",
+        "category": "research"
+      },
+      {
+        "name": "Nature Human Behaviour",
+        "url": "https://www.nature.com/nathumbehav.rss",
+        "enabled": true,
+        "profile": "research-news",
+        "category": "research"
+      },
+      {
+        "name": "Nature Medicine",
+        "url": "https://www.nature.com/nm.rss",
+        "enabled": true,
+        "profile": "research-news",
+        "category": "research"
+      },
+      {
+        "name": "Nature Communications",
+        "url": "https://www.nature.com/ncomms.rss",
+        "enabled": true,
+        "profile": "research-news",
+        "category": "research"
+      },
+      {
+        "name": "Scientific Reports",
+        "url": "https://www.nature.com/srep.rss",
+        "enabled": true,
+        "profile": "research-news",
+        "category": "research"
+      },
+      {
+        "name": "Science",
+        "url": "https://www.science.org/action/showFeed?type=etoc&feed=rss&jc=science",
+        "enabled": true,
+        "profile": "research-news",
+        "category": "research"
+      },
+      {
+        "name": "eLife",
+        "url": "https://elifesciences.org/rss/recent.xml",
+        "enabled": true,
+        "profile": "research-news",
+        "category": "research"
+      },
+      {
+        "name": "PLOS ONE",
+        "url": "https://journals.plos.org/plosone/feed/atom",
+        "enabled": true,
+        "profile": "research-news",
+        "category": "research"
+      },
+      {
+        "name": "PLOS Biology",
+        "url": "https://journals.plos.org/plosbiology/feed/atom",
+        "enabled": true,
+        "profile": "research-news",
+        "category": "research"
+      },
+      {
+        "name": "arXiv AI 预印本",
+        "url": "https://rss.arxiv.org/rss/cs.AI",
+        "enabled": true,
+        "profile": "research-news",
+        "category": "research"
+      },
+      {
+        "name": "arXiv 社会与计算预印本",
+        "url": "https://rss.arxiv.org/rss/cs.CY",
+        "enabled": true,
+        "profile": "research-news",
+        "category": "research"
+      },
+      {
+        "name": "Ars Technica",
+        "url": "https://feeds.arstechnica.com/arstechnica/index",
+        "enabled": true,
+        "profile": "tech-news",
+        "category": "tech"
+      },
+      {
+        "name": "The Verge",
+        "url": "https://www.theverge.com/rss/index.xml",
+        "enabled": true,
+        "profile": "tech-news",
+        "category": "tech"
+      },
+      {
+        "name": "Rest of World",
+        "url": "https://restofworld.org/feed/",
+        "enabled": true,
+        "profile": "life-news",
+        "category": "life"
+      },
+      {
+        "name": "Sixth Tone",
+        "url": "https://www.sixthtone.com/rss",
+        "enabled": true,
+        "profile": "life-news",
+        "category": "life"
+      },
+      {
+        "name": "HelloGitHub 月刊",
+        "url": "https://hellogithub.com/rss",
+        "profile": "tech-news",
+        "category": "tech",
+        "enabled": true
+      },
+      {
+        "name": "科技爱好者周刊",
+        "url": "https://www.ruanyifeng.com/blog/atom.xml",
+        "profile": "tech-news",
+        "category": "tech",
+        "enabled": true
+      },
+      {
+        "name": "Product Hunt 新工具",
+        "url": "https://www.producthunt.com/feed",
+        "profile": "tech-news",
+        "category": "tech",
+        "enabled": true
+      },
+      {
+        "name": "The Pudding 数据故事",
+        "url": "https://pudding.cool/rss.xml",
+        "profile": "culture-news",
+        "category": "culture",
+        "enabled": true
+      },
+      {
+        "name": "Aeon 观念与文化",
+        "url": "https://aeon.co/feed.rss",
+        "profile": "culture-news",
+        "category": "culture",
+        "enabled": true
+      },
+      {
+        "name": "JSTOR Daily 跨学科阅读",
+        "url": "https://daily.jstor.org/feed/",
+        "profile": "research-news",
+        "category": "research",
+        "enabled": true
+      },
+      {
+        "name": "Vox 文化",
+        "url": "https://www.vox.com/rss/culture/index.xml",
+        "profile": "culture-news",
+        "category": "culture",
+        "enabled": true
+      },
+      {
+        "name": "Atlas Obscura 新奇世界",
+        "url": "https://www.atlasobscura.com/feeds/latest",
+        "profile": "life-news",
+        "category": "life",
+        "enabled": true
+      }
+    ],
+    "google_news_queries": [
+      {
+        "enabled": true,
+        "query": "\"youth culture\" OR \"social change\"",
+        "language": "en",
+        "country": "US",
+        "max_results": 100,
+        "profile": "world-news",
+        "category": "world"
+      },
+      {
+        "enabled": true,
+        "query": "\"education reform\" OR \"urban life\"",
+        "language": "en",
+        "country": "US",
+        "max_results": 100,
+        "profile": "world-news",
+        "category": "world"
+      },
+      {
+        "enabled": true,
+        "query": "\"global south\" AND (culture OR society)",
+        "language": "en",
+        "country": "US",
+        "max_results": 100,
+        "profile": "world-news",
+        "category": "world"
+      },
+      {
+        "enabled": true,
+        "query": "\"new ideas\" OR \"public debate\"",
+        "language": "en",
+        "country": "US",
+        "max_results": 100,
+        "profile": "world-news",
+        "category": "world"
+      },
+      {
+        "enabled": true,
+        "query": "\"digital culture\" AND (Asia OR Europe)",
+        "language": "en",
+        "country": "US",
+        "max_results": 100,
+        "profile": "world-news",
+        "category": "world"
+      },
+      {
+        "enabled": true,
+        "query": "\"social trends\" OR \"changing lifestyles\"",
+        "language": "en",
+        "country": "US",
+        "max_results": 100,
+        "profile": "world-news",
+        "category": "world"
+      },
+      {
+        "enabled": true,
+        "query": "\"international perspective\" OR \"cultural exchange\"",
+        "language": "en",
+        "country": "US",
+        "max_results": 100,
+        "profile": "world-news",
+        "category": "world"
+      },
+      {
+        "enabled": true,
+        "query": "\"major policy\" AND (education OR housing OR workers)",
+        "language": "en",
+        "country": "US",
+        "max_results": 100,
+        "profile": "world-news",
+        "category": "world"
+      },
+      {
+        "enabled": true,
+        "query": "economy OR inflation OR wages",
+        "language": "en",
+        "country": "US",
+        "max_results": 100,
+        "profile": "finance-news",
+        "category": "finance"
+      },
+      {
+        "enabled": true,
+        "query": "\"consumer prices\" OR housing OR rent",
+        "language": "en",
+        "country": "US",
+        "max_results": 100,
+        "profile": "finance-news",
+        "category": "finance"
+      },
+      {
+        "enabled": true,
+        "query": "business OR companies OR competition",
+        "language": "en",
+        "country": "US",
+        "max_results": 100,
+        "profile": "finance-news",
+        "category": "finance"
+      },
+      {
+        "enabled": true,
+        "query": "jobs OR labour OR workplace",
+        "language": "en",
+        "country": "US",
+        "max_results": 100,
+        "profile": "finance-news",
+        "category": "finance"
+      },
+      {
+        "enabled": true,
+        "query": "energy OR oil OR \"electricity bills\"",
+        "language": "en",
+        "country": "US",
+        "max_results": 100,
+        "profile": "finance-news",
+        "category": "finance"
+      },
+      {
+        "enabled": true,
+        "query": "\"central bank\" OR \"interest rates\"",
+        "language": "en",
+        "country": "US",
+        "max_results": 100,
+        "profile": "finance-news",
+        "category": "finance"
+      },
+      {
+        "enabled": true,
+        "query": "\"China economy\" OR consumption",
+        "language": "en",
+        "country": "US",
+        "max_results": 100,
+        "profile": "finance-news",
+        "category": "finance"
+      },
+      {
+        "enabled": true,
+        "query": "trade OR \"supply chain\"",
+        "language": "en",
+        "country": "US",
+        "max_results": 100,
+        "profile": "finance-news",
+        "category": "finance"
+      },
+      {
+        "enabled": true,
+        "query": "film OR cinema OR festival",
+        "language": "en",
+        "country": "US",
+        "max_results": 100,
+        "profile": "culture-news",
+        "category": "culture"
+      },
+      {
+        "enabled": true,
+        "query": "music OR album OR concert",
+        "language": "en",
+        "country": "US",
+        "max_results": 100,
+        "profile": "culture-news",
+        "category": "culture"
+      },
+      {
+        "enabled": true,
+        "query": "books OR literature OR author",
+        "language": "en",
+        "country": "US",
+        "max_results": 100,
+        "profile": "culture-news",
+        "category": "culture"
+      },
+      {
+        "enabled": true,
+        "query": "football OR basketball OR tennis",
+        "language": "en",
+        "country": "US",
+        "max_results": 100,
+        "profile": "culture-news",
+        "category": "culture"
+      },
+      {
+        "enabled": true,
+        "query": "celebrity OR entertainment",
+        "language": "en",
+        "country": "US",
+        "max_results": 100,
+        "profile": "culture-news",
+        "category": "culture"
+      },
+      {
+        "enabled": true,
+        "query": "TikTok OR \"internet subculture\" OR \"creator economy\"",
+        "language": "en",
+        "country": "US",
+        "max_results": 100,
+        "profile": "culture-news",
+        "category": "culture"
+      },
+      {
+        "enabled": true,
+        "query": "gaming OR videogame OR esports",
+        "language": "en",
+        "country": "US",
+        "max_results": 100,
+        "profile": "culture-news",
+        "category": "culture"
+      },
+      {
+        "enabled": true,
+        "query": "museum OR exhibition OR \"cultural heritage\"",
+        "language": "en",
+        "country": "US",
+        "max_results": 100,
+        "profile": "culture-news",
+        "category": "culture"
+      },
+      {
+        "enabled": true,
+        "query": "food OR \"consumer safety\" OR recall",
+        "language": "en",
+        "country": "US",
+        "max_results": 100,
+        "profile": "life-news",
+        "category": "life"
+      },
+      {
+        "enabled": true,
+        "query": "travel OR transport OR trains",
+        "language": "en",
+        "country": "US",
+        "max_results": 100,
+        "profile": "life-news",
+        "category": "life"
+      },
+      {
+        "enabled": true,
+        "query": "education OR schools OR students",
+        "language": "en",
+        "country": "US",
+        "max_results": 100,
+        "profile": "life-news",
+        "category": "life"
+      },
+      {
+        "enabled": true,
+        "query": "climate OR environment OR wildlife",
+        "language": "en",
+        "country": "US",
+        "max_results": 100,
+        "profile": "life-news",
+        "category": "life"
+      },
+      {
+        "enabled": true,
+        "query": "\"work life\" OR family OR community",
+        "language": "en",
+        "country": "US",
+        "max_results": 100,
+        "profile": "life-news",
+        "category": "life"
+      },
+      {
+        "enabled": true,
+        "query": "housing OR cities OR \"public transport\"",
+        "language": "en",
+        "country": "US",
+        "max_results": 100,
+        "profile": "life-news",
+        "category": "life"
+      },
+      {
+        "enabled": true,
+        "query": "\"public health\" OR wellbeing",
+        "language": "en",
+        "country": "US",
+        "max_results": 100,
+        "profile": "life-news",
+        "category": "life"
+      },
+      {
+        "enabled": true,
+        "query": "privacy OR scams OR \"consumer technology\"",
+        "language": "en",
+        "country": "US",
+        "max_results": 100,
+        "profile": "life-news",
+        "category": "life"
+      },
+      {
+        "enabled": true,
+        "query": "astronomy OR \"space research\"",
+        "language": "en",
+        "country": "US",
+        "max_results": 100,
+        "profile": "research-news",
+        "category": "research"
+      },
+      {
+        "enabled": true,
+        "query": "biology OR ecology OR evolution",
+        "language": "en",
+        "country": "US",
+        "max_results": 100,
+        "profile": "research-news",
+        "category": "research"
+      },
+      {
+        "enabled": true,
+        "query": "psychology OR sociology OR \"social science\"",
+        "language": "en",
+        "country": "US",
+        "max_results": 100,
+        "profile": "research-news",
+        "category": "research"
+      },
+      {
+        "enabled": true,
+        "query": "archaeology OR history",
+        "language": "en",
+        "country": "US",
+        "max_results": 100,
+        "profile": "research-news",
+        "category": "research"
+      },
+      {
+        "enabled": true,
+        "query": "materials OR chemistry",
+        "language": "en",
+        "country": "US",
+        "max_results": 100,
+        "profile": "research-news",
+        "category": "research"
+      },
+      {
+        "enabled": true,
+        "query": "neuroscience OR cognition OR sleep",
+        "language": "en",
+        "country": "US",
+        "max_results": 100,
+        "profile": "research-news",
+        "category": "research"
+      },
+      {
+        "enabled": true,
+        "query": "ocean OR \"earth science\"",
+        "language": "en",
+        "country": "US",
+        "max_results": 100,
+        "profile": "research-news",
+        "category": "research"
+      },
+      {
+        "enabled": true,
+        "query": "\"clinical trial\" OR \"medical research\"",
+        "language": "en",
+        "country": "US",
+        "max_results": 100,
+        "profile": "research-news",
+        "category": "research"
+      },
+      {
+        "enabled": true,
+        "query": "\"AI tools\" OR \"AI assistant\"",
+        "language": "en",
+        "country": "US",
+        "max_results": 100,
+        "profile": "tech-news",
+        "category": "tech"
+      },
+      {
+        "enabled": true,
+        "query": "\"no code\" OR \"AI workflow\"",
+        "language": "en",
+        "country": "US",
+        "max_results": 100,
+        "profile": "tech-news",
+        "category": "tech"
+      },
+      {
+        "enabled": true,
+        "query": "\"open source\" AND (creative OR productivity OR beginner)",
+        "language": "en",
+        "country": "US",
+        "max_results": 100,
+        "profile": "tech-news",
+        "category": "tech"
+      },
+      {
+        "enabled": true,
+        "query": "\"AI\" AND (video OR music OR design OR learning)",
+        "language": "en",
+        "country": "US",
+        "max_results": 100,
+        "profile": "tech-news",
+        "category": "tech"
+      },
+      {
+        "enabled": true,
+        "query": "影视 音乐 文学 奖项",
+        "language": "zh-CN",
+        "country": "CN",
+        "ceid": "CN:zh-Hans",
+        "max_results": 100,
+        "profile": "culture-news",
+        "category": "culture"
+      },
+      {
+        "enabled": true,
+        "query": "体育 比赛 游戏 热门话题",
+        "language": "zh-CN",
+        "country": "CN",
+        "ceid": "CN:zh-Hans",
+        "max_results": 100,
+        "profile": "culture-news",
+        "category": "culture"
+      },
+      {
+        "enabled": true,
+        "query": "微博 知乎 热议 事件 核实",
+        "language": "zh-CN",
+        "country": "CN",
+        "ceid": "CN:zh-Hans",
+        "max_results": 100,
+        "profile": "culture-news",
+        "category": "culture"
+      },
+      {
+        "enabled": true,
+        "query": "消费 食品 安全 出行",
+        "language": "zh-CN",
+        "country": "CN",
+        "ceid": "CN:zh-Hans",
+        "max_results": 100,
+        "profile": "life-news",
+        "category": "life"
+      },
+      {
+        "enabled": true,
+        "query": "教育 就业 社会 城市生活",
+        "language": "zh-CN",
+        "country": "CN",
+        "ceid": "CN:zh-Hans",
+        "max_results": 100,
+        "profile": "life-news",
+        "category": "life"
+      },
+      {
+        "enabled": true,
+        "query": "环境 生态 科普",
+        "language": "zh-CN",
+        "country": "CN",
+        "ceid": "CN:zh-Hans",
+        "max_results": 100,
+        "profile": "life-news",
+        "category": "life"
+      },
+      {
+        "enabled": true,
+        "query": "研究 发现 科学 期刊",
+        "language": "zh-CN",
+        "country": "CN",
+        "ceid": "CN:zh-Hans",
+        "max_results": 100,
+        "profile": "research-news",
+        "category": "research"
+      },
+      {
+        "enabled": true,
+        "query": "国际 社会 政策",
+        "language": "zh-CN",
+        "country": "CN",
+        "ceid": "CN:zh-Hans",
+        "max_results": 100,
+        "profile": "world-news",
+        "category": "world"
+      },
+      {
+        "enabled": true,
+        "query": "财经 经济 消费 就业",
+        "language": "zh-CN",
+        "country": "CN",
+        "ceid": "CN:zh-Hans",
+        "max_results": 100,
+        "profile": "finance-news",
+        "category": "finance"
+      },
+      {
+        "enabled": true,
+        "query": "科技 人工智能 产品 隐私",
+        "language": "zh-CN",
+        "country": "CN",
+        "ceid": "CN:zh-Hans",
+        "max_results": 100,
+        "profile": "tech-news",
+        "category": "tech"
       }
     ]
+  },
+  "collection": {
+    "time_window_hours": 24,
+    "max_analysis_items": 360,
+    "search_concurrency": 4
   }
 }

@@ -1,6 +1,7 @@
 """RSS feed scraper implementation."""
 
 import calendar
+import asyncio
 import hashlib
 import logging
 import os
@@ -46,17 +47,12 @@ class RSSScraper(BaseScraper):
         Returns:
             List[ContentItem]: Fetched content items
         """
-        items = []
-        sources = self.config["sources"]
-
-        for source in sources:
-            if not source.enabled:
-                continue
-
-            feed_items = await self._fetch_feed(source, since)
-            items.extend(feed_items)
-
-        return items
+        gate = asyncio.Semaphore(6)
+        async def fetch_source(source):
+            async with gate:
+                return await self._fetch_feed(source, since)
+        batches = await asyncio.gather(*(fetch_source(source) for source in self.config["sources"] if source.enabled))
+        return [item for batch in batches for item in batch]
 
     async def _fetch_feed(
         self, source: RSSSourceConfig, since: datetime
