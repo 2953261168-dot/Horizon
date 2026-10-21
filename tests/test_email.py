@@ -175,8 +175,10 @@ def test_send_daily_summary_cleans_app_generated_markdown_html(monkeypatch):
     assert "&lt;details&gt;" not in html_body
     assert "&lt;summary&gt;" not in html_body
     assert "<strong>参考链接</strong>" in html_body
-    assert '<a href="https://example.com/a">Example A</a>' in html_body
-    assert '<a href="https://example.com/b">Example B</a>' in html_body
+    from bs4 import BeautifulSoup
+    parsed = BeautifulSoup(html_body, 'html.parser')
+    assert parsed.find('a', href='https://example.com/a').get_text() == 'Example A'
+    assert parsed.find('a', href='https://example.com/b').get_text() == 'Example B'
 
 
 def test_send_daily_summary_does_not_link_unsafe_details_href(monkeypatch):

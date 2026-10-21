@@ -21,6 +21,7 @@ from rich.console import Console
 
 from ..ai.markdown_utils import clean_app_summary_markdown
 from ..models import EmailConfig
+from .email_renderer import render_daily_letter
 
 logger = logging.getLogger(__name__)
 
@@ -169,36 +170,8 @@ class EmailManager:
             raise ValueError(f"Missing email credential: {self.config.password_env}")
 
         cleaned_summary = clean_app_summary_markdown(summary_md)
-        safe_summary = html.escape(cleaned_summary)
-        html_content = (
-            markdown.markdown(safe_summary)
-            if markdown
-            else f"<pre>{safe_summary}</pre>"
-        )
-
-        html_body = f"""
-        <!DOCTYPE html>
-        <html>
-        <head>
-            <meta charset="utf-8">
-            <style>
-                body {{ font-family: sans-serif; line-height: 1.6; color: #333; max-width: 800px; margin: 0 auto; padding: 20px; }}
-                h1, h2, h3 {{ color: #2c3e50; }}
-                code {{ background-color: #f4f4f4; padding: 2px 5px; border-radius: 3px; font-family: monospace; }}
-                pre {{ background-color: #f4f4f4; padding: 15px; border-radius: 5px; overflow-x: auto; }}
-                blockquote {{ border-left: 4px solid #ddd; padding-left: 15px; color: #777; }}
-                .footer {{ margin-top: 40px; font-size: 12px; color: #888; text-align: center; border-top: 1px solid #eee; padding-top: 20px; }}
-            </style>
-        </head>
-        <body>
-            {html_content}
-            <div class="footer">
-                <p>Sent by {html.escape(self.config.sender_name)}</p>
-                <p>{'To unsubscribe, reply with ' + html.escape(self.config.unsubscribe_keyword) if self.config.imap_enabled else 'Personal daily briefing · Manage recipients in Horizon settings.'}</p>
-            </div>
-        </body>
-        </html>
-        """
+        footer = ("退订请回复 " + self.config.unsubscribe_keyword) if self.config.imap_enabled else "个人早报 · 收件设置由 Horizon 管理"
+        html_body = render_daily_letter(cleaned_summary, subject, self.config.sender_name, footer)
 
         failures = 0
         try:

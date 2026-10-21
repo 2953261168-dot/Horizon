@@ -230,7 +230,7 @@ def test_data_dir_and_config_default_to_data_directory(monkeypatch):
         wizard.main()
 
     assert storage_calls == [{"data_dir": "data", "config_path": None}]
-    assert load_presets_calls == [{"presets_path": "data/presets.json", "prefer_api": True}]
+    assert [{**call, "presets_path": call["presets_path"].replace(chr(92), "/")} for call in load_presets_calls] == [{"presets_path": "data/presets.json", "prefer_api": True}]
 
 
 def test_missing_custom_presets_falls_back_to_bundled_file(monkeypatch, tmp_path):
@@ -249,9 +249,7 @@ def test_missing_custom_presets_falls_back_to_bundled_file(monkeypatch, tmp_path
     with pytest.raises(_StopWizard):
         wizard.main()
 
-    assert load_presets_calls == [
-        {"presets_path": "data/presets.json", "prefer_api": True}
-    ]
+    assert [{**call, "presets_path": call["presets_path"].replace(chr(92), "/")} for call in load_presets_calls] == [{"presets_path": "data/presets.json", "prefer_api": True}]
 
 
 def test_log_level_flag_is_forwarded_to_configure_logging(monkeypatch):

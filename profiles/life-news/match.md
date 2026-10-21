@@ -1,0 +1,1 @@
+Seek new patterns in consumption, work, study, relationships, community, emotional value, leisure, food, travel and ordinary people adapting to change. Avoid generic self-help and isolated incidents.

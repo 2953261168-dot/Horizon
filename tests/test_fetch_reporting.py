@@ -9,7 +9,7 @@ from unittest.mock import AsyncMock
 import pytest
 from rich.console import Console
 
-from src.models import ContentItem, SourceType
+from src.models import ContentItem, SourceType, CollectionConfig
 from src.orchestrator import FetchReport, HorizonOrchestrator, SourceFetchOutcome
 
 
@@ -49,6 +49,7 @@ def make_sources(**overrides):  # type: ignore[no-untyped-def]
         "ossinsight": SimpleNamespace(enabled=False),
         "gdelt": None,
         "google_news": None,
+        "google_news_queries": [],
     }
     values.update(overrides)
     return SimpleNamespace(**values)
@@ -68,7 +69,7 @@ class StubScraper:
 def test_all_success_empty_has_normal_success_report(monkeypatch) -> None:
     orchestrator = make_orchestrator()
     orchestrator.config = SimpleNamespace(  # type: ignore[assignment]
-        sources=make_sources(github=[object()]), extractors={}
+        sources=make_sources(github=[object()]), extractors={}, collection=CollectionConfig()
     )
     monkeypatch.setattr(
         "src.orchestrator.GitHubScraper",
@@ -92,6 +93,7 @@ def test_partial_failure_keeps_items_and_source_names(monkeypatch) -> None:
             github=[object()], hackernews=SimpleNamespace(enabled=True)
         ),
         extractors={},
+        collection=CollectionConfig(),
     )
     monkeypatch.setattr(
         "src.orchestrator.GitHubScraper",

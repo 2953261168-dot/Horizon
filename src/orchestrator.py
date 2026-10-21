@@ -275,8 +275,12 @@ class HorizonOrchestrator:
                     f"→ {len(merged_items)} unique items\n"
                 )
 
+            # Bound AI work after collecting the broad pool, preserving profile/source diversity.
+            from .processing.discovery import shortlist_candidates, save_coverage
+            candidates = shortlist_candidates(merged_items, self.config.collection.max_analysis_items)
+            save_coverage(all_items, merged_items, candidates, self.last_fetch_report)
             # 4. Analyze with AI
-            analyzed_items = await self.analyze_items(merged_items)
+            analyzed_items = await self.analyze_items(candidates)
             self.console.print(
                 f"{self.icons['ai']} Analyzed {len(analyzed_items)} items with AI\n"
             )
@@ -497,6 +501,17 @@ class HorizonOrchestrator:
             if self.config.sources.google_news and self.config.sources.google_news.enabled:
                 gn_scraper = GoogleNewsScraper(self.config.sources.google_news, client)
                 tasks.append(self._fetch_with_progress("Google News", gn_scraper, since))
+
+            # A broad multilingual search desk, with bounded request concurrency.
+            search_gate = asyncio.Semaphore(self.config.collection.search_concurrency)
+            async def fetch_query(index, query):
+                async with search_gate:
+                    result = await self._fetch_with_progress(f"News desk {index}: {query.query}", GoogleNewsScraper(query, client), since)
+                    await asyncio.sleep(.35)
+                    return result
+            for index, query in enumerate(self.config.sources.google_news_queries, 1):
+                if query.enabled:
+                    tasks.append(fetch_query(index, query))
 
             # Fetch all concurrently
             outcomes = await asyncio.gather(*tasks)

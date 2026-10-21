@@ -8,4 +8,10 @@ if git ls-remote --exit-code --heads origin gh-pages >/dev/null 2>&1; then
     git archive origin/gh-pages _posts | tar -x -C history
     cp -rn history/_posts/. docs/_posts/
   fi
+  if git cat-file -e origin/gh-pages:_data/coverage.json 2>/dev/null; then
+    mkdir -p docs/_data
+    if [ ! -f docs/_data/coverage.json ]; then
+      git show origin/gh-pages:_data/coverage.json > docs/_data/coverage.json
+    fi
+  fi
 fi
