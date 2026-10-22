@@ -1157,6 +1157,246 @@
         "max_results": 100,
         "profile": "tech-news",
         "category": "tech"
+      },
+      {
+        "enabled": true,
+        "query": "site:tiktok.com (meme OR trend OR 爆料 OR 热梗)",
+        "language": "en",
+        "country": "US",
+        "ceid": "US:en",
+        "max_results": 20,
+        "profile": "culture-news",
+        "category": "culture"
+      },
+      {
+        "enabled": true,
+        "query": "site:tiktok.com (\"AI tool\" OR 教程 OR 免费 OR 学生)",
+        "language": "en",
+        "country": "US",
+        "ceid": "US:en",
+        "max_results": 20,
+        "profile": "tech-news",
+        "category": "tech"
+      },
+      {
+        "enabled": true,
+        "query": "site:instagram.com (meme OR trend OR 爆料 OR 热梗)",
+        "language": "en",
+        "country": "US",
+        "ceid": "US:en",
+        "max_results": 20,
+        "profile": "culture-news",
+        "category": "culture"
+      },
+      {
+        "enabled": true,
+        "query": "site:instagram.com (\"AI tool\" OR 教程 OR 免费 OR 学生)",
+        "language": "en",
+        "country": "US",
+        "ceid": "US:en",
+        "max_results": 20,
+        "profile": "tech-news",
+        "category": "tech"
+      },
+      {
+        "enabled": true,
+        "query": "site:threads.com (meme OR trend OR 爆料 OR 热梗)",
+        "language": "en",
+        "country": "US",
+        "ceid": "US:en",
+        "max_results": 20,
+        "profile": "culture-news",
+        "category": "culture"
+      },
+      {
+        "enabled": true,
+        "query": "site:threads.com (\"AI tool\" OR 教程 OR 免费 OR 学生)",
+        "language": "en",
+        "country": "US",
+        "ceid": "US:en",
+        "max_results": 20,
+        "profile": "tech-news",
+        "category": "tech"
+      },
+      {
+        "enabled": true,
+        "query": "site:threads.net (meme OR trend OR 爆料 OR 热梗)",
+        "language": "en",
+        "country": "US",
+        "ceid": "US:en",
+        "max_results": 20,
+        "profile": "culture-news",
+        "category": "culture"
+      },
+      {
+        "enabled": true,
+        "query": "site:threads.net (\"AI tool\" OR 教程 OR 免费 OR 学生)",
+        "language": "en",
+        "country": "US",
+        "ceid": "US:en",
+        "max_results": 20,
+        "profile": "tech-news",
+        "category": "tech"
+      },
+      {
+        "enabled": true,
+        "query": "site:x.com (meme OR trend OR 爆料 OR 热梗)",
+        "language": "en",
+        "country": "US",
+        "ceid": "US:en",
+        "max_results": 20,
+        "profile": "culture-news",
+        "category": "culture"
+      },
+      {
+        "enabled": true,
+        "query": "site:x.com (\"AI tool\" OR 教程 OR 免费 OR 学生)",
+        "language": "en",
+        "country": "US",
+        "ceid": "US:en",
+        "max_results": 20,
+        "profile": "tech-news",
+        "category": "tech"
+      },
+      {
+        "enabled": true,
+        "query": "site:quora.com (meme OR trend OR 爆料 OR 热梗)",
+        "language": "en",
+        "country": "US",
+        "ceid": "US:en",
+        "max_results": 20,
+        "profile": "culture-news",
+        "category": "culture"
+      },
+      {
+        "enabled": true,
+        "query": "site:quora.com (\"AI tool\" OR 教程 OR 免费 OR 学生)",
+        "language": "en",
+        "country": "US",
+        "ceid": "US:en",
+        "max_results": 20,
+        "profile": "tech-news",
+        "category": "tech"
+      },
+      {
+        "enabled": true,
+        "query": "site:reddit.com (meme OR trend OR 爆料 OR 热梗)",
+        "language": "en",
+        "country": "US",
+        "ceid": "US:en",
+        "max_results": 20,
+        "profile": "culture-news",
+        "category": "culture"
+      },
+      {
+        "enabled": true,
+        "query": "site:reddit.com (\"AI tool\" OR 教程 OR 免费 OR 学生)",
+        "language": "en",
+        "country": "US",
+        "ceid": "US:en",
+        "max_results": 20,
+        "profile": "tech-news",
+        "category": "tech"
+      },
+      {
+        "enabled": true,
+        "query": "site:weibo.com (meme OR trend OR 爆料 OR 热梗)",
+        "language": "zh-CN",
+        "country": "CN",
+        "ceid": "CN:zh-Hans",
+        "max_results": 20,
+        "profile": "culture-news",
+        "category": "culture"
+      },
+      {
+        "enabled": true,
+        "query": "site:weibo.com (\"AI tool\" OR 教程 OR 免费 OR 学生)",
+        "language": "zh-CN",
+        "country": "CN",
+        "ceid": "CN:zh-Hans",
+        "max_results": 20,
+        "profile": "tech-news",
+        "category": "tech"
+      },
+      {
+        "enabled": true,
+        "query": "site:xiaohongshu.com (meme OR trend OR 爆料 OR 热梗)",
+        "language": "zh-CN",
+        "country": "CN",
+        "ceid": "CN:zh-Hans",
+        "max_results": 20,
+        "profile": "culture-news",
+        "category": "culture"
+      },
+      {
+        "enabled": true,
+        "query": "site:xiaohongshu.com (\"AI tool\" OR 教程 OR 免费 OR 学生)",
+        "language": "zh-CN",
+        "country": "CN",
+        "ceid": "CN:zh-Hans",
+        "max_results": 20,
+        "profile": "tech-news",
+        "category": "tech"
+      },
+      {
+        "enabled": true,
+        "query": "site:zhihu.com (meme OR trend OR 爆料 OR 热梗)",
+        "language": "zh-CN",
+        "country": "CN",
+        "ceid": "CN:zh-Hans",
+        "max_results": 20,
+        "profile": "culture-news",
+        "category": "culture"
+      },
+      {
+        "enabled": true,
+        "query": "site:zhihu.com (\"AI tool\" OR 教程 OR 免费 OR 学生)",
+        "language": "zh-CN",
+        "country": "CN",
+        "ceid": "CN:zh-Hans",
+        "max_results": 20,
+        "profile": "tech-news",
+        "category": "tech"
+      },
+      {
+        "enabled": true,
+        "query": "site:tieba.baidu.com (meme OR trend OR 爆料 OR 热梗)",
+        "language": "zh-CN",
+        "country": "CN",
+        "ceid": "CN:zh-Hans",
+        "max_results": 20,
+        "profile": "culture-news",
+        "category": "culture"
+      },
+      {
+        "enabled": true,
+        "query": "site:tieba.baidu.com (\"AI tool\" OR 教程 OR 免费 OR 学生)",
+        "language": "zh-CN",
+        "country": "CN",
+        "ceid": "CN:zh-Hans",
+        "max_results": 20,
+        "profile": "tech-news",
+        "category": "tech"
+      },
+      {
+        "enabled": true,
+        "query": "site:qzone.qq.com (meme OR trend OR 爆料 OR 热梗)",
+        "language": "zh-CN",
+        "country": "CN",
+        "ceid": "CN:zh-Hans",
+        "max_results": 20,
+        "profile": "culture-news",
+        "category": "culture"
+      },
+      {
+        "enabled": true,
+        "query": "site:qzone.qq.com (\"AI tool\" OR 教程 OR 免费 OR 学生)",
+        "language": "zh-CN",
+        "country": "CN",
+        "ceid": "CN:zh-Hans",
+        "max_results": 20,
+        "profile": "tech-news",
+        "category": "tech"
       }
     ]
   },
@@ -1167,4 +1407,3 @@
     "require_source_text": true
   }
 }
-
