@@ -5,9 +5,25 @@ date: 2026-10-22
 lang: zh
 ---
 
-> 从 4464 条内容中筛选出 30 条重要资讯。
+> 采集 4,464 条线索。以下补充 1 篇原文核对的 PHP2Shell 读本；其后保留当日原自动稿 30 篇。
 
 ---
+
+## 补充核对 / PHP2Shell
+
+<a id="item-tech-news-php2shell"></a>
+### [PHP2Shell漏洞：补丁还没发，演示视频先流出来了](https://thephp.foundation/blog/2026/10/21/todays-php-security-release-and-how-were-strengthening-php-security/)
+
+PHP 基金会确认两项严重漏洞，特定条件下可让未登录的攻击者在服务器上执行代码。披露过程又出了岔子：CVE 编号提前流传，一家参与研究的公司误发演示视频，删除后副本仍在社交媒体传播。官方把修复发布时间从 10 月 22 日提前到 21 日。
+
+**来源：** PHP 基金会 · 2026-10-21；本条于 2026-10-22 补充原文核对。
+
+**细读一层：** 这不是普通功能更新，也不能写成“所有网站已遭数据泄露”。风险在 PHP 引擎，影响取决于版本、部署与具体路径；基金会要求使用者尽快更新。正文所说的“泄露”，首先指协调披露信息和演示视频提前流出，不能据此推断已经发生全面入侵。
+
+[官方说明](https://thephp.foundation/blog/2026/10/21/todays-php-security-release-and-how-were-strengthening-php-security/) · [PHP 安全公告](https://github.com/php/php-src/security/advisories/GHSA-6wmf-4rv5-p3rp)
+
+---
+
 
 **生活与社会**
 1. [视频 Meta 因误导 Facebook 用户隐私问题被罚款 250 亿美元 - ABC 新闻 - 最新新闻和视频](#item-life-news-1) ⭐️ 8.0/10

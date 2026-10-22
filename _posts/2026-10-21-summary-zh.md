@@ -10,29 +10,29 @@ lang: zh
 ---
 
 **AI 与日常工具**
-1. [AI 加入研究者邮件群，不到十分钟就吵了起来](#item-tech-news-1) ⭐️ 8.0/10
-2. [聊天可以上锁了，但这不等于内容被端到端加密](#item-tech-news-2) ⭐️ 8.0/10
-3. [只把 AI 聊天链接发给朋友，也可能不够私密](#item-tech-news-3) ⭐️ 8.0/10
+1. [AI 进群引发争吵，学术协会领导层转头做了自嘲 T 恤](#item-tech-news-1) ⭐️ 8.0/10
+2. [ChatGPT 也能锁聊天了，防的是翻你手机的人](#item-tech-news-2) ⭐️ 8.0/10
+3. [Meta AI 分享链接翻车：发给朋友，也可能被陌生人找到](#item-tech-news-3) ⭐️ 8.0/10
 
 **文化与热议**
-1. [15 岁开始全职当网红，她现在想先过自己的生活](#item-culture-news-1) ⭐️ 8.0/10
-2. [游戏越做越大，玩家和开发者就越快乐吗？](#item-culture-news-2) ⭐️ 8.0/10
+1. [TikTok 顶流谈停更：15 岁开工，休息还得怕过气](#item-culture-news-1) ⭐️ 8.0/10
+2. [GTA 6 式大作，游戏业还烧得起几部？](#item-culture-news-2) ⭐️ 8.0/10
 
 **生活与社会**
-1. [学校还该教什么？两千名青少年想学求职、理财和减压](#item-life-news-1) ⭐️ 8.0/10
-2. [情歌听不下去时，有人走进了重型摇滚现场](#item-life-news-2) ⭐️ 8.0/10
+1. [2000 名英国青少年给学校开清单：求职、理财、减压](#item-life-news-1) ⭐️ 8.0/10
+2. [失恋后听不了情歌，作者去了硬核朋克的冲撞区](#item-life-news-2) ⭐️ 8.0/10
 
 **研究与新知**
-1. [“总觉得哪里不对”，直觉一定是不理性的吗？](#item-research-news-1) ⭐️ 8.0/10
+1. [“这人不对劲”算理由吗？哲学家给直觉辩护](#item-research-news-1) ⭐️ 8.0/10
 
 ---
 
 ## AI 与日常工具
 
 <a id="item-tech-news-1"></a>
-### [AI 加入研究者邮件群，不到十分钟就吵了起来](https://www.wired.com/story/an-ai-agent-joined-a-listserv-of-top-internet-researchers-the-reply-all-chaos-is-still-unfolding/) ⭐️ 8.0/10
+### [AI 进群引发争吵，学术协会领导层转头做了自嘲 T 恤](https://www.wired.com/story/an-ai-agent-joined-a-listserv-of-top-internet-researchers-the-reply-all-chaos-is-still-unfolding/) ⭐️ 8.0/10
 
-AI 身份 Velvet Vale 向一个互联网研究者邮件组自我介绍后，部分成员担心自己的发言被用于训练。约一小时后，它被移出群组。
+AI 身份 Velvet Vale 向一个互联网研究者邮件组自我介绍后，部分成员担心自己的发言被用于训练。约一小时后，它被移出群组；协会领导层随后设计了自嘲 T 恤，商店里还卖起了“请把我从邮件组退订”的标语。
 
 rss · Wired - 科技与文化 · 10月20日 15:07
 
@@ -44,7 +44,7 @@ rss · Wired - 科技与文化 · 10月20日 15:07
 ---
 
 <a id="item-tech-news-2"></a>
-### [聊天可以上锁了，但这不等于内容被端到端加密](https://techcrunch.com/2026/10/20/chatgpt-now-lets-you-lock-your-chats/) ⭐️ 8.0/10
+### [ChatGPT 也能锁聊天了，防的是翻你手机的人](https://techcrunch.com/2026/10/20/chatgpt-now-lets-you-lock-your-chats/) ⭐️ 8.0/10
 
 据 TechCrunch 报道，ChatGPT 开始分批推出锁定聊天功能：可用四位 PIN 保护对话，支持的设备也可用 Face ID 或 Touch ID。
 
@@ -55,7 +55,7 @@ rss · TechCrunch · 10月20日 18:36
 ---
 
 <a id="item-tech-news-3"></a>
-### [只把 AI 聊天链接发给朋友，也可能不够私密](https://www.wired.com/story/a-design-flaw-in-share-links-exposes-users-personal-conversations-with-meta-muse/) ⭐️ 8.0/10
+### [Meta AI 分享链接翻车：发给朋友，也可能被陌生人找到](https://www.wired.com/story/a-design-flaw-in-share-links-exposes-users-personal-conversations-with-meta-muse/) ⭐️ 8.0/10
 
 安全研究者发现，Meta 的 AI 助手 Muse 分享链接设计让部分聊天页面更容易被第三方发现。报道说 Meta 已暂停该分享功能，展开评估。
 
@@ -68,31 +68,31 @@ rss · Wired - 科技与文化 · 10月21日 12:35
 ## 文化与热议
 
 <a id="item-culture-news-1"></a>
-### [15 岁开始全职当网红，她现在想先过自己的生活](https://www.hollywoodreporter.com/business/digital/charli-damelio-interview-life-tiktok-career-1236736245/) ⭐️ 8.0/10
+### [TikTok 顶流谈停更：15 岁开工，休息还得怕过气](https://www.hollywoodreporter.com/business/digital/charli-damelio-interview-life-tiktok-career-1236736245/) ⭐️ 8.0/10
 
-22 岁的 Charli D’Amelio 曾凭跳舞视频成为 TikTok 顶流。她在《好莱坞报道者》访谈中谈到暂停更新、搬出去独居，以及尝试百老汇演出。
+22 岁的 Charli D’Amelio 曾凭跳舞视频成为 TikTok 顶流。她在《好莱坞报道者》访谈中回顾了一次从 10 月到次年 2 月的社交媒体休息，也谈到独居和百老汇演出。
 
 rss · Hollywood Reporter · 10月21日 14:00
 
-**「细读一层」** 这篇人物访谈的焦点，是一个从青春期就被持续拍摄的人，如何分清自己喜欢什么、观众又希望她成为什么。她谈的是自己的经历，并不代表所有创作者。
+**「细读一层」** 她说自己 15 岁就开始全职工作，也一直被告知休息后可能再也回不来。真正停下来时，她发现自己连喜欢什么都说不清。这个访谈谈的是流量工作的代价，不是一次刚宣布的退网。
 
 ---
 
 <a id="item-culture-news-2"></a>
-### [游戏越做越大，玩家和开发者就越快乐吗？](https://www.wired.com/story/make-big-games-smaller/) ⭐️ 8.0/10
+### [GTA 6 式大作，游戏业还烧得起几部？](https://www.wired.com/story/make-big-games-smaller/) ⭐️ 8.0/10
 
 围绕即将推出的《GTA6》，WIRED 的一篇评论把问题转向开发成本、裁员与玩家时间：更大、更精细的地图，未必自动带来更好的体验。
 
 rss · Wired - 科技与文化 · 10月21日 11:00
 
-**「细读一层」** 作者主张重新重视中等规模作品，举《光与影：33 号远征队》为例。这里讨论的是制作规模与创作空间，不是已经对《GTA6》作出质量评价。
+**「细读一层」** 作者拿《光与影：33 号远征队》作对照：不必复制《GTA6》的体量，也能让创作和商业成立。这篇评论追问的是预算军备竞赛、开发者裁员，以及被大地图占满的玩家时间。
 
 ---
 
 ## 生活与社会
 
 <a id="item-life-news-1"></a>
-### [学校还该教什么？两千名青少年想学求职、理财和减压](https://www.bbc.co.uk/news/articles/c6m2dmdxgz2xo?at_medium=RSS&amp;at_campaign=rss) ⭐️ 8.0/10
+### [2000 名英国青少年给学校开清单：求职、理财、减压](https://www.bbc.co.uk/news/articles/c6m2dmdxgz2xo?at_medium=RSS&amp;at_campaign=rss) ⭐️ 8.0/10
 
 BBC 委托调查了 2,000 名 13 至 18 岁英国青少年：44%想要更多实习机会，43%想学理财，42%希望获得求职指导。
 
@@ -106,25 +106,25 @@ rss · BBC 教育 · 10月20日 11:47
 ---
 
 <a id="item-life-news-2"></a>
-### [情歌听不下去时，有人走进了重型摇滚现场](https://www.theguardian.com/lifeandstyle/2026/oct/21/a-moment-that-changed-me-i-was-devastated-by-a-breakup-and-saved-by-a-sweaty-moshpit) ⭐️ 8.0/10
+### [失恋后听不了情歌，作者去了硬核朋克的冲撞区](https://www.theguardian.com/lifeandstyle/2026/oct/21/a-moment-that-changed-me-i-was-devastated-by-a-breakup-and-saved-by-a-sweaty-moshpit) ⭐️ 8.0/10
 
 《卫报》的一篇个人随笔里，作者失恋后连喜欢的歌都听不了，后来意外迷上硬核朋克，在现场的人群里重新找到了与情绪相处的方式。
 
 rss · The Guardian 音乐 · 10月21日 05:30
 
-**「细读一层」** moshpit 指演出中人群随音乐冲撞、跳动的区域。文章有趣之处在于：作者原想用巨大的噪声逃开悲伤，最后却发现这些音乐也在表达脆弱。这是个人经验，不是治疗建议。
+**「细读一层」** moshpit 指演出中人群随音乐冲撞、跳动的区域。作者原想用巨大的噪声逃开悲伤，最后却发现这些音乐也在表达脆弱。
 
 ---
 
 ## 研究与新知
 
 <a id="item-research-news-1"></a>
-### [“总觉得哪里不对”，直觉一定是不理性的吗？](https://aeon.co/essays/sometimes-you-just-know-somethings-off-but-how) ⭐️ 8.0/10
+### [“这人不对劲”算理由吗？哲学家给直觉辩护](https://aeon.co/essays/sometimes-you-just-know-somethings-off-but-how) ⭐️ 8.0/10
 
 Aeon 的一篇哲学长文，从陌生人的气场、可疑邮件和让人不安的交易说起：有时还没列出理由，我们已经形成了判断。
 
 rss · Aeon 观念与文化 · 10月20日 10:00
 
-**「细读一层」** 作者尝试说明日常直觉为何能参与理性判断，同时承认它并非总可靠。这是一种哲学论证；值得读的是它如何拆解判断过程，而不是把“相信感觉”当成万能结论。
+**「细读一层」** 作者把日常直觉与感知相比较：有些判断在列出理由之前就已经出现，仍可能构成行动的理由；但反面证据也能推翻它。文章讨论的是理由从哪里来，并不主张每个直觉都正确。
 
 ---
