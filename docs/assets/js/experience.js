@@ -48,7 +48,10 @@
     });
     const fragment = document.createDocumentFragment();
     plans.forEach(({h,index,category,anchor,nodes}) => {
-      const label = category?.textContent.trim() || (en ? 'News' : '每日新闻');
+      const rawLabel = category?.textContent.trim() || (en ? 'News' : '每日新闻');
+      // Editorial provenance belongs inside the story, not in the topic navigation.
+      const label = /PHP2Shell/i.test(rawLabel) && /补充|核对|supplement|verif/i.test(rawLabel)
+        ? ([...root.querySelectorAll(':scope > h2')].find(title => /AI 与有趣工具|Technology News/.test(title.textContent))?.textContent.trim() || (en ? 'Technology News' : 'AI 与有趣工具')) : rawLabel;
       let group = groups.find(g => g.label === label);
       const anchorID = anchor?.id || `story-${index+1}`;
       const topic = anchorID.replace(/^item-/, '').replace(/-\d+$/, '');
@@ -77,6 +80,8 @@
       let isContext=false;
       nodes.forEach(node => {
         if (node.tagName==='HR' || node.matches('a[id^="item-"]') || node.querySelector('a[id^="item-"]')) return;
+        if (node.matches('ol,ul') && node.querySelector('a[href^="#item-"]')) return;
+        if (node.matches('p') && node.querySelector('strong') && node.nextElementSibling?.matches('ol,ul') && node.nextElementSibling.querySelector('a[href^="#item-"]')) return;
         if(node.matches('.reaction-clippings')){body.append(node);return;}
         const value=node.textContent.trim();
         if (/^(rss|reddit|github|hackernews|hn|telegram)\s*·/i.test(value)) {metadata=node;node.className='news-source';const first=node.firstChild;if(first?.nodeType===Node.TEXT_NODE)first.textContent=first.textContent.replace(/^[^·]+·\s*/,'');return;}
