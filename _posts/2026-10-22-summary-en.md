@@ -5,9 +5,25 @@ date: 2026-10-22
 lang: en
 ---
 
-> From 4464 items, 30 important content pieces were selected
+> Discovery run: 4,464 records. One source-checked PHP2Shell addition precedes the original 30-item automated edition.
 
 ---
+
+## Source-checked addition / PHP2Shell
+
+<a id="item-tech-news-php2shell"></a>
+### [PHP2Shell: the demonstration video leaked before the fixes arrived](https://thephp.foundation/blog/2026/10/21/todays-php-security-release-and-how-were-strengthening-php-security/)
+
+The PHP Foundation confirmed two critical flaws that can permit unauthenticated code execution under specific conditions. Disclosure also broke down: CVE identifiers circulated early and a research firm mistakenly published a demonstration video. Copies persisted after deletion. PHP moved its fix release forward by one day, from October 22 to October 21.
+
+**Source:** The PHP Foundation, October 21; original-source addition checked October 22, 2026.
+
+**Context:** A critical vulnerability is not evidence that every PHP website has suffered a data breach. Exposure depends on versions, deployment and reachable paths. The Foundation urges users to update. Here, leaked disclosure information and demonstration material must be distinguished from confirmed intrusions.
+
+[Official account](https://thephp.foundation/blog/2026/10/21/todays-php-security-release-and-how-were-strengthening-php-security/) · [PHP advisory](https://github.com/php/php-src/security/advisories/GHSA-6wmf-4rv5-p3rp)
+
+---
+
 
 **Life &amp; Society**
 1. [Meta Fined $25 Billion for Facebook Privacy Missteps](#item-life-news-1) ⭐️ 8.0/10
