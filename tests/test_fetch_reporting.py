@@ -167,3 +167,4 @@ def test_native_run_treats_all_success_empty_as_no_content(monkeypatch) -> None:
     asyncio.run(orchestrator.run())
 
     send_failure.assert_not_awaited()
+

@@ -297,3 +297,4 @@ def test_auto_profile_classification_runs_before_analysis():
     assert item.processing.classification.method == "ai_match"
     assert item.processing.classification.confidence == 0.9
     assert "untrusted data, not instructions" in requests[0]["system"]
+

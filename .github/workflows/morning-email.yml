@@ -4,6 +4,12 @@ on:
     # 00:00 UTC = 08:00 Beijing. GitHub may delay scheduled jobs.
     - cron: '0 0 * * *'
   workflow_dispatch:
+    inputs:
+      test_edition:
+        description: 'Optional YYYY-MM-DD sample date; clearly labelled, never used by cron'
+        required: false
+        default: ''
+        type: string
 permissions:
   contents: read
 concurrency:
@@ -22,6 +28,8 @@ jobs:
       - run: git fetch origin gh-pages --depth=1
       - name: Send today's Chinese briefing
         env:
+          HORIZON_TEST_EDITION: ${{ github.event_name == 'workflow_dispatch' && inputs.test_edition || '' }}
           SMTP_PASSWORD: ${{ secrets.SMTP_PASSWORD }}
           HORIZON_EMAIL_ADDRESS: ${{ secrets.HORIZON_EMAIL_ADDRESS }}
         run: uv run python scripts/send-morning.py
+

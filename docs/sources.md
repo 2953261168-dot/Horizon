@@ -26,3 +26,6 @@ title: 信息来源
 </ul>
 
 同时参考 GitHub 项目发布、Hacker News 与 OSSInsight。上述 RSS 于 2026-10-20 完成连通性检查，后续可用性可能变化。暂时不可用的源保留在配置中并停用，详见 [来源检测记录]({{ "/source-status" | relative_url }})。
+
+
+[查看新增期刊、文化生活来源及社交平台接入状态]({{ "/coverage" | relative_url }})。

@@ -25,7 +25,16 @@
         "type": "section",
         "tools": [
           "web_search"
-        ]
+        ],
+        "optional": true
+      },
+      {
+        "id": "community_discussion",
+        "type": "section",
+        "tools": [
+          "web_search"
+        ],
+        "optional": true
       },
       {
         "id": "impact",

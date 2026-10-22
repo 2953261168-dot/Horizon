@@ -595,6 +595,7 @@ class CollectionConfig(BaseModel):
 
     time_window_hours: int = 24
     max_analysis_items: Optional[int] = Field(default=None, ge=30, le=2000)
+    require_source_text: bool = False
     search_concurrency: int = Field(default=4, ge=1, le=8)
 
 

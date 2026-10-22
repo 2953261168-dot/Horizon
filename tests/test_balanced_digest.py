@@ -364,3 +364,43 @@ def test_run_balances_after_twitter_reanalysis(tmp_path, monkeypatch) -> None:
     asyncio.run(orchestrator.run())
 
     assert enriched_ids == ["second"]
+
+
+def test_topic_dedup_cannot_drop_php_incident_for_waf_product(monkeypatch):
+    orchestrator = make_orchestrator(DigestConfig())
+    orchestrator.config.ai = AIConfig(provider='openai', model='test', api_key_env='TEST_KEY')
+    waf = make_item('waf', 8, 'tech')
+    waf.title = 'Introducing full transaction detection for Cloudflare WAF'
+    php = make_item('php', 8, 'tech')
+    php.title = 'Cybersecurity company Wiz says it used AI tools to discover flaw in the PHP programming language - Devdiscourse'
+    async def complete(**kwargs):
+        return '{"duplicates": [[0, 1]]}'
+    monkeypatch.setattr('src.orchestrator.create_ai_client', lambda config: SimpleNamespace(complete=complete))
+    result = asyncio.run(orchestrator.merge_topic_duplicates([waf, php], log=False))
+    assert [i.id for i in result] == ['waf', 'php']
+    assert not waf.content
+
+
+def test_topic_dedup_keeps_distinct_cve_incidents(monkeypatch):
+    orchestrator = make_orchestrator(DigestConfig())
+    orchestrator.config.ai = AIConfig(provider='openai', model='test', api_key_env='TEST_KEY')
+    items = [make_item('one', 8, 'tech'), make_item('two', 8, 'tech')]
+    items[0].title = 'PHP critical vulnerability CVE-2026-109618 patched'
+    items[1].title = 'PHP critical vulnerability CVE-2026-109619 patched'
+    async def complete(**kwargs):
+        return '{"duplicates": [[0, 1]]}'
+    monkeypatch.setattr('src.orchestrator.create_ai_client', lambda config: SimpleNamespace(complete=complete))
+    assert len(asyncio.run(orchestrator.merge_topic_duplicates(items, log=False))) == 2
+
+
+def test_topic_dedup_merges_confirmed_same_incident(monkeypatch):
+    orchestrator = make_orchestrator(DigestConfig())
+    orchestrator.config.ai = AIConfig(provider='openai', model='test', api_key_env='TEST_KEY')
+    items = [make_item('one', 8, 'tech'), make_item('two', 8, 'tech')]
+    items[0].title = 'PHP CVE-2026-109618 emergency update'
+    items[1].title = 'Emergency fixes released for CVE-2026-109618 in PHP'
+    async def complete(**kwargs):
+        return '{"duplicates": [[0, 1]]}'
+    monkeypatch.setattr('src.orchestrator.create_ai_client', lambda config: SimpleNamespace(complete=complete))
+    assert [i.id for i in asyncio.run(orchestrator.merge_topic_duplicates(items, log=False))] == ['one']
+

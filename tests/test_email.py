@@ -257,3 +257,4 @@ def test_partial_delivery_failure_is_not_silently_successful(monkeypatch):
     monkeypatch.setattr('src.services.email.smtplib.SMTP_SSL', RejectingSMTP)
     with pytest.raises(RuntimeError, match='1 recipient'):
         EmailManager(_email_config()).send_daily_summary('Daily', 'Daily', ['good@example.com', 'bad@example.com'])
+

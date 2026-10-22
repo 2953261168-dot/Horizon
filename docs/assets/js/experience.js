@@ -77,6 +77,7 @@
       let isContext=false;
       nodes.forEach(node => {
         if (node.tagName==='HR' || node.matches('a[id^="item-"]') || node.querySelector('a[id^="item-"]')) return;
+        if(node.matches('.reaction-clippings')){body.append(node);return;}
         const value=node.textContent.trim();
         if (/^(rss|reddit|github|hackernews|hn|telegram)\s*·/i.test(value)) {metadata=node;node.className='news-source';const first=node.firstChild;if(first?.nodeType===Node.TEXT_NODE)first.textContent=first.textContent.replace(/^[^·]+·\s*/,'');return;}
         if (/^(标签|Tags)\s*[:：]/i.test(value)) {

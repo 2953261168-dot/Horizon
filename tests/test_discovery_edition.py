@@ -35,3 +35,20 @@ def test_letter_removes_unsafe_links_and_preserves_original_source():
  assert 'A useful account.' in soup.get_text()
  assert 'Extra context.' in soup.get_text()
 
+
+
+def test_sample_letter_marks_visible_body_with_real_edition_date():
+ html=render_daily_letter('> 样刊视觉测试：原刊日期 2026-10-21；发送日期 2026-10-22（北京时间）。这不是今日晨报。\n\n### [A verified story](https://example.com/story)\n\nSource reporting.','Horizon 样刊测试 · 2026-10-21（非今日晨报）','Horizon','Personal')
+ soup=BeautifulSoup(html,'html.parser');soup.head.decompose()
+ assert '样刊测试' in soup.get_text(' ',strip=True)
+ assert '非今日晨报' in soup.get_text(' ',strip=True)
+ assert '2026-10-21' in soup.get_text(' ',strip=True)
+ assert soup.find('a',href='https://example.com/story')
+
+
+def test_dedup_rejects_distinct_product_versions_and_targets():
+ from src.ai.prompting.deduplication import corroborated_event
+ for left,right in [('OpenAI releases GPT-5','OpenAI releases GPT-6'),('Cloudflare WAF adds PHP vulnerability protection','Cloudflare WAF adds WordPress vulnerability protection')]:
+  a=make_item(1,'tech-news','one');b=make_item(2,'tech-news','two');a.title=left;b.title=right
+  assert not corroborated_event(a,b)
+

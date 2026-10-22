@@ -8,7 +8,25 @@ from .common import EVIDENCE_RULES, UNTRUSTED_INPUT_RULE
 
 MAX_TOOL_REQUESTS = 3
 
+HEADLINE_RULES = """# Headlines for general readers
+Start from the most clickable TRUE detail in the actual story: a concrete contradiction, awkward consequence, specific decision, unusual response or useful capability. The headline should disclose the subject and the tension, not hide them behind an uplifting life lesson or an abstract question about happiness.
+Keep recognizable search hooks and identities when central: GTA 6, ChatGPT, TikTok and Donald Trump should not become merely 'a game', 'an AI app', 'a platform' or 'a president'. These examples are not topics to insert into unrelated stories. For unfamiliar people or places, add a useful role or situation; give the full identification in the opening body sentence. Do not mechanically remove all proper nouns.
+A sharp, dry or lightly barbed editorial voice is welcome when anchored in a documented contradiction. For example, an actual dispute followed by leaders making self-mocking T-shirts is a stronger hook than 'people debate AI'. Do not invent the shirts, joke, scandal or public response. Name the specific subject and action before adding wit. Avoid generic 'take back your life', 'a life of their own', 'are we happier', inspirational morals and interchangeable rhetorical questions.
+Preserve who said or did what, whether an event is past or current, and whether this is reporting, an interview, an allegation or an opinion. A reported past break is not a newly announced suspension. Never imply a motive, accuse a person without evidence, replace an allegation with a fact, invent popularity or turn one person's experience into a demographic trend. An opinion can be provocative without being presented as a verified finding.
+Use everyday, concrete language. Explain unfamiliar terms immediately in the body. In Chinese, usually aim for a readable 16-32 characters, extending when a recognizable name or accuracy requires it. The reader should know the actual focus before clicking; keep the original source link and complete identity in the story.
+"""
+
+
+REACTION_RULES = """# Attributable discussion, when community_discussion is requested
+Omit this optional block unless the supplied item/comments or this block's tool results contain actual attributable reactions to this exact event. Do not invent factions, angry crowds, jokes, popularity or votes. A few comments do not represent a demographic, nationality or platform. Preserve interesting contradictions (for example an evidenced joke alongside an evidenced decision to support), but never infer the decision from the joke. Do not force a pro/con balance.
+For this block only, encode content as a JSON object STRING with this schema (properly escaped inside the outer response JSON):
+{"reactions":[{"stance":"criticism","speaker":"actual name or organization, with a short identifying role","text":"a brief, attributed paraphrase of the actual position and its reason, up to 100 Chinese characters or 55 English words","source_ref":"tool-2-1"}]}
+Use 1-4 distinct evidenced voices. Allowed stances: support, criticism, humour, response, undecided, other. Humour requires an actual joke or clearly reported satire; do not write a joke yourself. Text is a paraphrase, not a fabricated verbatim quotation. Use source_ref 'source' only for reactions actually reported in the original item; 'discussion' only for comments supplied from its linked discussion; otherwise use an exact source ID from THIS block's tool results, and include that ID in source_refs. Never invent an identity, profession or group membership. Do not include engagement counts without verifiable source data; no counts are required. If searching, seek the original statement, interview or exact discussion of this event, not a generic controversy roundup. An organization's statement is its response, not public opinion.
+"""
+
 GROUNDING_RULES = f"""- Treat the source item as the primary account of what happened.
+- Explain the specific story, not a country encyclopedia entry, a person's follower counts, generic life advice or an unrelated same-name search result. Never write that something is important 'for young readers' merely to justify selecting it. Omit an optional block when evidence is insufficient. A useful background explains the actual mechanism or disputed point in this item. Do not append a moral, a rhetorical 'how can we' question, generic future benefits or claims that a technology is revolutionary.
+- Distinguish an article's actual findings from a proposal, advertisement, prediction or anecdote. Never fabricate details missing from the supplied source, even if they sound plausible.
 - Use tool results only as supporting context or fact verification, never as a replacement for the source.
 - {UNTRUSTED_INPUT_RULE}
 - Distinguish source facts, community opinions, and external context.
@@ -83,6 +101,10 @@ def block_prompt(
 
 Write the complete artifact in {target_language_instruction(language)}.
 
+{HEADLINE_RULES}
+
+{REACTION_RULES}
+
 # Grounding rules
 
 {GROUNDING_RULES}
@@ -121,6 +143,10 @@ def artifact_prompt(
 # Target language
 
 Write the complete artifact in {target_language_instruction(language)}.
+
+{HEADLINE_RULES}
+
+{REACTION_RULES}
 
 # Grounding rules
 
@@ -198,3 +224,4 @@ def tool_results_text(results: list[ToolResult]) -> str:
             f"## {result.request_id} for block {result.block_id}\n" + "\n".join(lines)
         )
     return "\n\n".join(sections)
+
