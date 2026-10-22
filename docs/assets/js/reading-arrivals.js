@@ -11,6 +11,16 @@
   headlines.forEach(el=>{
     const fold=document.createElement('span');fold.className='reading-fold';fold.setAttribute('aria-hidden','true');
     fold.innerHTML='<svg viewBox="0 0 30 30"><path d="M0 0H30V30Z" fill="#c8c9b7"/><path d="M0 0L30 30L22 7Z" fill="#f5f2e7" stroke="#858c70" stroke-width=".55"/></svg>';el.append(fold);
+    let flutter;
+    function lift(){
+      if(reduced.matches || !matchMedia('(hover: hover) and (pointer: fine)').matches)return;
+      flutter?.cancel();
+      flutter=el.animate([{rotate:'0deg'},{rotate:'.65deg',offset:.25},{rotate:'-.35deg',offset:.55},{rotate:'.12deg',offset:.78},{rotate:'0deg'}],{duration:480,easing:'ease-out'});
+      running.add(flutter);const active=flutter;active.finished.then(()=>running.delete(active)).catch(()=>running.delete(active));
+    }
+    el.addEventListener('pointerenter',lift);
+    el.addEventListener('focus',lift);
+
   });
   dates.forEach(el=>{
     const tab=document.createElement('span');tab.className='date-bookmark';tab.setAttribute('aria-hidden','true');
