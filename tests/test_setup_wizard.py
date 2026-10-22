@@ -273,3 +273,4 @@ def test_log_level_flag_is_forwarded_to_configure_logging(monkeypatch):
         wizard.main()
 
     assert logging_calls == ["DEBUG"]
+

@@ -223,3 +223,4 @@ class EmailManager:
                 server.send_message(msg)
         except Exception as e:
             logger.error(f"Failed to send reply to {to_email}: {e}")
+

@@ -1,6 +1,7 @@
 """Daily summary generation — pure programmatic rendering."""
 
 import html
+import json
 import re
 from dataclasses import dataclass
 from typing import Dict, List, Optional
@@ -39,6 +40,55 @@ def _safe_url(value: object) -> Optional[str]:
     encoded = quote(raw, safe=_URL_SAFE_CHARS)
     return html.escape(encoded, quote=True)
 
+
+
+def _render_reactions(block, sources, primary_url: str, language: str, discussion_url: str | None = None) -> str:
+    """Render only attributable reaction records; never leak malformed JSON."""
+    raw = block.content.strip()
+    if not raw.startswith(("{", "[")):
+        return ""  # Legacy prose continues through the ordinary text renderer.
+    try:
+        data = json.loads(raw)
+    except (ValueError, TypeError):
+        return ""
+    records = data.get("reactions", []) if isinstance(data, dict) else []
+    if not isinstance(records, list):
+        return ""
+    labels = {
+        "support": ("赞成的理由", "In favour"),
+        "criticism": ("质疑的理由", "Questions raised"),
+        "humour": ("有人开玩笑", "A wry take"),
+        "response": ("当事人回应", "The response"),
+        "undecided": ("还没下结论", "Undecided"),
+        "other": ("另一种看法", "Another view"),
+    }
+    allowed = {source.id: source for source in sources if source.id in block.source_refs}
+    cards = []
+    seen = set()
+    for record in records[:4]:
+        if not isinstance(record, dict):
+            continue
+        speaker, text = record.get("speaker"), record.get("text")
+        ref = record.get("source_ref")
+        if not isinstance(speaker, str) or not isinstance(text, str) or not speaker.strip() or not text.strip():
+            continue
+        if not isinstance(ref, str) or (ref not in {"source", "discussion"} and ref not in allowed):
+            continue
+        url = _safe_url(primary_url if ref == "source" else discussion_url or "" if ref == "discussion" else allowed[ref].url)
+        if not url or (speaker.strip(), text.strip()) in seen:
+            continue
+        seen.add((speaker.strip(), text.strip()))
+        stance = record.get("stance", "other")
+        if not isinstance(stance, str) or stance not in labels:
+            stance = "other"
+        label = labels[stance][0 if language == "zh" else 1]
+        link_label = "报道中的出处 ↗" if ref == "source" and language == "zh" else "查看出处 ↗" if language == "zh" else "Source ↗"
+        # Everything except these fixed tags is escaped. The model cannot inject UI.
+        cards.append(f'<article class="reaction-clip" data-stance="{stance}"><p class="reaction-label">{label}</p><h4>{html.escape(speaker[:100])}</h4><p>{html.escape(text[:500])}</p><a href="{url}" target="_blank" rel="noopener noreferrer">{link_label}</a></article>')
+    if not cards:
+        return ""
+    heading = "众声剪贴簿" if language == "zh" else "Voices, clipped"
+    return '<section class="reaction-clippings"><header><span>VOICES / SOURCES</span><h4>' + heading + '</h4></header><div class="reaction-sheets">' + ''.join(cards) + '</div></section>'
 
 def _pangu(text: str) -> str:
     """Insert a space between CJK and ASCII letters/digits (Pangu spacing)."""
@@ -431,6 +481,11 @@ class DailySummarizer:
         if artifact:
             for block in artifact.blocks:
                 if block.primary:
+                    continue
+                if block.id == "community_discussion" and block.content.strip().startswith(("{", "[")):
+                    reactions = _render_reactions(block, artifact.sources, raw_url, language, meta.get("discussion_url"))
+                    if reactions:
+                        lines.extend(["", reactions, ""])
                     continue
                 block_title = _escape_markdown(block.title)
                 block_content = _escape_markdown(block.content)

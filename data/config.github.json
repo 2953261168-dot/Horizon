@@ -44,7 +44,7 @@
     }
   },
   "digest": {
-    "max_items": 30,
+    "max_items": 20,
     "profile_order": [
       "life-news",
       "culture-news",
@@ -63,35 +63,35 @@
       },
       "finance": {
         "name": "财经与政策",
-        "limit": 3,
+        "limit": 2,
         "categories": [
           "finance"
         ]
       },
       "tech": {
         "name": "科技与研究",
-        "limit": 6,
+        "limit": 4,
         "categories": [
           "tech"
         ]
       },
       "culture": {
         "name": "文化与热议",
-        "limit": 7,
+        "limit": 5,
         "categories": [
           "culture"
         ]
       },
       "life": {
         "name": "生活与社会",
-        "limit": 7,
+        "limit": 4,
         "categories": [
           "life"
         ]
       },
       "research": {
         "name": "研究与新知",
-        "limit": 5,
+        "limit": 3,
         "categories": [
           "research"
         ]
@@ -645,6 +645,20 @@
         "profile": "life-news",
         "category": "life",
         "enabled": true
+      },
+      {
+        "name": "Reddit r/popculturechat — public text posts",
+        "url": "https://www.reddit.com/r/popculturechat/.rss?limit=15",
+        "enabled": true,
+        "category": "culture",
+        "profile": "culture-news"
+      },
+      {
+        "name": "The PHP Foundation — official security and ecosystem",
+        "url": "https://thephp.foundation/atom.xml",
+        "enabled": true,
+        "profile": "tech-news",
+        "category": "tech"
       }
     ],
     "google_news_queries": [
@@ -1148,7 +1162,9 @@
   },
   "collection": {
     "time_window_hours": 24,
-    "max_analysis_items": 360,
-    "search_concurrency": 4
+    "max_analysis_items": 180,
+    "search_concurrency": 4,
+    "require_source_text": true
   }
 }
+

@@ -23,12 +23,25 @@
       {
         "id": "background",
         "type": "section",
-        "tools": ["web_search"]
+        "tools": [
+          "web_search"
+        ],
+        "optional": true
+      },
+      {
+        "id": "community_discussion",
+        "type": "section",
+        "tools": [
+          "web_search"
+        ],
+        "optional": true
       },
       {
         "id": "impact",
         "type": "section",
-        "tools": ["web_search"],
+        "tools": [
+          "web_search"
+        ],
         "optional": true
       }
     ]

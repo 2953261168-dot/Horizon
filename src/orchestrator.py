@@ -277,7 +277,16 @@ class HorizonOrchestrator:
 
             # Bound AI work after collecting the broad pool, preserving profile/source diversity.
             from .processing.discovery import shortlist_candidates, save_coverage
-            candidates = shortlist_candidates(merged_items, self.config.collection.max_analysis_items)
+            discovery_pool = merged_items
+            if self.config.collection.require_source_text:
+                from .processing.source_evidence import eligible_discovery_item, prepare_source_evidence
+                from .extractors import ExtractorRegistry
+                discovery_pool = [item for item in merged_items if eligible_discovery_item(item)]
+            candidates = shortlist_candidates(discovery_pool, self.config.collection.max_analysis_items)
+            if self.config.collection.require_source_text:
+                async with httpx.AsyncClient(timeout=18, follow_redirects=True) as evidence_client:
+                    candidates = await prepare_source_evidence(candidates, evidence_client, ExtractorRegistry(self.config.extractors).get("trafilatura"))
+                self.console.print(f"Readable primary-source candidates: {len(candidates)}")
             save_coverage(all_items, merged_items, candidates, self.last_fetch_report)
             # 4. Analyze with AI
             analyzed_items = await self.analyze_items(candidates)
@@ -310,7 +319,13 @@ class HorizonOrchestrator:
                     profile_names=self.profiles.names,
                     profile_order=self.config.digest.profile_order,
                 )
-                summary = await summarizer.generate_summary(important_items, today, len(all_items), language=lang)
+                localized_items = important_items
+                if self.config.collection.require_source_text:
+                    from .processing.source_evidence import has_localized_artifact
+                    localized_items = [item for item in important_items if has_localized_artifact(item, lang)]
+                    if not localized_items:
+                        raise RuntimeError(f"No grounded {lang} artifacts; preserving the previous published edition")
+                summary = await summarizer.generate_summary(localized_items, today, len(all_items), language=lang)
 
                 # Save to data/summaries/
                 summary_path = self.storage.save_daily_summary(today, summary, language=lang)
@@ -664,7 +679,7 @@ class HorizonOrchestrator:
         if len(items) <= 1:
             return items
 
-        from .ai.prompting.deduplication import TOPIC_DEDUP_SYSTEM, TOPIC_DEDUP_USER
+        from .ai.prompting.deduplication import TOPIC_DEDUP_SYSTEM, TOPIC_DEDUP_USER, corroborated_event
         from .ai.utils import parse_json_response
 
         # Build the item list for the prompt
@@ -703,7 +718,7 @@ class HorizonOrchestrator:
             if not isinstance(group, list) or len(group) < 2:
                 continue
             primary_idx = group[0]
-            if primary_idx < 0 or primary_idx >= len(items):
+            if not isinstance(primary_idx, int) or isinstance(primary_idx, bool) or primary_idx < 0 or primary_idx >= len(items):
                 continue
             primary = items[primary_idx]
             for dup_idx in group[1:]:
@@ -712,6 +727,10 @@ class HorizonOrchestrator:
                 if dup_idx == primary_idx:
                     continue
                 dup = items[dup_idx]
+                if not corroborated_event(primary, dup):
+                    if log:
+                        self.console.print(f"[yellow]  dedup: retained distinct event [{dup_idx}] {dup.title}[/yellow]")
+                    continue
                 # Merge comments/content from the duplicate into the primary
                 if dup.content:
                     if not primary.content or dup.content not in primary.content:
@@ -1118,3 +1137,4 @@ class HorizonOrchestrator:
         )
 
         return await summarizer.generate_summary(items, date, total_fetched, language=language)
+

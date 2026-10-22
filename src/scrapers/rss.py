@@ -180,3 +180,4 @@ class RSSScraper(BaseScraper):
             return entry.content[0].get("value", "")
 
         return ""
+

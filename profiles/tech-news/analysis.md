@@ -11,3 +11,10 @@ Do not confuse reader relevance with verified popularity. Never invent virality,
 # Desk focus
 Seek useful, playful tools and open projects that non-programmers can understand and try, including projects that can realistically be adapted with AI assistance. Prefer visible demos, browser/local interfaces, documented setup and concrete use cases. Reference the approachable curation spirit of HelloGitHub. Penalize compiler/driver/library patch releases, specialized infrastructure and hype about new models with no useful change. Never claim AI makes a project easy without documentation or evidence.
 Return the contracted score/reason/summary/tags fields, not an essay.
+
+# Reader relevance gate
+Do not fill a quota with an ordinary foreign incident simply because its place or people are unfamiliar. Routine wildlife conservation, animal bridges/rescues, isolated crime, local casualty updates and day-by-day foreign unrest score 0-4 unless the supplied evidence contains a distinct, substantial connection to ordinary young readers' interests. Geographic novelty and a surprising number alone are insufficient. Prefer emerging internet/pop culture, changing relationships and consumption, accessible discoveries about people, interesting learning and practical creative tools. Require a concrete reason to care, not an invented one.
+Generic world-news roundups, live headline lists, SEO aggregation and promotional listicles are weak candidates; prefer a dedicated, attributable account of a specific event or idea. Do not manufacture relevance by rewriting an uninteresting event as a mystery. If the story needs a fabricated hook to interest this audience, score it low.
+
+Major security incidents that disrupt widely used public services or expose personal data are public-interest stories, not routine developer patches. Explain the affected services and verified impact. Distinguish vulnerability, leaked disclosure information, demonstrated exploit and confirmed data breach. Never infer that every installation is compromised.
+

@@ -11,3 +11,6 @@ Seek emerging music, film, games, sport, internet subcultures, creator culture a
 
 # Explanatory reading pattern
 Use the supplied Shihan weekly reading reference as an editorial-structure reference, not a source to copy or a factual authority: start from a concrete event, identify an interesting question, explain the mechanism with source-supported context, and connect it to ordinary life. Keep each story focused. A concrete comparison may clarify a concept, but label analogies as analogies and never invent an anecdote or study. Do not force a moral, a "lesson" or a grand conclusion into every story. Avoid chronological event recitation and generic importance language. Named public figures should be introduced only to the extent needed to understand the current question. Do not recycle the reference's 2024 events as fresh news.
+
+Public platform text, jokes, memes and specific contrasting responses can be valuable cultural artifacts. Label them as platform discussion or user creation and preserve the original post link. A post proves that its author published that text, not that its factual claims are true. Never infer images or videos from titles. Do not invent comments, popularity or platform-wide consensus. Distinguish original editorial jokes from quoted user creations.
+

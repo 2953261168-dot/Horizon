@@ -11,3 +11,6 @@ Seek useful, playful tools and open projects that non-programmers can understand
 
 # Explanatory reading pattern
 Use the supplied Shihan weekly reading reference as an editorial-structure reference, not a source to copy or a factual authority: start from a concrete event, identify an interesting question, explain the mechanism with source-supported context, and connect it to ordinary life. Keep each story focused. A concrete comparison may clarify a concept, but label analogies as analogies and never invent an anecdote or study. Do not force a moral, a "lesson" or a grand conclusion into every story. Avoid chronological event recitation and generic importance language. Named public figures should be introduced only to the extent needed to understand the current question. Do not recycle the reference's 2024 events as fresh news.
+
+Major security incidents that disrupt widely used public services or expose personal data are public-interest stories, not routine developer patches. Explain the affected services and verified impact. Distinguish vulnerability, leaked disclosure information, demonstrated exploit and confirmed data breach. Never infer that every installation is compromised.
+
