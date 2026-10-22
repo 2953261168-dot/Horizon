@@ -54,7 +54,7 @@
         ? ([...root.querySelectorAll(':scope > h2')].find(title => /AI 与有趣工具|Technology News/.test(title.textContent))?.textContent.trim() || (en ? 'Technology News' : 'AI 与有趣工具')) : rawLabel;
       let group = groups.find(g => g.label === label);
       const anchorID = anchor?.id || `story-${index+1}`;
-      const topic = anchorID.replace(/^item-/, '').replace(/-\d+$/, '');
+      const topic = label !== rawLabel ? 'tech-news' : anchorID.replace(/^item-/, '').replace(/-\d+$/, '');
       if (!group) {
         const section = document.createElement('section'); section.className = 'news-group'; section.dataset.topic = topic;
         const title = document.createElement('h2'); title.className = 'group-title'; title.textContent = label;
