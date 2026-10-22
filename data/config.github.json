@@ -48,22 +48,22 @@
     "profile_order": [
       "life-news",
       "culture-news",
+      "finance-news",
       "tech-news",
       "research-news",
-      "world-news",
-      "finance-news"
+      "world-news"
     ],
     "category_groups": {
       "world": {
         "name": "国际与公共事务",
-        "limit": 2,
+        "limit": 1,
         "categories": [
           "world"
         ]
       },
       "finance": {
         "name": "财经与政策",
-        "limit": 2,
+        "limit": 4,
         "categories": [
           "finance"
         ]
@@ -91,7 +91,7 @@
       },
       "research": {
         "name": "研究与新知",
-        "limit": 3,
+        "limit": 2,
         "categories": [
           "research"
         ]
@@ -659,6 +659,48 @@
         "enabled": true,
         "profile": "tech-news",
         "category": "tech"
+      },
+      {
+        "name": "BIS 研究与金融稳定",
+        "url": "https://www.bis.org/doclist/bis_fsi_publs.rss",
+        "enabled": true,
+        "profile": "finance-news",
+        "category": "finance"
+      },
+      {
+        "name": "BIS 监管与政策公告",
+        "url": "https://www.bis.org/doclist/all_pressrels.rss",
+        "enabled": true,
+        "profile": "finance-news",
+        "category": "finance"
+      },
+      {
+        "name": "美联储 FEDS Notes 经济研究解读",
+        "url": "https://www.federalreserve.gov/feeds/feds_notes.xml",
+        "enabled": true,
+        "profile": "finance-news",
+        "category": "finance"
+      },
+      {
+        "name": "美联储 FEDS 经济金融工作论文",
+        "url": "https://www.federalreserve.gov/feeds/feds.xml",
+        "enabled": true,
+        "profile": "finance-news",
+        "category": "finance"
+      },
+      {
+        "name": "美联储 执法与监管",
+        "url": "https://www.federalreserve.gov/feeds/press_enforcement.xml",
+        "enabled": true,
+        "profile": "finance-news",
+        "category": "finance"
+      },
+      {
+        "name": "IFAC 国际会计师联合会",
+        "url": "https://www.ifac.org/rss.xml",
+        "enabled": true,
+        "profile": "finance-news",
+        "category": "finance"
       }
     ],
     "google_news_queries": [
@@ -1397,6 +1439,116 @@
         "max_results": 20,
         "profile": "tech-news",
         "category": "tech"
+      },
+      {
+        "enabled": true,
+        "query": "site:kjs.mof.gov.cn (会计准则 OR 征求意见 OR 实施)",
+        "language": "zh-CN",
+        "country": "CN",
+        "ceid": "CN:zh-Hans",
+        "max_results": 25,
+        "profile": "finance-news",
+        "category": "finance"
+      },
+      {
+        "enabled": true,
+        "query": "site:chinatax.gov.cn (新政策 OR 生效 OR 征求意见)",
+        "language": "zh-CN",
+        "country": "CN",
+        "ceid": "CN:zh-Hans",
+        "max_results": 25,
+        "profile": "finance-news",
+        "category": "finance"
+      },
+      {
+        "enabled": true,
+        "query": "site:csrc.gov.cn (财务造假 OR 审计 OR 信息披露 OR 行政处罚)",
+        "language": "zh-CN",
+        "country": "CN",
+        "ceid": "CN:zh-Hans",
+        "max_results": 25,
+        "profile": "finance-news",
+        "category": "finance"
+      },
+      {
+        "enabled": true,
+        "query": "site:cicpa.org.cn (审计 OR 数字化 OR 人工智能 OR 职业)",
+        "language": "zh-CN",
+        "country": "CN",
+        "ceid": "CN:zh-Hans",
+        "max_results": 25,
+        "profile": "finance-news",
+        "category": "finance"
+      },
+      {
+        "enabled": true,
+        "query": "site:cninfo.com.cn (财报 OR 审计意见 OR 现金流 OR 问询函)",
+        "language": "zh-CN",
+        "country": "CN",
+        "ceid": "CN:zh-Hans",
+        "max_results": 25,
+        "profile": "finance-news",
+        "category": "finance"
+      },
+      {
+        "enabled": true,
+        "query": "site:caixin.com (财务造假 OR 审计 OR 债务风险 OR 财报)",
+        "language": "zh-CN",
+        "country": "CN",
+        "ceid": "CN:zh-Hans",
+        "max_results": 25,
+        "profile": "finance-news",
+        "category": "finance"
+      },
+      {
+        "enabled": true,
+        "query": "site:ifrs.org/news-and-events/news (accounting OR disclosure OR effective)",
+        "language": "en",
+        "country": "US",
+        "ceid": "US:en",
+        "max_results": 25,
+        "profile": "finance-news",
+        "category": "finance"
+      },
+      {
+        "enabled": true,
+        "query": "site:journalofaccountancy.com (audit OR accounting OR AI OR careers)",
+        "language": "en",
+        "country": "US",
+        "ceid": "US:en",
+        "max_results": 25,
+        "profile": "finance-news",
+        "category": "finance"
+      },
+      {
+        "enabled": true,
+        "query": "site:nber.org/digest (tax OR accounting OR firms OR credit OR labor)",
+        "language": "en",
+        "country": "US",
+        "ceid": "US:en",
+        "max_results": 25,
+        "profile": "finance-news",
+        "category": "finance"
+      },
+      {
+        "enabled": true,
+        "query": "site:imf.org/en/Publications/fandd (debt OR finance OR economy)",
+        "language": "en",
+        "country": "US",
+        "ceid": "US:en",
+        "max_results": 25,
+        "profile": "finance-news",
+        "category": "finance"
+      },
+      {
+        "enabled": true,
+        "query": "site:cepr.org/voxeu/columns (accounting OR firms OR credit OR tax)",
+        "language": "en",
+        "country": "US",
+        "ceid": "US:en",
+        "max_results": 25,
+        "profile": "finance-news",
+        "category": "finance"
       }
     ]
   },

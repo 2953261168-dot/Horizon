@@ -3,12 +3,8 @@ layout: default
 title: 采集与来源
 ---
 <div class="sources-intro"><p class="eyebrow">THE READING DESK / COLLECTION</p><h1>世界不止一个话题。</h1><p>生活、文化、研究、国际、经济与技术。先把视野打开，再把重要的事情讲清楚。</p></div>
-<div class="coverage-metrics"><article><strong>78</strong><span>中英文检索主题</span></article><article><strong>47</strong><span>本轮新增公开来源</span></article><article><strong>180</strong><span>可读正文候选上限</span></article></div>
-{% if site.data.coverage %}<p class="coverage-note">最近一轮：采集 {{ site.data.coverage.fetched }} 条，跨源去重后 {{ site.data.coverage.unique }} 条，抽取 {{ site.data.coverage.analysis_candidates }} 条深读候选。记录时间 {{ site.data.coverage.generated_at }}。采集数包含跨源重复。</p>{% endif %}
 <h2>每份早报，怎样来到这里</h2>
 <p>公开订阅与主题检索 → 保留原始出处 → 跨源去重 → 按主题和出版方均衡抽取候选 → 深读、核实背景 → 事件去重和分栏选编。采集量会随当天发布情况变化，配置容量不等于实际采集量。</p>
-<h2>扩容阶段实测</h2>
-<p>2026-10-21 的 24 小时窗口检查：54 个主题返回 3,483 条，按标题去重后 3,304 条。该数字是扩容连通实测，并非今天已发布旧简报的采集量；每日实际结果由上方记录展示。</p>
 <h2>新加入的阅读书架</h2><ul class="source-list">
 <li><a href="https://www.bbc.com/">BBC 文化娱乐</a><small>culture · 公开订阅连通检查通过</small></li>
 <li><a href="https://www.bbc.com/">BBC 健康</a><small>life · 公开订阅连通检查通过</small></li>
@@ -77,3 +73,8 @@ title: 采集与来源
 <p>2026-10-22 公开入口实测：知乎热榜 HTTP 401、微博热搜 HTTP 403；QQ 空间首页 HTTP 200 仅为门户／登录页，不能证明读到说说；小红书首页 HTTP 200，尚未验证笔记正文稳定采集。PHP 基金会官方 Atom HTTP 200，解析 10 条，已加入来源。</p>
 
 <p class="coverage-note">公开平台检索范围包括 TikTok、Instagram、Threads、X、Quora、Reddit、微博、小红书、知乎、贴吧与 QQ 空间。新增的是站点限定检索线索，不代表已接通平台热榜、完整帖子或点赞数据；搜索无结果时不补造热度。选题统一融入现有栏目。</p>
+
+<h2>财经与财会阅读</h2>
+<p>关注会计审计规则、税务与披露变化、财报中的风险，以及能帮助理解企业和经济的研究。分清新闻、评论与工作论文；在文章内交代适用地区、发布日期和生效时间。</p>
+<ul class="source-list"><li><a href="https://www.bis.org/doclist/bis_fsi_publs.rss">BIS 研究与金融稳定</a><small>公开订阅；只选有实际阅读价值的新内容。</small></li><li><a href="https://www.bis.org/doclist/all_pressrels.rss">BIS 监管与政策公告</a><small>公开订阅；只选有实际阅读价值的新内容。</small></li><li><a href="https://www.federalreserve.gov/feeds/feds_notes.xml">美联储 FEDS Notes 经济研究解读</a><small>公开订阅；只选有实际阅读价值的新内容。</small></li><li><a href="https://www.federalreserve.gov/feeds/feds.xml">美联储 FEDS 经济金融工作论文</a><small>公开订阅；只选有实际阅读价值的新内容。</small></li><li><a href="https://www.federalreserve.gov/feeds/press_enforcement.xml">美联储 执法与监管</a><small>公开订阅；只选有实际阅读价值的新内容。</small></li><li><a href="https://www.ifac.org/rss.xml">IFAC 国际会计师联合会</a><small>公开订阅；只选有实际阅读价值的新内容。</small></li></ul>
+<p>财政部会计司、税务总局、证监会、中注协、IFRS、NBER Digest、IMF《金融与发展》及财会报刊补充公开检索；检索线索仍需回到原文核实。</p>

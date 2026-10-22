@@ -35,7 +35,6 @@
     const words = en ? {all:'All stories',search:'Search this edition',empty:'No stories match. Try another search.',more:'Context & references',less:'Close context',original:'Read original',count:'stories',top:'Back to top',saved:'Saved',save:'Save for later',copied:'Link copied',copy:'Copy story link'} : {all:'全部视野',search:'搜索本期新闻',empty:'没有找到相关新闻，换个关键词试试。',more:'背景与参考',less:'收起延伸阅读',original:'阅读原文',count:'条新闻',top:'回到顶部',saved:'已收藏',save:'稍后阅读',copied:'链接已复制',copy:'复制新闻链接'};
     const groups = []; const cards = []; let bookmarkOnly = false;
     const firstCategory = root.querySelector(':scope > h2');
-    const intro = root.querySelector(':scope > blockquote')?.textContent.trim();
     // Capture the original document's boundaries before moving any nodes.
     const plans = headings.map((h, index) => {
       let category = h.previousElementSibling;
@@ -108,7 +107,7 @@
     root.replaceChildren(fragment);
     document.body.classList.add('reader-page');
     const tools=document.createElement('div');tools.className='reader-tools';
-    const info=document.createElement('div');info.className='edition-note';info.textContent=intro || `${cards.length} ${words.count}`;
+    const info=document.createElement('div');info.className='edition-note';info.textContent=en?'Original sources and context accompany each story.':'每篇附原文与背景参考。';
     const controlRow=document.createElement('div');controlRow.className='reader-controls';
     const filters=document.createElement('div');filters.className='topic-switch';filters.setAttribute('role','group');filters.setAttribute('aria-label',en?'Filter stories':'新闻分类');
     const indicator=document.createElement('span');indicator.className='topic-indicator';indicator.setAttribute('aria-hidden','true');filters.append(indicator);
@@ -131,6 +130,17 @@
     // Direct story links always reveal their category, including links copied from a filtered view.
     function revealHash(){const id=decodeURIComponent(location.hash.slice(1));const target=cards.find(c=>c.id===id);if(!target)return;selected='all';bookmarkOnly=false;savedFilter.setAttribute('aria-pressed','false');search.value='';apply();requestAnimationFrame(()=>target.scrollIntoView({behavior:'instant',block:'start'}));}
     apply();revealHash();addEventListener('hashchange',revealHash);
+    // Home reading verbs are ordinary links; their destination works without scripting too.
+    const view=new URLSearchParams(location.search).get('view');
+    if(view==='context' || view==='sources'){
+      root.querySelectorAll('.news-context').forEach(details=>{details.open=true;});
+      info.textContent += en
+        ? (view==='context' ? ' — Context and references expanded.' : ' — Original sources and references expanded.')
+        : (view==='context' ? ' · 已展开本期背景与参考。' : ' · 每篇文末可打开原文，背景中的参考链接也已展开。');
+      const destination=view==='context' ? root.querySelector('.news-context summary') : root.querySelector('.original-link');
+      if(destination && !location.hash)requestAnimationFrame(()=>{destination.scrollIntoView({behavior:'instant',block:'center'});destination.focus({preventScroll:true});});
+    }
+
   }
 
   // Soft light follows the pointer; transforms stay small enough to preserve readability.
