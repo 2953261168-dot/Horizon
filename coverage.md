@@ -3,7 +3,7 @@ layout: default
 title: 采集与来源
 ---
 <div class="sources-intro"><p class="eyebrow">THE READING DESK / COLLECTION</p><h1>世界不止一个话题。</h1><p>生活、文化、研究、国际、经济与技术。先把视野打开，再把重要的事情讲清楚。</p></div>
-<div class="coverage-metrics"><article><strong>54</strong><span>中英文检索主题</span></article><article><strong>47</strong><span>本轮新增公开来源</span></article><article><strong>180</strong><span>可读正文候选上限</span></article></div>
+<div class="coverage-metrics"><article><strong>78</strong><span>中英文检索主题</span></article><article><strong>47</strong><span>本轮新增公开来源</span></article><article><strong>180</strong><span>可读正文候选上限</span></article></div>
 {% if site.data.coverage %}<p class="coverage-note">最近一轮：采集 {{ site.data.coverage.fetched }} 条，跨源去重后 {{ site.data.coverage.unique }} 条，抽取 {{ site.data.coverage.analysis_candidates }} 条深读候选。记录时间 {{ site.data.coverage.generated_at }}。采集数包含跨源重复。</p>{% endif %}
 <h2>每份早报，怎样来到这里</h2>
 <p>公开订阅与主题检索 → 保留原始出处 → 跨源去重 → 按主题和出版方均衡抽取候选 → 深读、核实背景 → 事件去重和分栏选编。采集量会随当天发布情况变化，配置容量不等于实际采集量。</p>
@@ -76,3 +76,4 @@ title: 采集与来源
 
 <p>2026-10-22 公开入口实测：知乎热榜 HTTP 401、微博热搜 HTTP 403；QQ 空间首页 HTTP 200 仅为门户／登录页，不能证明读到说说；小红书首页 HTTP 200，尚未验证笔记正文稳定采集。PHP 基金会官方 Atom HTTP 200，解析 10 条，已加入来源。</p>
 
+<p class="coverage-note">公开平台检索范围包括 TikTok、Instagram、Threads、X、Quora、Reddit、微博、小红书、知乎、贴吧与 QQ 空间。新增的是站点限定检索线索，不代表已接通平台热榜、完整帖子或点赞数据；搜索无结果时不补造热度。选题统一融入现有栏目。</p>
