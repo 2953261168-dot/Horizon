@@ -16,6 +16,24 @@
     const tab=document.createElement('span');tab.className='date-bookmark';tab.setAttribute('aria-hidden','true');
     tab.textContent=el.querySelector('strong').textContent.trim().split('.').pop();el.append(tab);
   });
+  const archiveIntro=document.querySelector('.archive-intro');
+  if(archiveIntro && dates.length){
+    const preview=document.createElement('a');preview.className='archive-paper';
+    const dateline=document.createElement('span');dateline.className='archive-paper-date';
+    const title=document.createElement('h3');
+    const illustration=document.querySelector('.front-art img')?.cloneNode(true);
+    const turn=document.createElement('span');turn.className='archive-paper-turn';turn.textContent='翻开这一期 ↗';
+    preview.append(dateline,title);if(illustration){illustration.alt='';preview.append(illustration);}preview.append(turn);archiveIntro.append(preview);
+    function select(row){
+      const headline=row.querySelector('.ledger-preview')?.textContent.trim();
+      const date=row.querySelector('strong')?.textContent.trim();
+      preview.href=row.href;dateline.textContent=date;title.textContent=headline || '每日视野 · '+date;
+      dates.forEach(el=>el.classList.toggle('is-selected',el===row));
+      if(!reduced.matches)play(preview,[{rotate:'-1.1deg',translate:'-5px 4px'},{rotate:'-.4deg',translate:'0 0'}],{duration:320,easing:'ease-out'});
+    }
+    select(dates[0]);
+    dates.forEach(row=>{row.addEventListener('pointerenter',()=>select(row));row.addEventListener('focus',()=>select(row));});
+  }
   if(mast){const marks=document.createElement('span');marks.className='press-register';marks.setAttribute('aria-hidden','true');marks.innerHTML='<i></i><i></i><i></i>';mast.append(marks);}
   function play(el,frames,options){if(reduced.matches)return;const animation=el.animate(frames,options);running.add(animation);animation.finished.then(()=>running.delete(animation)).catch(()=>running.delete(animation));}
   const observer=new IntersectionObserver(entries=>{
