@@ -48,12 +48,23 @@
   }
   const study=document.querySelector('.manifesto-plate');
   if(study){
-    const toolbar=document.createElement('div');toolbar.className='study-controls';toolbar.setAttribute('role','group');toolbar.setAttribute('aria-label','建筑研究观察模式');
-    const note=document.createElement('span');note.className='study-observation';note.setAttribute('role','status');
-    const labels=['线稿 / DRAWING','结构 / STRUCTURE','尺度 / SCALE'],notes=['以细线观察一座建筑。','层层展开，观察立面的结构节奏。','沿制图网格，观察垂直与水平关系。'];
-    labels.forEach((name,i)=>{const button=document.createElement('button');button.type='button';button.textContent=name;button.setAttribute('aria-pressed',String(i===0));button.addEventListener('click',()=>{study.dataset.study=String(i);toolbar.querySelectorAll('button').forEach((b,j)=>b.setAttribute('aria-pressed',String(i===j)));note.textContent=notes[i];});toolbar.append(button);});
-    study.dataset.study='0';note.textContent=notes[0];study.append(toolbar,note);
-    const dimensions=document.createElement('div');dimensions.className='study-dimensions';dimensions.setAttribute('aria-hidden','true');dimensions.innerHTML='<span>＋</span><span>VERTICAL STUDY</span><span>＋</span>';study.append(dimensions);
+    const art=study.querySelector('img');art.src=art.src.replace('architecture-study.avif','architecture-finished.avif');
+    const lens=document.createElement('div');lens.className='study-loupe';lens.setAttribute('aria-hidden','true');
+    const detail=art.cloneNode();detail.alt='';detail.removeAttribute('loading');lens.append(detail);
+    const label=document.createElement('span');label.className='loupe-label';label.textContent='2× / DETAIL';lens.append(label);study.append(lens);
+    const caption=study.querySelector('figcaption');caption.textContent='PLATE II / ARCHITECTURAL DETAIL';
+    let active=false,raf=0,x=0,y=0,tx=0,ty=0,timer=0;
+    const locations=[[.42,.30],[.59,.51],[.36,.73]];let stop=0;
+    function paint(){raf=0;if(!active||reduced.matches)return;const r=study.getBoundingClientRect();x+=(tx-x)*.09;y+=(ty-y)*.09;
+      lens.style.translate=`${x-70}px ${y-70}px`;detail.style.width=r.width*2.2+'px';detail.style.height=r.height*2.2+'px';detail.style.left=70-x*2.2+'px';detail.style.top=70-y*2.2+'px';
+      if(Math.hypot(tx-x,ty-y)>.2)raf=requestAnimationFrame(paint);
+    }
+    function aim(a,b){tx=a;ty=b;if(!raf)raf=requestAnimationFrame(paint);}
+    function visit(){const r=study.getBoundingClientRect(),point=locations[stop++%locations.length];aim(r.width*point[0],r.height*point[1]);}
+    new IntersectionObserver(entries=>{active=entries[0].isIntersecting;study.classList.toggle('loupe-visible',active&&!reduced.matches);clearInterval(timer);if(active){visit();timer=setInterval(visit,4600);}else{cancelAnimationFrame(raf);raf=0;}},{threshold:.25}).observe(study);
+    study.addEventListener('pointermove',event=>{if(!fine.matches||reduced.matches)return;clearInterval(timer);const r=study.getBoundingClientRect();aim(Math.max(75,Math.min(r.width-75,event.clientX-r.left)),Math.max(75,Math.min(r.height-75,event.clientY-r.top)));},{passive:true});
+    study.addEventListener('pointerleave',()=>{clearInterval(timer);if(active)timer=setInterval(visit,4600);});
+    reduced.addEventListener('change',()=>{study.classList.toggle('loupe-visible',active&&!reduced.matches);if(reduced.matches){cancelAnimationFrame(raf);raf=0;}else visit();});
   }
   // Pointer ink makes the footer behave like a drawing sheet being marked up.
   const wordmark=document.querySelector('.draft-wordmark');
