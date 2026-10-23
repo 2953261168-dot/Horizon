@@ -1,17 +1,17 @@
 {
-  "generated_at": "2026-10-22T00:47:15.218340+00:00",
-  "fetched": 4464,
-  "unique": 4413,
-  "analysis_candidates": 360,
+  "generated_at": "2026-10-23T16:04:42.726523+00:00",
+  "fetched": 4627,
+  "unique": 4565,
+  "analysis_candidates": 158,
   "by_profile": {
-    "tech-news": 389,
-    "finance-news": 830,
-    "world-news": 238,
-    "culture-news": 903,
-    "life-news": 856,
-    "research-news": 1248
+    "tech-news": 470,
+    "finance-news": 855,
+    "world-news": 263,
+    "culture-news": 1040,
+    "life-news": 859,
+    "research-news": 1140
   },
   "collection_window_hours": 24,
-  "sources_attempted": 59,
+  "sources_attempted": 94,
   "note": "采集数含跨源重复；去重后按主题和出版方均衡抽取候选，再作深度分析。"
 }
