@@ -10,6 +10,7 @@ from zoneinfo import ZoneInfo
 sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
 from src.models import EmailConfig
 from src.services.email import EmailManager
+from mail_delivery import GitDeliveryState, guarded_delivery
 
 
 def edition_date(today, sample):
@@ -26,10 +27,19 @@ def main():
     if not address or '@' not in address:
         raise ValueError('Missing or invalid HORIZON_EMAIL_ADDRESS secret')
     data = json.loads(Path('data/config.json').read_text(encoding='utf-8'))['email']
-    data.update(email_address=address, recipients=[address])
+    # This dedicated command sends deliberately, even after a no-email generation step.
+    data.update(enabled=True, email_address=address, recipients=[address])
     config = EmailConfig(**data)
     today = datetime.now(ZoneInfo('Asia/Shanghai')).strftime('%Y-%m-%d')
     selected, is_sample = edition_date(today, os.environ.get('HORIZON_TEST_EDITION', '').strip())
+    if not is_sample and os.environ.get('HORIZON_WAIT_UNTIL_MORNING')=='1' and datetime.now(ZoneInfo('Asia/Shanghai')).hour<8:
+        print('Briefing prepared; waiting for the morning delivery window')
+        return
+    exists=subprocess.run(['git','cat-file','-e',f'origin/gh-pages:_posts/{selected}-summary-zh.md'],capture_output=True)
+    if exists.returncode:
+        if is_sample:raise RuntimeError('Requested sample edition is unavailable')
+        print('Today\'s briefing is not ready; no email sent')
+        return
     post = subprocess.run(
         ['git', 'show', f'origin/gh-pages:_posts/{selected}-summary-zh.md'],
         check=True, capture_output=True, encoding='utf-8',
@@ -41,10 +51,15 @@ def main():
     subject = f'Horizon 样刊测试 · {selected}（非今日晨报）' if is_sample else f'Horizon 早间简报 · {today}'
     if is_sample:
         post = f'> 样刊视觉测试：原刊日期 {selected}；发送日期 {today}（北京时间）。这不是今日晨报。\n\n' + post
-    EmailManager(config).send_daily_summary(post, subject, config.resolve_recipients([]))
-    print('SMTP delivery completed: ' + ('explicit sample ' + selected if is_sample else today))
+    def send():
+        EmailManager(config).send_daily_summary(post, subject, config.resolve_recipients([]))
+    if is_sample:
+        send()
+        print('SMTP delivery completed: explicit sample ' + selected)
+    else:
+        result=guarded_delivery(selected,GitDeliveryState(Path(__file__).resolve().parents[1]),send)
+        print(('SMTP delivery completed: ' if result=='sent' else 'Already delivered; skipped duplicate: ')+selected)
 
 
 if __name__ == '__main__':
     main()
-
