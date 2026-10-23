@@ -3,6 +3,11 @@ on:
   schedule:
     # 00:00 UTC = 08:00 Beijing. GitHub may delay scheduled jobs.
     - cron: '0 0 * * *'
+    # Off-peak retries: 08:17/08:47 through 11:17/11:47 Beijing.
+    - cron: '17,47 0-3 * * *'
+  workflow_run:
+    workflows: ['Prepare Daily Briefing']
+    types: [completed]
   workflow_dispatch:
     inputs:
       test_edition:
@@ -11,12 +16,13 @@ on:
         default: ''
         type: string
 permissions:
-  contents: read
+  contents: write
 concurrency:
   group: horizon-morning-email
   cancel-in-progress: false
 jobs:
   email:
+    if: github.event_name != 'workflow_run' || (github.event.workflow_run.conclusion == 'success' && github.event.workflow_run.head_branch == 'main' && github.event.workflow_run.head_repository.full_name == github.repository)
     runs-on: ubuntu-latest
     timeout-minutes: 10
     steps:
@@ -29,7 +35,7 @@ jobs:
       - name: Send today's Chinese briefing
         env:
           HORIZON_TEST_EDITION: ${{ github.event_name == 'workflow_dispatch' && inputs.test_edition || '' }}
+          HORIZON_WAIT_UNTIL_MORNING: '1'
           SMTP_PASSWORD: ${{ secrets.SMTP_PASSWORD }}
           HORIZON_EMAIL_ADDRESS: ${{ secrets.HORIZON_EMAIL_ADDRESS }}
         run: uv run python scripts/send-morning.py
-

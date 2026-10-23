@@ -1,8 +1,8 @@
 name: Prepare Daily Briefing
 on:
   schedule:
-    # 06:30 Beijing: allow time for AI analysis before the 08:00 email job.
-    - cron: '30 22 * * *'
+    # 06:17 Beijing, with a 07:17 retry. The second run skips a prepared edition.
+    - cron: '17 22,23 * * *'
   workflow_dispatch:
 permissions:
   contents: write
@@ -23,7 +23,17 @@ jobs:
       - run: uv sync --frozen
       - name: Preserve published briefing history
         run: bash scripts/restore-history.sh
+      - name: Check whether today's edition is already prepared
+        id: edition
+        run: |
+          today=$(TZ=Asia/Shanghai date +%F)
+          if [ -s "docs/_posts/${today}-summary-zh.md" ]; then
+            echo "ready=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "ready=false" >> "$GITHUB_OUTPUT"
+          fi
       - name: Generate briefing without early email
+        if: steps.edition.outputs.ready != 'true'
         env:
           ZHIPU_API_KEY: ${{ secrets.ZHIPU_API_KEY }}
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
@@ -31,11 +41,13 @@ jobs:
           python -c "import json; p='data/config.json'; c=json.load(open(p)); c['email']['enabled']=False; json.dump(c,open(p,'w'),ensure_ascii=False)"
           uv run horizon --hours 24
       - uses: actions/upload-artifact@v4
+        if: steps.edition.outputs.ready != 'true'
         with:
           name: daily-summary
           path: data/summaries/
           if-no-files-found: error
       - uses: peaceiris/actions-gh-pages@v4
+        if: steps.edition.outputs.ready != 'true'
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./docs

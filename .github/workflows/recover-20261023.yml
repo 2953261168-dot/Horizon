@@ -1,0 +1,63 @@
+name: Recover missing October 23 briefing
+on:
+  push:
+    branches: ['horizon/recover-mail-20261023']
+permissions:
+  contents: write
+jobs:
+  briefing:
+    runs-on: ubuntu-latest
+    timeout-minutes: 80
+    concurrency:
+      group: horizon-publish
+      cancel-in-progress: false
+    env:
+      TZ: Asia/Shanghai
+    steps:
+      - uses: actions/checkout@v4
+      - uses: astral-sh/setup-uv@v6
+        with:
+          python-version: '3.12'
+      - run: uv sync --frozen
+      - name: Preserve existing editions
+        run: bash scripts/restore-history.sh
+      - name: Generate the missing real briefing without early email
+        env:
+          ZHIPU_API_KEY: ${{ secrets.ZHIPU_API_KEY }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          python -c "import json; p='data/config.json'; c=json.load(open(p)); c['email']['enabled']=False; json.dump(c,open(p,'w'),ensure_ascii=False)"
+          uv run horizon --hours 24
+          test -s docs/_posts/2026-10-23-summary-zh.md
+      - uses: actions/upload-artifact@v4
+        with:
+          name: recovered-october-23
+          path: data/summaries/
+          if-no-files-found: error
+      - uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./docs
+          publish_branch: gh-pages
+          enable_jekyll: true
+  delivery:
+    needs: briefing
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    concurrency:
+      group: horizon-morning-email
+      cancel-in-progress: false
+    steps:
+      - uses: actions/checkout@v4
+      - uses: astral-sh/setup-uv@v6
+        with:
+          python-version: '3.12'
+      - run: uv sync --frozen
+      - run: git fetch origin gh-pages --depth=1
+      - name: Deliver the missing actual edition with duplicate protection
+        env:
+          SMTP_PASSWORD: ${{ secrets.SMTP_PASSWORD }}
+          HORIZON_EMAIL_ADDRESS: ${{ secrets.HORIZON_EMAIL_ADDRESS }}
+        run: |
+          test "$(TZ=Asia/Shanghai date +%F)" = 2026-10-23
+          uv run python scripts/send-morning.py
