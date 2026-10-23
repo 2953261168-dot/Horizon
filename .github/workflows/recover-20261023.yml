@@ -61,3 +61,5 @@ jobs:
         run: |
           test "$(TZ=Asia/Shanghai date +%F)" = 2026-10-23
           uv run python scripts/send-morning.py
+
+# A normal branch push starts this single-date recovery; production delivery is guarded.
