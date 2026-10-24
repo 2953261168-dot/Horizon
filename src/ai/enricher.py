@@ -332,11 +332,12 @@ class ContentEnricher:
             required_base_ids = {
                 block.id for block in base_blocks if not block.optional
             }
-            allowed_base_ids = {block.id for block in base_blocks}
+            configured_ids = {block.id for block in configured_blocks}
 
             def validate_required_blocks(generated: GeneratedArtifact) -> None:
                 generated_ids = [block.id for block in generated.blocks]
-                unknown = set(generated_ids) - allowed_base_ids
+                # Known but unrequested blocks are discarded below, never trusted.
+                unknown = set(generated_ids) - configured_ids
                 if unknown:
                     raise ValueError(
                         "unknown blocks: " + ", ".join(sorted(unknown))
