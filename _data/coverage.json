@@ -1,15 +1,15 @@
 {
-  "generated_at": "2026-10-23T16:04:42.726523+00:00",
-  "fetched": 4627,
-  "unique": 4565,
-  "analysis_candidates": 158,
+  "generated_at": "2026-10-24T03:50:52.555219+00:00",
+  "fetched": 4640,
+  "unique": 4587,
+  "analysis_candidates": 157,
   "by_profile": {
-    "tech-news": 470,
-    "finance-news": 855,
-    "world-news": 263,
-    "culture-news": 1040,
-    "life-news": 859,
-    "research-news": 1140
+    "tech-news": 472,
+    "finance-news": 840,
+    "world-news": 271,
+    "culture-news": 1054,
+    "life-news": 855,
+    "research-news": 1148
   },
   "collection_window_hours": 24,
   "sources_attempted": 94,
