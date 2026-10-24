@@ -1,0 +1,66 @@
+name: Horizon cloud daily
+on:
+  schedule:
+    - cron: '7,37 22-23,0-5 * * *'
+  workflow_dispatch:
+    inputs:
+      edition:
+        description: 'Beijing YYYY-MM-DD; empty uses today'
+        required: false
+        type: string
+      mode:
+        description: 'Live requires repository production variable'
+        type: choice
+        default: dry-run
+        options: [dry-run, live]
+permissions:
+  contents: read
+  actions: read
+concurrency:
+  group: horizon-cloud-daily
+  cancel-in-progress: false
+jobs:
+  daily:
+    if: github.event_name == 'workflow_dispatch' || vars.HORIZON_PRODUCTION_ENABLED == 'true'
+    runs-on: ubuntu-latest
+    timeout-minutes: 100
+    env:
+      TZ: Asia/Shanghai
+      HORIZON_PRODUCTION_ENABLED: ${{ vars.HORIZON_PRODUCTION_ENABLED }}
+    steps:
+      - name: Checkout original source and publication origin
+        uses: actions/checkout@v4
+        with:
+          repository: 2953261168-dot/Horizon
+          ref: main
+          token: ${{ secrets.HORIZON_SOURCE_TOKEN }}
+      - uses: astral-sh/setup-uv@v6
+        with:
+          python-version: '3.12'
+          enable-cache: false
+      - run: uv sync --frozen
+      - name: Prepare, verify deployment and deliver
+        env:
+          REQUESTED_EDITION: ${{ inputs.edition }}
+          REQUESTED_MODE: ${{ inputs.mode }}
+          HORIZON_SOURCE_TOKEN: ${{ secrets.HORIZON_SOURCE_TOKEN }}
+          GITHUB_TOKEN: ${{ github.token }}
+          ZHIPU_API_KEY: ${{ secrets.ZHIPU_API_KEY }}
+          SMTP_PASSWORD: ${{ secrets.SMTP_PASSWORD }}
+          HORIZON_EMAIL_ADDRESS: ${{ secrets.HORIZON_EMAIL_ADDRESS }}
+          HEALTHCHECKS_PING_URL: ${{ secrets.HEALTHCHECKS_PING_URL }}
+        shell: bash
+        run: |
+          edition="${REQUESTED_EDITION:-$(TZ=Asia/Shanghai date +%F)}"
+          mode="${REQUESTED_MODE:-dry-run}"
+          if [ "$HORIZON_PRODUCTION_ENABLED" = true ] && [ -z "$REQUESTED_MODE" ]; then
+            mode=live
+          fi
+          uv run python scripts/cloud_runner.py --edition "$edition" --mode "$mode"
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: verified-edition
+          path: docs/editions/
+          if-no-files-found: ignore
+          retention-days: 1

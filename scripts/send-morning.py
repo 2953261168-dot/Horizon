@@ -1,6 +1,7 @@
 """Send today's prepared briefing; never silently mail yesterday's news."""
 import json
 import os
+import re
 import subprocess
 import sys
 from datetime import datetime
@@ -36,15 +37,24 @@ def main():
     if not is_sample and os.environ.get('HORIZON_WAIT_UNTIL_MORNING')=='1' and datetime.now(ZoneInfo('Asia/Shanghai')).hour<8:
         print('Briefing prepared; waiting for the morning delivery window')
         return
-    exists=subprocess.run(['git','cat-file','-e',f'origin/gh-pages:_posts/{selected}-summary-zh.md'],capture_output=True)
+    publication=os.environ.get('HORIZON_VERIFIED_COMMIT','')
+    if publication and not re.fullmatch('[0-9a-f]{40}',publication):
+        raise ValueError('Invalid verified publication commit')
+    publication=publication or 'origin/gh-pages'
+    exists=subprocess.run(['git','cat-file','-e',f'{publication}:_posts/{selected}-summary-zh.md'],capture_output=True)
     if exists.returncode:
         if is_sample:raise RuntimeError('Requested sample edition is unavailable')
         print('Today\'s briefing is not ready; no email sent')
         return
     post = subprocess.run(
-        ['git', 'show', f'origin/gh-pages:_posts/{selected}-summary-zh.md'],
+        ['git', 'show', f'{publication}:_posts/{selected}-summary-zh.md'],
         check=True, capture_output=True, encoding='utf-8',
     ).stdout
+    if os.environ.get('HORIZON_VERIFIED_COMMIT'):
+        from src.processing.edition_manifest import validate_manifest
+        manifest=json.loads(subprocess.run(['git','show',f'{publication}:editions/{selected}.json'],check=True,capture_output=True).stdout)
+        raw=subprocess.run(['git','show',f'{publication}:_posts/{selected}-summary-zh.md'],check=True,capture_output=True).stdout
+        validate_manifest(manifest['languages']['zh'],selected,raw)
     if post.startswith('---\n'):
         post = post.split('---\n', 2)[-1].strip()
     if not post:
