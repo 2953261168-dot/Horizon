@@ -59,3 +59,10 @@ def has_localized_artifact(item, language):
     return any(block.primary and block.content.strip() for block in artifact.blocks)
 
 
+def validate_edition_size(available, selected, language):
+    """Reject a processing collapse without imposing a quota on quiet days."""
+    if available < min(10, selected) or available == 0:
+        raise RuntimeError(
+            f"Incomplete {language} edition: {available}/{selected} stories; preserving the previous published edition"
+        )
+
