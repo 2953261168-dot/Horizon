@@ -1,0 +1,8 @@
+{
+  "name": "horizon-scheduler",
+  "main": "worker.mjs",
+  "compatibility_date": "2026-10-24",
+  "workers_dev": false,
+  "triggers": { "crons": ["*/10 22-23,0-5 * * *"] },
+  "vars": { "ENABLED": "false" }
+}

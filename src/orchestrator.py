@@ -1,6 +1,7 @@
 """Main orchestrator coordinating the entire workflow."""
 
 import asyncio
+import os
 from collections import defaultdict
 from dataclasses import dataclass, field
 from datetime import datetime, timedelta, timezone
@@ -319,6 +320,7 @@ class HorizonOrchestrator:
                     available = sum(has_localized_artifact(item, lang) for item in important_items)
                     validate_edition_size(available, len(important_items), lang)
             today = datetime.now(ZoneInfo("Asia/Shanghai")).strftime("%Y-%m-%d")
+            completed_posts = {}
             for lang in self.config.ai.languages:
                 summarizer = DailySummarizer(
                     profile_names=self.profiles.names,
@@ -366,14 +368,17 @@ class HorizonOrchestrator:
                         if len(parts) > 1:
                             summary_content = parts[1].strip()
 
-                    with open(dest_path, "w", encoding="utf-8") as f:
-                        f.write(front_matter + summary_content)
+                    rendered = (front_matter + summary_content).encode('utf-8')
+                    dest_path.write_bytes(rendered)
+                    completed_posts[lang] = rendered
 
                     self.console.print(
                         f"{self.icons['document']} Copied {lang.upper()} summary "
                         f"to GitHub Pages: {dest_path}\n"
                     )
                 except Exception as e:
+                    if os.environ.get('HORIZON_CLOUD_COMPLETION') == '1':
+                        raise
                     self.console.print(
                         f"[yellow]{self.icons['warning']} Failed to copy "
                         f"{lang.upper()} summary to docs/: {e}[/yellow]\n"
@@ -401,6 +406,16 @@ class HorizonOrchestrator:
                     )
                 if self.wechat_notifier:
                     await self.wechat_notifier.send_daily_summary(summary, lang)
+
+            if os.environ.get('HORIZON_CLOUD_COMPLETION') == '1':
+                # The independent runner requires all configured languages before publication.
+                from .processing.edition_manifest import write_completion
+                from .processing.source_evidence import has_localized_artifact
+                write_completion(Path('docs'), today, {
+                    lang: (len(important_items), [str(item.url) for item in important_items
+                           if has_localized_artifact(item, lang)])
+                    for lang in self.config.ai.languages
+                }, completed_posts)
 
             self.console.print(
                 f"[bold green]{self.icons['success']} "

@@ -1,0 +1,15 @@
+# Free cloud setup — production not enabled
+
+This directory contains deployment candidates. Local tests are not proof of live daily delivery.
+
+1. Publish reviewed source to the original Horizon repository. Create a standalone **public** repository `2953261168-dot/horizon-runner` and install `runner.yml` as `.github/workflows/daily.yml`. Keep `HORIZON_PRODUCTION_ENABLED` absent/false until cutover. Standard `ubuntu-latest` only, no larger runners. Artifacts retained one day; dependency cache disabled.
+2. User enters new runner Secrets directly in GitHub: `ZHIPU_API_KEY`, `SMTP_PASSWORD`, `HORIZON_EMAIL_ADDRESS`, `HORIZON_SOURCE_TOKEN`, `HEALTHCHECKS_PING_URL`. Old GitHub Secrets cannot be read back. Never send credentials through chat.
+3. Source token: fine-grained, selected original **Horizon** repository only, Contents read/write. Runner's own GITHUB_TOKEN handles Actions read queries. It cannot publish to original repo; checkout uses the source token and preserves original `origin` for both state branches.
+4. User creates a separate fine-grained token selecting **horizon-runner** only, Actions read/write, and enters it as Worker secret `GITHUB_TOKEN`. Tokens are repository-scoped, not workflow-scoped. Worker program hardcodes `daily.yml` and fixed source state URLs. Do not grant original write access to Worker.
+5. Cloudflare account must show Workers **Free / current plan**. Deploy `worker.mjs` with `wrangler.jsonc` config, initially `ENABLED=false`. Do not upgrade or enable paid bindings. CPU must be measured under real scheduled execution against Free quota before activation.
+6. Healthchecks Free: production check cron `0 8 * * *`, timezone Asia/Shanghai, grace 30 minutes, verified email integration. Initialize only from a verified real delivered edition; never fake a production successful ping. Use a separate disposable check for failure/recovery alert verification. Secret ping URL goes directly to runner Secret.
+7. Run manual `dry-run` first: generation and manifests only, no publication, cloud state mutation or SMTP. It skips an already-sent edition rather than resending it. Fault tests must cover missing triggers, generation failure, incorrect dates, Pages failure, simultaneous dispatch, credential failure and uncertain SMTP.
+8. Before enabling production, check old generation/mail queues and mail-state. Do not cancel in-flight SMTP. Uncertain sending requires human verification; never erase the claim automatically. Obtain user's final cutover confirmation. Disable original generation/mail workflows, retain Pages; enable runner repository variable and Worker `ENABLED=true` with cron from config. Only then may Worker request live execution.
+9. Verify actual Cloudflare cron invocation, runner dispatch, original Pages deployment and served manifest, durable SMTP sent receipt and independent monitor receipt. Verify a real next-day automatic cycle before reporting daily automation as verified.
+
+If GitHub platform is unavailable, this design alerts through Healthchecks; it does not move long Python generation into Worker. Free services carry no precise-time SLA.
