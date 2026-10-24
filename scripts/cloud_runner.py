@@ -101,11 +101,11 @@ def main():
         raise RuntimeError('Production cutover is not enabled')
     state=CloudState(root)
     head,record=state.snapshot(args.edition)
-    if already_sent and not (record or {}).get('published_sha'):
+    if args.mode=='live' and already_sent and not (record or {}).get('published_sha'):
         print('Existing sent receipt predates cloud migration; no SMTP or fabricated monitor success')
         return
     run_id=os.environ['GITHUB_RUN_ID']
-    ready=record and (record.get('phase')=='ready' or already_sent)
+    ready=record and record.get('published_sha') and (record.get('phase')=='ready' or already_sent)
     if ready:
         sha=record['published_sha']
         fetch_publication(sha)

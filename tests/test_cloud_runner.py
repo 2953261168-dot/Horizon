@@ -43,7 +43,9 @@ def test_pinned_fetch_validates_full_sha_and_fetches_it_explicitly(monkeypatch):
     with pytest.raises(ValueError): module.fetch_publication('--bad-ref')
 
 
-def test_actual_dry_run_entry_point_does_not_publish_or_send(monkeypatch,tmp_path):
+@pytest.mark.parametrize('receipt',[None,{'status':'sent'}])
+@pytest.mark.parametrize('cloud_record',[None,{'phase':'failed','attempts':1,'run_id':'previous'}])
+def test_actual_dry_run_entry_point_does_not_publish_or_send(monkeypatch,tmp_path,receipt,cloud_record):
     today=module.datetime.now(module.ZoneInfo('Asia/Shanghai')).strftime('%Y-%m-%d')
     monkeypatch.chdir(tmp_path)
     monkeypatch.setenv('GITHUB_REPOSITORY',module.RUNNER)
@@ -51,10 +53,10 @@ def test_actual_dry_run_entry_point_does_not_publish_or_send(monkeypatch,tmp_pat
     monkeypatch.setattr(sys,'argv',['cloud_runner.py','--edition',today,'--mode','dry-run'])
     class Mail:
         def __init__(self,*args): pass
-        def read(self,*args): return None
+        def read(self,*args): return receipt
     class State:
         def __init__(self,*args): pass
-        def snapshot(self,*args): return None,None
+        def snapshot(self,*args): return None,cloud_record
         def commit(self,*args): pytest.fail('Dry-run must never mutate public state')
     monkeypatch.setattr(module,'GitDeliveryState',Mail)
     monkeypatch.setattr(module,'CloudState',State)
@@ -70,5 +72,6 @@ def test_actual_dry_run_entry_point_does_not_publish_or_send(monkeypatch,tmp_pat
             write_completion(docs,today,{'zh':(1,['https://example.org'])})
     monkeypatch.setattr(module,'command',command)
     module.main()
+    assert ('uv','run','horizon','--hours','24') in calls
     assert all('push' not in call and 'scripts/send-morning.py' not in call for call in calls)
     assert json.loads((tmp_path/'data/config.json').read_text())['email']['enabled'] is False
