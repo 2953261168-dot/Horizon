@@ -92,3 +92,21 @@ def test_invalid_optional_citation_does_not_discard_primary():
     enricher = ContentEnricher(SimpleNamespace(complete=complete), PROFILES, ['en'], tools=FakeTools())
     asyncio.run(enricher._enrich_item(item))
     assert [block.id for block in item.processing.artifacts['en'].blocks] == ['summary']
+
+
+def test_unrequested_known_blocks_are_discarded_without_losing_primary():
+    async def complete(**request):
+        if '# Block contract' not in request['system']:
+            return '{"tool_requests": []}'
+        return json.dumps({'title': 'Release', 'blocks': [
+            {'id': 'summary', 'title': 'Summary', 'content': 'A new architecture was released.'},
+            {'id': 'background', 'title': 'Context', 'content': 'Unrequested context.', 'source_refs': ['tool-99-1']},
+            {'id': 'impact', 'title': 'Impact', 'content': 'Unrequested impact.'}
+        ]})
+
+    item = make_item()
+    item.profile = item.processing.classification.profile = 'finance-news'
+    enricher = ContentEnricher(SimpleNamespace(complete=complete), PROFILES, ['en'])
+    asyncio.run(enricher._enrich_item(item))
+    assert [block.id for block in item.processing.artifacts['en'].blocks] == ['summary']
+    assert item.processing.artifacts['en'].sources == []
