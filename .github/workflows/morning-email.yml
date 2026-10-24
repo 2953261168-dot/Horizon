@@ -3,8 +3,8 @@ on:
   schedule:
     # 00:00 UTC = 08:00 Beijing. GitHub may delay scheduled jobs.
     - cron: '0 0 * * *'
-    # Off-peak retries: 08:17/08:47 through 11:17/11:47 Beijing.
-    - cron: '17,47 0-3 * * *'
+    # Renewed off-peak schedule after fork re-enablement; retry through 13:43 Beijing.
+    - cron: '13,43 0-5 * * *'
   workflow_run:
     workflows: ['Prepare Daily Briefing']
     types: [completed]
