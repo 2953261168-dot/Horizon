@@ -176,7 +176,7 @@ class ContentEnricher:
                     "\n\nYour previous response did not satisfy the output contract. "
                     f"Validation error: {exc}. Return only a corrected JSON object."
                 )
-        raise ValueError(error_message) from validation_error
+        raise ValueError(f"{error_message}: {validation_error}") from validation_error
 
     async def enrich_batch(self, items: list[ContentItem]) -> EnrichmentBatchResult:
         semaphore = asyncio.Semaphore(self._get_concurrency())
@@ -223,7 +223,6 @@ class ContentEnricher:
         tool_results = await self._plan_and_execute_tools(item, profile)
         sources = self._sources_from_tool_results(tool_results)
 
-        artifacts = {}
         for language in self.languages:
             generated = await self._generate_artifact(
                 item, profile, language, tool_results
@@ -239,13 +238,12 @@ class ContentEnricher:
                 for block in generated.blocks
                 for source_id in block.source_refs
             }
-            artifacts[language] = ContentArtifact(
+            item.processing.artifacts[language] = ContentArtifact(
                 language=language,
                 title=generated.title,
                 blocks=generated.blocks,
                 sources=[source for source in sources.values() if source.id in referenced],
             )
-        item.processing.artifacts.update(artifacts)
 
     @staticmethod
     def _expand_request_source_refs(
@@ -324,7 +322,8 @@ class ContentEnricher:
         configured_blocks = profile.definition.enrichment.blocks
         result_block_ids = {result.block_id for result in tool_results}
         base_blocks = [
-            block for block in configured_blocks if block.id not in result_block_ids
+            block for block in configured_blocks
+            if block.id not in result_block_ids and not block.optional
         ]
         title = ""
         generated_by_id: dict[str, ContentBlock] = {}
@@ -403,22 +402,37 @@ class ContentEnricher:
                         f"block ID {generated.block.id} does not match {block.id}"
                     )
 
-            generated = await self._complete_model(
-                response_model,
-                system=block_prompt(
-                    profile,
-                    language,
-                    block,
-                    include_header=not title,
-                ),
-                user=(
-                    item_context(item, profile, include_content=True)
-                    + f"\n\n# Tool results for block `{block.id}`\n\n"
-                    + tool_results_text(block_results)
-                ),
-                error_message=f"Invalid enrichment block: {block.id}",
-                validator=validate_requested_block,
-            )
+            try:
+                generated = await self._complete_model(
+                    response_model,
+                    system=block_prompt(
+                        profile,
+                        language,
+                        block,
+                        include_header=not title,
+                    ),
+                    user=(
+                        item_context(item, profile, include_content=True)
+                        + f"\n\n# Tool results for block `{block.id}`\n\n"
+                        + tool_results_text(block_results)
+                    ),
+                    error_message=f"Invalid enrichment block: {block.id}",
+                    validator=validate_requested_block,
+                )
+                if generated.block is not None:
+                    self._expand_request_source_refs([generated.block], block_results)
+                    allowed_refs = {
+                        f"{result.request_id}-{index}"
+                        for result in block_results
+                        for index, _ in enumerate(result.results, start=1)
+                    }
+                    if set(generated.block.source_refs) - allowed_refs:
+                        raise ValueError(f"Block {block.id} contains unknown source refs")
+            except Exception:
+                if not block.optional:
+                    raise
+                logger.warning("Omitting failed optional block %s for %s (%s)", block.id, item.id, language)
+                continue
 
             if not title:
                 title = generated.title.strip()

@@ -313,6 +313,11 @@ class HorizonOrchestrator:
             await self.enrich_items(important_items)
 
             # 7. Generate and save daily summaries for each configured language
+            if self.config.collection.require_source_text:
+                from .processing.source_evidence import has_localized_artifact, validate_edition_size
+                for lang in self.config.ai.languages:
+                    available = sum(has_localized_artifact(item, lang) for item in important_items)
+                    validate_edition_size(available, len(important_items), lang)
             today = datetime.now(ZoneInfo("Asia/Shanghai")).strftime("%Y-%m-%d")
             for lang in self.config.ai.languages:
                 summarizer = DailySummarizer(
@@ -1137,4 +1142,3 @@ class HorizonOrchestrator:
         )
 
         return await summarizer.generate_summary(items, date, total_fetched, language=language)
-
