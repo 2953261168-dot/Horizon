@@ -1,1 +1,1 @@
-{"attempts": 1, "count": 19, "edition": "2026-10-29", "phase": "publishing", "run_id": "40802101325", "updated_at": "2026-10-29T02:29:26.778997+00:00"}
+{"attempts": 1, "count": 19, "edition": "2026-10-29", "phase": "ready", "published_sha": "283b3c96b25064ea8465d44d1a702c9c0af565cc", "run_id": "40802101325", "sha256": "b5a3de1f2ebd8fc6cedf43286cf2fc2fd9aaae827916cc15fa20b6afeb944f2a", "updated_at": "2026-10-29T02:30:22.176873+00:00"}
