@@ -1,1 +1,1 @@
-{"attempts": 1, "count": 19, "edition": "2026-11-11", "phase": "ready", "published_sha": "503669f2ed32b35f90e6392ea4d735a9ca841a6d", "run_id": "42941951845", "sha256": "01d4cf25e1e0ff8a937177bdd2fdb8dc51facd81aa41fb1b99d1186e2d580ad7", "updated_at": "2026-11-11T02:45:20.005613+00:00"}
+{"attempts": 1, "count": 19, "edition": "2026-11-11", "phase": "sending", "published_sha": "503669f2ed32b35f90e6392ea4d735a9ca841a6d", "run_id": "42941951845", "sha256": "01d4cf25e1e0ff8a937177bdd2fdb8dc51facd81aa41fb1b99d1186e2d580ad7", "updated_at": "2026-11-11T02:45:21.062784+00:00"}
