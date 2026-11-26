@@ -5,148 +5,147 @@ date: 2026-11-26
 lang: en
 ---
 
-> From 4642 items, 20 important content pieces were selected
+> From 4671 items, 19 important content pieces were selected
 
 ---
 
 **Life &amp; Society**
-1. [Students Learn Life Lessons Through Pickleball with Pensioners](#item-life-news-1) ⭐️ 8.0/10
-2. [AI Romance Apps Reshape Youth Intimacy in Africa](#item-life-news-2) ⭐️ 7.0/10
-3. [Reality TV Star Advocates for Extended Sex Education](#item-life-news-3) ⭐️ 7.0/10
+1. [Cheaper HIV Prevention Jab Offers Hope in Africa](#item-life-news-1) ⭐️ 8.0/10
 
 **Culture &amp; Conversation**
-1. [Patrick Radden Keefe’s London Falling Named Waterstones Book of the Year](#item-culture-news-1) ⭐️ 8.0/10
-2. [Ava DuVernay&\#x27;s Documentary on the 14th Amendment: A Defense of Democracy](#item-culture-news-2) ⭐️ 8.0/10
-3. [U2 Halftime Show on Netflix and NFL&\#x27;s Thanksgiving Eve Game](#item-culture-news-3) ⭐️ 8.0/10
-4. [Grand Theft Auto VI: The Album review – even GTA sceptics will warm to this zeitgeisty, star-packed soundtrack](#item-culture-news-4) ⭐️ 8.0/10
+1. [Lina Ghotmeh: An Architect&\#x27;s Vision for Healing Structures](#item-culture-news-1) ⭐️ 8.0/10
+2. [Bob Dylan&\#x27;s Evolving Music and Stage Presence at 85](#item-culture-news-2) ⭐️ 8.0/10
+3. [Patrick Radden Keefe’s London Falling Named Waterstones Book of the Year](#item-culture-news-3) ⭐️ 8.0/10
+4. [Novelist&\#x27;s Unique Return to UK Rap Scene](#item-culture-news-4) ⭐️ 8.0/10
 5. [Astronomers Discover a Mysterious Triple-Star System](#item-culture-news-5) ⭐️ 8.0/10
 
 **Financial News**
 1. [The Stability of Hedge Fund Repo Haircuts in the U.S. Repo Market](#item-finance-news-1) ⭐️ 8.0/10
+2. [Big Tech&\#x27;s Influence on Open Finance: Implications for Accounting and Finance Students](#item-finance-news-2) ⭐️ 8.0/10
+3. [Updated Guidelines on Counterparty Credit Risk Management for Accounting Students](#item-finance-news-3) ⭐️ 8.0/10
+4. [Climate Change and Inflation Expectations: A Study for Accounting and Finance Students](#item-finance-news-4) ⭐️ 7.0/10
 
 **Technology News**
-1. [European Spacecraft Captures Chaotic Scene After Asteroid Deflection Experiment](#item-tech-news-1) ⭐️ 8.0/10
-2. [Google Introduces Framework for Evaluating AI Assistants&\#x27; Social Reasoning](#item-tech-news-2) ⭐️ 8.0/10
-3. [Nfs2root: A 12-year-old pre-auth remote root in the Linux kernel&\#x27;s NFS server](#item-tech-news-3) ⭐️ 8.0/10
-4. [AI Makes Breakthrough in Algorithms and Math](#item-tech-news-4) ⭐️ 8.0/10
-5. [The Polynomial Hirsch Conjecture Disproven: A Breakthrough in Computational Complexity](#item-tech-news-5) ⭐️ 8.0/10
-6. [Google&\#x27;s Math Research Papers Spark Community Interest](#item-tech-news-6) ⭐️ 8.0/10
-7. [FCC授权SpaceX部署100万颗卫星](#item-tech-news-7) ⭐️ 8.0/10
-8. [FCC Approves SpaceX&\#x27;s Plan for Space AI Data Centers](#item-tech-news-8) ⭐️ 7.0/10
+1. [Google&\#x27;s New Framework Evaluates AI Assistants&\#x27; Social Reasoning](#item-tech-news-1) ⭐️ 8.0/10
+2. [Revolutionary Bionic Hands and the AI Natural Gas Boom](#item-tech-news-2) ⭐️ 8.0/10
+3. [Intel One Mono Font: A Developer-Friendly, Accessible Typographic Tool](#item-tech-news-3) ⭐️ 8.0/10
+4. [AI&\#x27;s Breakthrough in Algorithms and Cryptography](#item-tech-news-4) ⭐️ 8.0/10
+5. [Next Generation Bionic Hands: Feeling the Difference](#item-tech-news-5) ⭐️ 8.0/10
+6. [European Spacecraft Captures Chaotic Scene After Asteroid Deflection Experiment](#item-tech-news-6) ⭐️ 8.0/10
+7. [Explore the Evolution of UI Design with a Historic Collection of Style Guides](#item-tech-news-7) ⭐️ 7.0/10
 
 **Research &amp; Ideas**
-1. [Flax Seeds of Revolution](#item-research-news-1) ⭐️ 8.0/10
-2. [NASA&\#x27;s Asteroid Deflection Success: A Leap in Planetary Defense](#item-research-news-2) ⭐️ 8.0/10
+1. [Flax Seeds of Revolution: The Unseen Threads of the American Revolution](#item-research-news-1) ⭐️ 8.0/10
 
 **World News**
-1. [Austin的小型免费面包店：邻里间的社区联系](#item-world-news-1) ⭐️ 8.0/10
+1. [Native American Cuisine at Albuquerque&\#x27;s Indian Pueblo Kitchen](#item-world-news-1) ⭐️ 8.0/10
 
 ---
 
 ## Life &amp; Society
 
 <a id="item-life-news-1"></a>
-### [Students Learn Life Lessons Through Pickleball with Pensioners](https://www.bbc.co.uk/news/articles/cxyvdjpjd1lvo?at_medium=RSS&amp;at_campaign=rss) ⭐️ 8.0/10
+### [Cheaper HIV Prevention Jab Offers Hope in Africa](https://www.bbc.co.uk/news/articles/cmly7jve72r2o?at_medium=RSS&amp;at_campaign=rss) ⭐️ 8.0/10
 
-Students at Breda Academy are gaining valuable life lessons and contributing to their community by engaging with local pensioners through activities like pickleball.
+A cheaper, nearly 100% effective HIV prevention injection is set to reach Africa, offering hope for expanded access to life-saving medication for millions.
 
-rss · BBC 教育 · Nov 25, 06:21
+rss · BBC 健康 · Nov 26, 11:00
 
-**「Intergenerational Interaction in Education」** Intergenerational learning, as seen in the Breda Academy&\#x27;s initiative with local pensioners, is a growing educational approach. This method involves students and elderly individuals engaging in activities like pickleball, cooking, and socializing. Research indicates that such interactions can have numerous benefits. For children, it can enhance social skills, increase school attendance, and deepen knowledge of culture and history. For older adults, it can improve physical health, reduce depression, and provide a sense of purpose. This approach not only enriches the educational experience but also fosters a sense of community and mutual respect between different age groups.
+**「Understanding Lenacapavir and Its Impact」** Lenacapavir is a groundbreaking HIV prevention injection that has shown nearly 100% effectiveness in clinical trials. Developed by the US pharmaceutical giant Gilead Sciences, this drug targets the protective protein shell of HIV, preventing the virus from multiplying and establishing an infection in the body. The original version of Lenacapavir was priced at about $28,000 annually in the US, making it inaccessible to many in developing countries. However, a cheaper generic version of the drug is now reaching Africa, offering hope for expanded access to life-saving medication. This development is significant as Sub-Saharan Africa accounts for nearly two-thirds of people living with HIV globally, with adolescent girls and young women disproportionately affected.
 
-**「Impact on Community and Education」** Engaging in activities like pickleball with pensioners can have profound effects on both students and the elderly. For students, it provides a unique educational experience outside the classroom, fostering skills like respect, empathy, and practical life skills. It also helps them understand the community&\#x27;s needs and their role in it. For the elderly, such interactions can alleviate loneliness and provide a sense of purpose. Additionally, the physical activity involved in pickleball can contribute to the health and well-being of the seniors, enhancing their cognitive function and physical abilities. This intergenerational interaction can create a stronger, more connected community.
+**「Impact on Ordinary Life」** The introduction of a cheaper, nearly 100% effective HIV prevention injection in Africa could lead to a significant reduction in HIV infections among young people. This is particularly important as adolescent girls and young women are disproportionately affected by the disease. The availability of this injection may also reduce the social stigma associated with daily HIV prevention pills, making it easier for young people to adopt preventive measures.
 
 <details><summary>References</summary>
 <ul>
-<li><a href="https://crpe.org/intergenerational-learning/">Intergenerational Learning: Proven Benefits for Both Elders ...</a></li>
-<li><a href="https://www.irt.org.au/the-good-life/the-benefits-of-intergenerational-relationships/">8 Benefits of Intergenerational Relationships - IRT What is the effect of intergenerational activities on the ... INTERGENERATIONAL CONTACT AND THE BENEFITS FOR OLDER ADULTS Aging Better: Intergenerational Learning and the Aging Brain Intergenerational Activities for Seniors and Youth: Benefits ... 11 Benefits of Intergenerational Programs: Reducing Senior ...</a></li>
-<li><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC10546258/">What is the effect of intergenerational activities on the ...</a></li>
-<li><a href="https://www.seniorlifestyle.com/resources/blog/pickleball-for-seniors-what-are-the-health-benefits/">Pickleball for Seniors: What Are the Health Benefits?</a></li>
-<li><a href="https://www.silversneakers.com/blog/pickleball-health-benefits-2/">Pickleball: 5 Hidden Health Benefits for Older Adults ...</a></li>
-<li><a href="https://pickleballus.org/players/seniors/benefits/">Is Pickleball Good for Seniors? 8 Proven Benefits for Older ...</a></li>
+<li>Twice-Yearly Lenacapavir for HIV Prevention in Men and Gender-Diverse Persons</li>
+<li>Gilead Presents Full PURPOSE 2 Data Results for Twice Yearly Lenacapavir for HIV Prevention at HIV Glasgow</li>
+<li>Clinical Recommendation for the Use of Injectable Lenacapavir as HIV Preexposure Prophylaxis — United States, 2025 | MMWR - CDC</li>
+<li><a href="https://www.theglobalfund.org/en/hivaids/">HIV and AIDS - The Global Fund to Fight AIDS, Tuberculosis ...</a></li>
+<li><a href="https://www.gatesfoundation.org/stories/global-fund-impact-stories">The Global Fund Works: Fighting HIV, TB, and Malaria Together</a></li>
+<li><a href="https://www.theglobalfund.org/en/Results/">Results Report 2026 - The Global Fund to Fight AIDS ...</a></li>
+<li>Countries Commit to Action to End AIDS by 2030 - the United Nations</li>
+<li>Ending AIDS by 2030: the importance of an interlinked approach and meaningful youth leadership - PMC</li>
+<li>The Fast Track to End AIDS | United Nations</li>
 
 </ul>
 </details>
 
-**Tags**: `#Intergenerational Interaction`, `#Community Engagement`, `#Educational Activity`, `#Pickleball`, `#Life Lessons`
-
----
-
-<a id="item-life-news-2"></a>
-### [AI Romance Apps Reshape Youth Intimacy in Africa](https://restofworld.org/2026/ai-companion-apps-africa-character-ai/?utm_source=rss&amp;utm_medium=rss&amp;utm_campaign=feeds) ⭐️ 7.0/10
-
-AI romance apps are becoming increasingly popular among African youth, raising concerns about child safety and the distinction between virtual and real relationships.
-
-rss · Rest of World · Nov 25, 11:00
-
-**「Understanding AI Romance Apps in Africa」** AI romance apps, like Character.AI, are becoming increasingly popular among African youth. These apps use AI chatbots to simulate romantic relationships, often leading to concerns about child safety and the distinction between virtual and real relationships. In Africa, where most countries lack specific regulations for AI companion apps, young adults and minors are forming various types of relationships with these AI systems, ranging from friendship to therapy to dating. This trend raises questions about the psychological impact of these relationships and the potential risks for minors, especially in区分虚拟和现实关系方面。
-
-**「Impact on Ordinary Life」** The rise of AI romance apps in Africa raises questions about the digital divide and the potential impact on mental health. For young people, the ease of forming relationships with AI chatbots could lead to a reliance on virtual connections over real-life interactions, potentially affecting their social skills and emotional development. This trend also highlights the need for better regulations to protect minors from potential harm and to ensure that technology is used responsibly.
-
-<details><summary>References</summary>
-<ul>
-<li><a href="https://www.youtube.com/watch?v=XSkfwbHl3E8">Artificial Intimacy : When Machines Pursue Our Attachment... - YouTube</a></li>
-<li><a href="https://chunloutv.com/en/blog/best-romance-ai-dramas-2026/">Best Romance AI Short Dramas 2026 - Sweet Love Stories Made by AI</a></li>
-<li><a href="https://www.malwarebytes.com/blog/ai/2026/10/artificial-intimacy-love-and-lies-in-the-age-of-ai">Artificial Intimacy : Love and lies in the age of AI | Malwarebytes</a></li>
-<li><a href="https://www.youtube.com/watch?v=zXiVw1jZybA">AI &amp; Africa | Dialogues on Technology and Society - YouTube</a></li>
-<li><a href="https://ourdream.ai/free-ai-girlfriend">11 Best Free AI Girlfriend Apps &amp; Sites in 2026 (We Tested Them)</a></li>
-<li><a href="https://honeychat.bot/en/blog/free-ai-girlfriend-no-sign-up/">Free AI Girlfriend No Sign Up — 10 Apps Tested (2026)</a></li>
-<li><a href="https://en.wikipedia.org/wiki/Artificial_intelligence">Artificial intelligence - Wikipedia</a></li>
-<li><a href="https://honeychat.bot/en/blog/free-ai-girlfriend-no-sign-up/">Free AI Girlfriend No Sign Up — 10 Apps Tested (2026)</a></li>
-<li><a href="https://www.bbc.com/news/articles/c2l799gxjjpo">What is AI , how do apps like ChatGPT work and why are there...</a></li>
-
-</ul>
-</details>
-
-**Tags**: `#AI romance apps`, `#youth intimacy`, `#African youth`, `#child safety`, `#technology ethics`, `#regulation`
-
----
-
-<a id="item-life-news-3"></a>
-### [Reality TV Star Advocates for Extended Sex Education](https://www.bbc.co.uk/news/articles/cqgkl38j1r76o?at_medium=RSS&amp;at_campaign=rss) ⭐️ 7.0/10
-
-Reality TV star Georgia Harrison is advocating for extending sex education in the UK to the age of 18, highlighting the need for education to combat online dangers and prevent intimate image abuse.
-
-rss · BBC 教育 · Nov 25, 15:03
-
-**「Background on Sex Education in the UK」** Sex education in the UK has evolved significantly over the years. Historically, formal sex education was rare and often met with controversy. It wasn&\#x27;t until the late 20th century that schools began to introduce more comprehensive sex education programs. The 1970s saw the first major controversy around school sex education, with debates focusing on the content and approach. The 1980s brought about changes with the introduction of the Section 28 legislation, which restricted the teaching of homosexuality in schools. However, this legislation was repealed in 2003. More recently, there has been a push for more inclusive and comprehensive sex education, with campaigns advocating for the extension of sex education to age 18. This movement is gaining traction, as seen with the campaign led by reality TV star Georgia Harrison, who has called for the extension of compulsory relationships and sex education up to the age of 18 in England.
-
-**「Impact on Ordinary Life」** Extending sex education to 18 years old could significantly impact young adults by providing them with more comprehensive knowledge and tools to navigate relationships and protect themselves from online dangers. This could lead to a decrease in intimate image abuse and a better understanding of healthy relationships, potentially reducing the negative consequences of early sexual experiences.
-
-<details><summary>References</summary>
-<ul>
-<li><a href="https://www.historytoday.com/archive/sex-education-britain-1870-1995">Sex Education in Britain 1870-1995 - History Today</a></li>
-<li><a href="https://www.freetest.me/blog/history-of-sex-ed">Sex Education in the UK • Freetest.me</a></li>
-<li><a href="https://www.brook.org.uk/blog/the-fight-for-inclusive-sex-education-in-the-uk/">The Fight for Inclusive Sex Education in the UK - Brook SRE &amp; RSE : A History of Relationship and Sex Education ... The Timeline: Sex education - The Independent A Brief History of British Sex Education - VICE A brief history of sex education | OpenLearn - Open University</a></li>
-<li><a href="https://www.gov.uk/government/publications/relationships-and-sex-education/relationships-and-sex-education">Relationships and sex education - GOV.UK</a></li>
-<li><a href="https://researchbriefings.files.parliament.uk/documents/POST-PN-0576/POST-PN-0576.pdf">Number 576 June 2018 Relationships and Sex Education</a></li>
-<li><a href="https://www.bbc.co.uk/news/articles/cqgkl38j1r76o">Reality TV star backs extending sex education to 18 - BBC</a></li>
-
-</ul>
-</details>
-
-**Tags**: `#Sex Education`, `#Youth Issues`, `#Public Advocacy`, `#UK Education`, `#Reality TV`
+**Tags**: `#HIV prevention`, `#Africa`, `#public health`, `#pharmaceuticals`, `#Global Fund`, `#Lenacapavir`, `#HIV/AIDS`
 
 ---
 
 ## Culture &amp; Conversation
 
 <a id="item-culture-news-1"></a>
-### [Patrick Radden Keefe’s London Falling Named Waterstones Book of the Year](https://www.theguardian.com/books/2026/nov/26/patrick-radden-keefes-london-falling-named-waterstones-book-of-the-year) ⭐️ 8.0/10
+### [Lina Ghotmeh: An Architect&\#x27;s Vision for Healing Structures](https://aeon.co/videos/a-lebanese-architects-mission-to-build-structures-that-heal) ⭐️ 8.0/10
 
-Patrick Radden Keefe’s book &\#x27;London Falling&\#x27; has been named Waterstones book of the year. The investigation into the mysterious death of a London teenager captures the interest of young readers, offering a gripping narrative about a dangerous underworld.
+Lebanese architect Lina Ghotmeh is revolutionizing the field with her innovative approach to architecture, focusing on preserving history while building for the future. Her work, showcased in a documentary, includes the Estonian National Museum and the British Museum, blending cultural heritage with modern design.
 
-rss · The Guardian 图书 · Nov 26, 00:01
+rss · Aeon 观念与文化 · Nov 26, 11:01
 
-**「About &\#x27;London Falling&\#x27; by Patrick Radden Keefe」** Patrick Radden Keefe’s book &\#x27;London Falling&\#x27; is a compelling narrative nonfiction that delves into the mysterious death of a London teenager, Zac Brettler. The story follows the parents of Zac as they uncover the dark and dangerous underworld that their son had been drawn into. This book has gained significant attention and has been recognized as Waterstones book of the year, highlighting its impact and relevance. &\#x27;London Falling&\#x27; is a gripping exploration of corruption, money, and the complexities of urban life, offering readers an engaging and thought-provoking read.
+**「About Lina Ghotmeh and Her Architectural Approach」** Lina Ghotmeh, a Lebanese architect, is recognized for her innovative architectural style that intertwines the preservation of history with a vision for the future. Her work is characterized by a deep respect for the past, as seen in her design for the Estonian National Museum, which transformed a former Soviet airfield, and her apartment building in Beirut, known as Stone Garden. This building&\#x27;s facade, adorned with greenery, symbolically represents the scars of war. Ghotmeh&\#x27;s approach is further explored in a documentary by Stephen Pook, focusing on her redevelopment of the Western Range at the British Museum. This project, which encompasses a significant portion of the museum&\#x27;s gallery space, exemplifies her commitment to both historical sensitivity and future-forward design.
 
-**「Impact on Ordinary Life」** Patrick Radden Keefe’s book &\#x27;London Falling&\#x27; offers a gripping narrative that delves into the dark underbelly of a city, providing young readers with a compelling story that intertwines mystery and social issues. This exploration of a teenager’s mysterious death and the dangerous world he was drawn into can spark conversations about the realities of urban life and the complexities of wealth and power. It encourages readers to question the surface appearances of their surroundings and consider the unseen struggles that some may face.
+**「Impact on Ordinary Life」** Lina Ghotmeh&\#x27;s architectural approach, which intertwines historical preservation with modern design, offers a profound lesson on how buildings can serve as a bridge between the past and the future. This concept is particularly relevant for young readers who are increasingly aware of the importance of sustainability and cultural heritage. Ghotmeh&\#x27;s work challenges us to consider how our built environment can reflect and heal the scars of history, while also being a testament to our aspirations for the future.
 
 <details><summary>References</summary>
 <ul>
+<li><a href="https://www.imdb.com/name/nm3137564/">Stephen Pook - IMDb</a></li>
+<li><a href="https://en.kinorium.com/name/4392978/">Stephen Pook - camera, editor - biography, photo, best movies ...</a></li>
+<li><a href="https://www.youtube.com/watch?v=_X4-yacPePo">Masterclass: Filming like a Pro, with Steve Pook. - YouTube</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Lina_Ghotmeh">Lina Ghotmeh - Wikipedia</a></li>
+<li><a href="https://www.linaghotmeh.com/en/">Lina Ghotmeh — Architecture | Paris</a></li>
+<li><a href="https://www.linaghotmeh.com/en/estonian-national-museum.html">Estonian National Museum - Lina Ghotmeh — Architecture</a></li>
+
+</ul>
+</details>
+
+**Tags**: `#Architecture`, `#Cultural Heritage`, `#Innovation`, `#Lebanese Architecture`, `#Stephen Pook`, `#British Museum`
+
+---
+
+<a id="item-culture-news-2"></a>
+### [Bob Dylan&\#x27;s Evolving Music and Stage Presence at 85](https://www.theguardian.com/music/2026/nov/26/bob-dylan-review-bournemouth-international-centre-uk-tour) ⭐️ 8.0/10
+
+At 85, Bob Dylan&\#x27;s performance showcases a finer voice and a unique stage presence, captivating young audiences interested in cultural analysis.
+
+rss · The Guardian 音乐 · Nov 26, 12:31
+
+**「Bob Dylan&\#x27;s Never Ending Tour: An Overview」** Bob Dylan&\#x27;s Never Ending Tour, which began in the late 80s, is a unique aspect of his career. This ongoing tour is characterized by Dylan&\#x27;s tendency to reinterpret his extensive body of work in a distinctive &\#x27;late style&\#x27;. This style often involves subtle changes to his songs, such as the jazz version of &\#x27;Tangled Up in Blue&\#x27; mentioned in the review. The tour&\#x27;s name, &\#x27;Never Ending&\#x27;, reflects Dylan&\#x27;s approach to his music and performance, suggesting a continuous evolution and exploration of his art. The tour has been a platform for Dylan to experiment with different arrangements and interpretations of his songs, showcasing his versatility as a musician and artist. For instance, the 1990 tour included performances in various cities across Canada and the United States, highlighting the global appeal of his music. The tour&\#x27;s enduring nature and Dylan&\#x27;s commitment to it over the years demonstrate his dedication to his craft and his audience.
+
+**「Impact on Ordinary Life」** Bob Dylan&\#x27;s evolution in music and stage presence, showcased at 85, can inspire older artists to continue innovating and connect with younger audiences. His unique approach to reinterpreting his songs can prompt listeners to explore the depth and versatility of classic music, bridging generational gaps in the appreciation of art.
+
+<details><summary>References</summary>
+<ul>
+<li><a href="https://en.wikipedia.org/wiki/Never_Ending_Tour">Never Ending Tour - Wikipedia</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Never_Ending_Tour_1990">Never Ending Tour 1990 - Wikipedia</a></li>
+<li><a href="https://bob-dylan.org.uk/never-ending-tour">The Never Ending Tour | Untold Dylan</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Bob_Dylan">Bob Dylan - Wikipedia</a></li>
+<li><a href="https://olemiss.edu/news/2025/04/bob-dylan-and-the-south-class/index.html">Ole Miss Class Explores Bob Dylan &#x27;s Deep Cultural Influence</a></li>
+<li><a href="https://www.tiktok.com/discover/why-should-people-care-about-bob-dylan">Why Should People Care about Bob Dylan | TikTok</a></li>
+
+</ul>
+</details>
+
+**Tags**: `#Bob Dylan`, `#Music Review`, `#Cultural Analysis`, `#Performing Arts`, `#Music Evolution`
+
+---
+
+<a id="item-culture-news-3"></a>
+### [Patrick Radden Keefe’s London Falling Named Waterstones Book of the Year](https://www.theguardian.com/books/2026/nov/26/patrick-radden-keefes-london-falling-named-waterstones-book-of-the-year) ⭐️ 8.0/10
+
+Patrick Radden Keefe’s book &\#x27;London Falling&\#x27; has been named Waterstones book of the year, marking a significant achievement in the literary scene. The book delves into the mysterious death of a London teenager and exposes a dangerous underworld.
+
+rss · The Guardian 图书 · Nov 26, 00:01
+
+**「About &\#x27;London Falling&\#x27; by Patrick Radden Keefe」** Patrick Radden Keefe’s &\#x27;London Falling&\#x27; is a narrative nonfiction work that has gained significant attention in the literary world. The book delves into the mysterious death of Zac Brettler, a 19-year-old from a middle-class London family. Brettler’s tragic fall from a fifth-floor balcony into the River Thames is the focal point of this investigation. Keefe’s work not only examines the circumstances surrounding Brettler’s death but also exposes the dark and dangerous underworld that the teenager had been drawn into. This exposure of a hidden facet of London society has resonated with readers, contributing to the book’s success and recognition as Waterstones book of the year.
+
+**「Impact on Ordinary Life」** Patrick Radden Keefe’s book &\#x27;London Falling&\#x27; has become a significant literary achievement, shedding light on the dark underbelly of a city through the story of a teenager’s mysterious death. This not only highlights the power of investigative journalism but also raises questions about the dangers lurking in seemingly safe urban environments. For ordinary readers, the book serves as a reminder of the importance of staying vigilant and informed about the world around us.
+
+<details><summary>References</summary>
+<ul>
+<li><a href="https://www.supersummary.com/london-falling-patrick-radden-keefe/summary/">London Falling Summary | SuperSummary</a></li>
 <li><a href="https://www.supersummary.com/london-falling-patrick-radden-keefe/background/">London Falling Background | SuperSummary</a></li>
 <li><a href="https://www.theguardian.com/books/2026/apr/07/london-falling-by-patrick-radden-keefe-review-a-compulsive-tale-of-money-lies-and-avoidable-tragedy">London Falling by Patrick Radden Keefe review – a compulsive ...</a></li>
-<li><a href="https://www.supersummary.com/london-falling-patrick-radden-keefe/summary/">London Falling Summary | SuperSummary</a></li>
 <li><a href="https://www.nytimes.com/2026/04/02/style/patrick-radden-keefe-london-falling-new-yorker.html">What Drives Patrick Radden Keefe ? - The New York Times</a></li>
 <li><a href="https://www.theguardian.com/books/2026/apr/07/london-falling-by-patrick-radden-keefe-review-a-compulsive-tale-of-money-lies-and-avoidable-tragedy">London Falling by Patrick Radden Keefe review... | The Guardian</a></li>
 <li><a href="https://www.bostonglobe.com/2026/04/04/arts/patrick-radden-keefe-london-falling/">Book review: Patrick Radden Keefe &#x27; s &#x27; London Falling &#x27; spins a tale</a></li>
@@ -154,89 +153,33 @@ rss · The Guardian 图书 · Nov 26, 00:01
 </ul>
 </details>
 
-**Tags**: `#Literature`, `#Investigative Journalism`, `#Mystery`, `#London`, `#Teenager Death`
-
----
-
-<a id="item-culture-news-2"></a>
-### [Ava DuVernay&\#x27;s Documentary on the 14th Amendment: A Defense of Democracy](https://www.theguardian.com/film/2026/nov/25/14th-review-ava-duvernay-takes-on-a-bully-president-and-his-vipers-nest-court-of-maga-sycophants) ⭐️ 8.0/10
-
-Ava DuVernay&\#x27;s documentary on the 14th Amendment is hailed for its defense of democracy and its relevance to current political issues, marking a continuation of her work on the 13th Amendment.
-
-rss · The Guardian 电影 · Nov 25, 13:00
-
-**「Understanding the 14th Amendment」** The 14th Amendment to the U.S. Constitution, ratified in 1868, is a crucial part of American history. It establishes birthright citizenship, guarantees equal protection under the law, and ensures due process for all individuals. This amendment was a significant step in the Reconstruction era, aiming to provide civil and legal rights to Black Americans and to reshape American life. It also bars insurrectionists from holding public office, a provision that has been a subject of debate in recent years.
-
-**「Impact on Ordinary Life」** Ava DuVernay&\#x27;s documentary on the 14th Amendment raises awareness about the importance of upholding democratic values and the rights enshrined in the constitution. It prompts a revealing question: How can individuals actively participate in defending and promoting these rights in their daily lives, especially in the face of contemporary political challenges?
-
-<details><summary>References</summary>
-<ul>
-<li><a href="https://civicsforlife.org/the-fourteenth-amendment-history-meaning-impact/">The Fourteenth Amendment: History, Meaning &amp; Civic Impact</a></li>
-<li><a href="https://www.history.com/articles/fourteenth-amendment">14th Amendment: Simplified Summary, Text &amp; Impact | HISTORY</a></li>
-<li><a href="https://www.britannica.com/topic/Fourteenth-Amendment">Fourteenth Amendment | Definition, Birthright Citizenship ...</a></li>
-<li><a href="https://www.nytimes.com/2024/01/11/opinion/trump-ballot-14th-amendment.html">Opinion | Donald Trump and the 14 th Amendment (Published 2024)</a></li>
-<li><a href="https://reason.com/2020/10/26/amy-coney-barrett-on-lochner-and-the-14th-amendment/">Amy Coney Barrett on Lochner and the 14 th Amendment</a></li>
-<li><a href="https://www.latimes.com/opinion/story/2021-01-23/14th-amendment-section-three-expulsion-house-of-representatives-majority-vote">Litman: If Capitol mob had inside help, go to 14 th Amendment - Los...</a></li>
-
-</ul>
-</details>
-
-**Tags**: `#Documentary`, `#Ava DuVernay`, `#14th Amendment`, `#Democracy`, `#Social Issues`, `#Political Movements`
-
----
-
-<a id="item-culture-news-3"></a>
-### [U2 Halftime Show on Netflix and NFL&\#x27;s Thanksgiving Eve Game](https://deadline.com/2026/11/u2-halftime-show-performance-review-thanksgiving-eve-1237233462/) ⭐️ 8.0/10
-
-U2 delivered a memorable halftime show on Netflix and the NFL&\#x27;s first Thanksgiving Eve game, showcasing their enduring appeal and cultural impact.
-
-rss · Deadline 影视 · Nov 26, 03:06
-
-**「Understanding the U2 Halftime Show and Netflix&\#x27;s Role」** The U2 halftime show on Netflix and the NFL&\#x27;s first Thanksgiving Eve game marks a significant event in the entertainment industry. U2, an iconic Irish rock band, has been a staple in the music scene for over four decades. Their recent performance, which included a duet with country star Dolly Parton, showcased their enduring appeal and cultural impact. This event is particularly interesting as it was streamed on Netflix, highlighting the streaming service&\#x27;s growing role in live sports and entertainment events. Netflix&\#x27;s strategy to acquire and distribute premium content, as evidenced by their involvement in the NFL&\#x27;s Thanksgiving Eve game, underscores their ambition to compete with traditional broadcasting networks. The collaboration between U2 and Netflix not only serves as a promotional tool for the band&\#x27;s upcoming tour but also reflects the evolving landscape of live entertainment, where digital platforms play a crucial role in reaching global audiences.
-
-<details><summary>References</summary>
-<ul>
-<li><a href="https://www.1001tvs.com/nfl-thanksgiving-eve-game-2026-how-to-watch/">1001 TVs-- NFL Thanksgiving Eve Game 2026: How to Watch...</a></li>
-<li><a href="https://www.youtube.com/watch?v=fKEVMd6xCIw">NFL 2026 LIVE | Green Bay Packers vs Los Angeles Rams - YouTube</a></li>
-<li><a href="https://www.turfshowtimes.com/los-angeles-rams-news/155930/rams-packers-thanksgiving-eve-nfl-nacua">Rams vs. Packers is first NFL game of its kind | Turf Show Times</a></li>
-<li><a href="https://en.wikipedia.org/wiki/Carnaval_de_Luz">Carnaval de Luz - Wikipedia</a></li>
-<li><a href="https://www.u2.com/products/carnaval-de-luz">Carnaval De Luz - U2 | Official U2 Website – U2.com</a></li>
-<li><a href="https://www.officialcharts.com/albums/u2-carnaval-de-luz/">CARNAVAL DE LUZ – U2 | Official Charts</a></li>
-<li><a href="https://jobs.netflix.com/">Join Us | Careers at Netflix</a></li>
-<li><a href="https://www.businessinsider.com/inside-netflix-growing-deal-making-what-it-could-buy-next-2023-6">Netflix M&amp;A Strategy: What It Could Buy Next As... - Business Insider</a></li>
-<li><a href="https://www.youtube.com/watch?v=ShKQYDwjE3U">10 Things Netflix ’ s The Lyle and Erik Menendez Story Got... - YouTube</a></li>
-
-</ul>
-</details>
-
-**Tags**: `#Music`, `#Entertainment`, `#Cultural Significance`, `#NFL`, `#U2`, `#Halftime Show`
+**Tags**: `#Literary Award`, `#Investigative Journalism`, `#Mystery`, `#London`, `#Youth Culture`
 
 ---
 
 <a id="item-culture-news-4"></a>
-### [Grand Theft Auto VI: The Album review – even GTA sceptics will warm to this zeitgeisty, star-packed soundtrack](https://www.theguardian.com/music/2026/nov/25/grand-theft-auto-vi-the-album-review) ⭐️ 8.0/10
+### [Novelist&\#x27;s Unique Return to UK Rap Scene](https://www.theguardian.com/music/2026/nov/26/novelist-scenes-review) ⭐️ 8.0/10
 
-The Grand Theft Auto VI soundtrack, featuring a mix of pop, rap, rock, and country artists, has become a cultural phenomenon that resonates with a wide audience, even captivating those who are typically sceptical about the video game series.
+Novelist&\#x27;s new album &\#x27;Scenes&\#x27; marks a bold return to the UK rap scene with a mix of tracks, innovative promotion, and a fresh take on the genre, featuring collaborations with Skepta and unique promotional elements like a scented mirror hanger and a video game.
 
-rss · The Guardian 音乐 · Nov 25, 17:50
+rss · The Guardian 音乐 · Nov 26, 12:00
 
-**「About Grand Theft Auto VI: The Album」** Grand Theft Auto VI: The Album is a soundtrack for the video game Grand Theft Auto VI. The game, developed by Rockstar Games, is set in a fictionalized version of Florida and is known for its immersive gameplay and detailed settings. The soundtrack features a mix of pop, rap, rock, and country artists, including Dua Lipa, Travis Scott, and others. It is a significant cultural phenomenon, appealing to a wide audience and showcasing a variety of music styles. The album is set to be released on December 11, and it will be available on major music streaming services as well as on CD and vinyl.
+**「Understanding Novelist&\#x27;s Music Career」** Novelist, a notable figure in the UK rap scene, has made a significant comeback with his latest album, &\#x27;Scenes&\#x27;. This album marks his first release in eight years and features collaborations with renowned artist Skepta. Known for his distinctive style and innovative approach to music, Novelist has been a maverick in the UK rap world since his early days. He started his career with producer Mumdance and later established his own record label, Mmmyeh. His unique promotional strategies, such as including a scented mirror hanger and a video game with his album, highlight his creative and unconventional approach to music. For more information on Novelist and his music group, you can visit the Novelist Music Group website and LinkedIn profile of David Biga, a key figure in the group.
 
-**「Impact on Everyday Life」** The Grand Theft Auto VI soundtrack&\#x27;s diverse mix of genres and artists reflects the evolving tastes of today&\#x27;s youth. This compilation not only enhances the gaming experience but also serves as a snapshot of contemporary music trends. For ordinary listeners, it opens up a new way to explore different music styles and discover new artists, bridging the gap between video game culture and mainstream music.
+**「Impact on Ordinary Life」** The release of Novelist&\#x27;s album &\#x27;Scenes&\#x27; not only marks a significant return to the UK rap scene but also highlights the creative possibilities in music promotion. For ordinary listeners, this means discovering innovative ways artists can engage with their audience, such as through unique promotional items and interactive experiences. It raises the question of how such creative approaches might influence the future of music marketing and consumption.
 
 <details><summary>References</summary>
 <ul>
-<li><a href="https://www.rockstargames.com/VI/music">The Music of Grand Theft Auto VI : In-Game Radio Stations, Official...</a></li>
-<li><a href="https://www.theguardian.com/music/2026/nov/25/grand-theft-auto-vi-the-album-review">Grand Theft Auto VI : The Album review – even GTA... | The Guardian</a></li>
-<li><a href="https://music.apple.com/us/album/grand-theft-auto-vi-the-album-deluxe-edition/6837496123">Grand Theft Auto VI : The Album (Deluxe Edition)... - Apple Music</a></li>
-<li><a href="https://www.theguardian.com/music/2026/nov/25/grand-theft-auto-vi-the-album-review">Grand Theft Auto VI : The Album review – even GTA... | The Guardian</a></li>
-<li><a href="https://www.youtube.com/watch?v=NmhHLYXsM2g">Tom Petty – Love Is A Long Road | GTA VI Soundtrack ... - YouTube</a></li>
-<li><a href="https://www.rockstargames.com/VI/music">The Music of Grand Theft Auto VI : In-Game Radio Stations, Official...</a></li>
+<li><a href="https://www.novelistmusicgroup.com/home">NMG - Novelist Music Group</a></li>
+<li><a href="https://www.linkedin.com/in/davidbiga">David Biga - Novelist Music Group | LinkedIn</a></li>
+<li><a href="https://www.tiktok.com/discover/british-guy-rapping-on-piano">British Guy Rapping on Piano | TikTok</a></li>
+<li><a href="https://www.themetalverse.net/50-most-popular-rappers/">The 50 Most Popular Rap Artists Worldwide in 2026: According to Spotify</a></li>
+<li><a href="https://open.spotify.com/playlist/2ZnhGIj3hvC5Myfp6wLewB">UK DRILL 2026 British Drill Music - playlist by Chill Select | Spotify</a></li>
 
 </ul>
 </details>
 
-**Tags**: `#music`, `#video-game`, `#soundtrack`, `#pop-culture`, `#GTA VI`
+**Tags**: `#Music`, `#UK Rap`, `#Novelist`, `#Album Review`, `#Skepta`, `#Promotion`, `#Grime`
 
 ---
 
@@ -247,23 +190,23 @@ Astronomers have stumbled upon a rare triple-star system, Welopōʻai, just 28 l
 
 rss · Smithsonian 历史与文化 · Nov 25, 16:37
 
-**「Understanding Stellar Systems」** A stellar system is a collection of stars that are gravitationally bound to each other. These systems can range from binary stars, which consist of two stars, to more complex systems like triple or quadruple stars. The dynamics of these systems are typically described by the self-consistent Vlasov–Poisson system, which is a framework used to understand the behavior of stars in a collisionless environment. The study of multiple star systems is important for understanding the formation and evolution of stars and their planetary systems. This includes the processes of multiple star formation and the implications for planet formation and system evolution.
+**「Understanding the Triple-Star System Welopōʻai」** Welopōʻai is a rare triple-star system discovered by astronomers, located just 28 light-years from Earth. This system consists of a red dwarf and two white dwarfs. The discovery challenges current scientific understanding of stellar systems, as it defies expectations based on our current knowledge. Astronomers initially set out to search for exoplanets using a special instrument on the Canada-France-Hawaii Telescope. During their observations, they detected unusual velocity variations in a red dwarf, leading them to investigate further. Follow-up observations with the Gemini North telescope revealed the presence of a white dwarf, a dense stellar core left behind by a deceased star. The system&\#x27;s unique characteristics, including the close proximity of the white dwarf to the red dwarf and the presence of another white dwarf at a greater distance, make Welopōʻai a unique and educational topic in astronomy and astrophysics.
 
-**「Implications for Ordinary Life」** The discovery of Welopōʻai, a triple-star system that challenges current scientific understanding, prompts a thought about the vastness and complexity of the universe. It makes us wonder about the countless mysteries yet to be uncovered and how they might reshape our understanding of the cosmos. This rare find could inspire young minds to explore astronomy and astrophysics, potentially leading to new discoveries and a deeper appreciation for the universe&\#x27;s wonders.
+**「Implications for Ordinary Life」** The discovery of Welopōʻai, a triple-star system that challenges current scientific understanding, raises a thought-provoking question: How often are our existing scientific theories proven wrong by new discoveries? This finding could inspire young astronomers and scientists to question established knowledge and seek new answers, fostering a culture of curiosity and continuous learning.
 
 <details><summary>References</summary>
 <ul>
-<li><a href="https://www.sciencedirect.com/topics/earth-and-planetary-sciences/stellar-system">Stellar System - an overview | ScienceDirect Topics</a></li>
-<li><a href="https://arxiv.org/pdf/2402.13322">Kinetic Theory of Stellar Systems: A Tutorial - arXiv.org</a></li>
-<li><a href="https://articles.adsabs.harvard.edu/pdf/2023ASPC..534..275O">The Origin and Evolution of Multiple Star Systems</a></li>
-<li><a href="https://phys.org/news/2026-11-astronomers-remarkable-triple-star-years.html">Astronomers discover remarkable triple - star system just 28...</a></li>
-<li><a href="https://www.popsci.com/science/rare-triple-star-system-near-earth/">A rare triple - star system near Earth ‘should not exist’ | Popular Science</a></li>
-<li><a href="https://spacemesmerise.com/en-in/blogs/astronomy/discover-the-fascinating-realm-of-the-closest-stars-to-earth">Discover the Fascinating Realm of the Closest Stars to Earth</a></li>
+<li><a href="https://stellar.org/">Stellar | The blockchain purpose-built for regulated finance</a></li>
+<li><a href="https://github.com/tohkm22-del/Stellar-Systems">GitHub - tohkm22-del/ Stellar - Systems : A large scale interstellar mod...</a></li>
+<li><a href="https://astrobiology.com/2025/11/11/multiplicity-of-stellar-systems-in-the-solar-neighbourhood-wide-binaries-and-planet-hosting-stars/">Multiplicity Of Stellar Systems In The Solar... - Astrobiology</a></li>
+<li><a href="https://phys.org/news/2026-11-astronomers-remarkable-triple-star-years.html">Astronomers discover remarkable triple-star system just 28 ...</a></li>
+<li><a href="https://nouvelles.umontreal.ca/en/article/2026/11/18/astronomers-discover-remarkable-triple-star-system-just-28-light-years-from-earth">Astronomers discover remarkable triple-star system just 28 ...</a></li>
+<li><a href="https://vajiramandravi.com/current-affairs/triple-star-system/">Triple Star System, Formation, Characteristics, Significance</a></li>
 
 </ul>
 </details>
 
-**Tags**: `#Astronomy`, `#Triple-Star System`, `#Stellar Discovery`, `#Astronomical Research`, `#Science Education`
+**Tags**: `#Astronomy`, `#Triple-Star System`, `#Stellar Discovery`, `#Astronomical Research`, `#Science News`
 
 ---
 
@@ -272,325 +215,357 @@ rss · Smithsonian 历史与文化 · Nov 25, 16:37
 <a id="item-finance-news-1"></a>
 ### [The Stability of Hedge Fund Repo Haircuts in the U.S. Repo Market](https://www.federalreserve.gov/econres/notes/feds-notes/the-surprising-stability-of-hedge-fund-repo-haircuts-20261125.html) ⭐️ 8.0/10
 
-A new analysis by the Federal Reserve challenges the assumption that central clearing in the U.S. repo market increases repo haircuts, particularly for hedge funds. The study also finds that repo haircuts are not procyclical, suggesting they have a limited role in amplifying financial stress.
+A new analysis by the Federal Reserve reveals the surprising stability of hedge fund repo haircuts in the U.S. repo market, challenging the notion that these haircuts are procyclical and highlighting their limited role in amplifying financial stress.
 
 rss · 美联储 FEDS Notes 经济研究解读 · Nov 25, 20:45
 
-**「Understanding Repo Markets and Central Clearing」** Repo markets, a crucial part of modern financial systems, facilitate short-term secured funding and support market making. Central clearing in these markets involves a central counterparty \(CCP\) that acts as an intermediary in transactions, reducing counterparty risk. The U.S. repo market, valued at $12 trillion, has seen a growing trend towards central clearing, especially in the dealer-to-client segment, which includes transactions with hedge funds. This shift is driven by regulatory requirements aiming to improve margining practices and manage leverage. The analysis of repo haircuts, which are used to protect lenders against defaults, has become a focus of research and policy debate, particularly in the context of central clearing and its potential impact on these haircuts.
+**「Understanding Repo Markets and Haircuts」** The repo market, a significant part of the U.S. financial system, involves the lending of securities against collateral. In this market, &\#x27;haircuts&\#x27; are used by cash lenders to protect against losses in case of borrower default. This practice has been a focus of policymakers and researchers, especially since the 2020 financial crisis. The U.S. repo market is worth $12 trillion, with a significant portion being centrally cleared. Central clearing involves a central counterparty \(CCP\) that acts as an intermediary in trades, reducing counterparty risk. The analysis of repo haircuts, particularly in the dealer-to-client segment, is crucial for understanding margining practices and regulatory considerations. This study focuses on sponsored repo, where dealers bring their bilateral trades with clients into the CCP, and examines the stability of haircuts in this segment.
 
-**「Impact on Financial Analysis」** The analysis of hedge fund repo haircuts in the U.S. repo market provides a significant insight for accounting and finance students. It challenges the assumption that central clearing increases haircuts and that they are procyclical. This finding suggests that the benefits of central clearing may not be as straightforward as previously thought, potentially affecting how financial institutions manage their margining practices. For students, this implies a need to consider the nuances in financial market regulation and the complexities of risk management in their studies.
+**「Impact on Financial Risk Management」** The analysis of hedge fund repo haircuts in the U.S. repo market reveals that these haircuts are not procyclical, suggesting that they play a limited role in amplifying financial stress. This finding is crucial for financial risk management, as it indicates that repo haircuts may not be the primary factor in magnifying market stress during times of financial turmoil. Understanding this can help financial institutions and regulators to focus on other areas, such as futures margins and dealer intermediation capacity, to better manage systemic risk.
 
 <details><summary>References</summary>
 <ul>
-<li><a href="https://www.suerf.org/publications/suerf-policy-notes-and-briefs/central-clearing-counterparty-risk-and-repo-specialness/">Central clearing , counterparty risk, and repo specialness - SUERF</a></li>
-<li><a href="https://www.sec.gov/comments/s7-23-22/s72322-20158405-326446.pdf">Central clearing of u.s.</a></li>
-<li><a href="https://www.federalreserve.gov/econres/feds/files/2026057pap.pdf">Government bond-backed repo markets : between resilience and...</a></li>
-<li><a href="https://en.wikipedia.org/wiki/Repurchase_agreement">Repurchase agreement - Wikipedia</a></li>
-<li><a href="https://www.europarl.europa.eu/RegData/etudes/note/join/2013/507462/IPOL-ECON_NT%282013%29507462_EN.pdf">Shadow Banking - Minimum Haircuts on Collateral</a></li>
-<li><a href="https://fastercapital.com/content/Financial-Regulation--Regulatory-Razor--The-Impact-of-Haircuts-on-Financial-Regulation.html">Financial Regulation: Regulatory Razor: The Impact of Haircuts on...</a></li>
+<li><a href="https://www.dtcc.com/insights/2024/impacts-of-mandatory-clearing-for-us-treasury-repo">Impacts of Mandatory Clearing for U.S. Treasury Repo | DTCC</a></li>
+<li><a href="https://www.esma.europa.eu/sites/default/files/2026-09/ESMA50-1949966494-4331_Margining_Repo_Transactions_working_paper.pdf">ESMA50-1949966494-4331 Margining Repo Transactions: a Risk...</a></li>
+<li><a href="https://www.bis.org/publications/working-paper-515-impact-ccps-margin-policies-repo-markets.pdf">The impact of CCPs&#x27; margin policies on repo markets</a></li>
+<li><a href="https://bankunderground.co.uk/2024/07/10/no-one-length-fits-all-haircuts-in-the-repo-market/">‘No one length fits all’ – haircuts in the repo market</a></li>
+<li><a href="https://www.federalreserve.gov/econres/notes/feds-notes/the-surprising-stability-of-hedge-fund-repo-haircuts-20261125.html">The Surprising Stability of Hedge Fund Repo Haircuts</a></li>
 
 </ul>
 </details>
 
-**Tags**: `#Financial Markets`, `#Repo Haircuts`, `#Central Clearing`, `#Hedge Funds`, `#Accounting`, `#Finance`, `#Regulatory Practices`
+**Tags**: `#Financial Markets`, `#Repo Haircuts`, `#Regulatory Practices`, `#Hedge Funds`, `#Accounting`, `#Finance`
+
+---
+
+<a id="item-finance-news-2"></a>
+### [Big Tech&\#x27;s Influence on Open Finance: Implications for Accounting and Finance Students](https://www.bis.org/publications/fsi-insight-79-carrot-stick-and-yardstick-big-techs-implications-open-finance) ⭐️ 8.0/10
+
+Big tech companies are reshaping open finance, which aims to transform financial services through data sharing. This analysis explores how big tech&\#x27;s involvement impacts competition, innovation, and financial inclusion, focusing on 11 jurisdictions.
+
+rss · BIS 研究与金融稳定 · Nov 26, 00:00
+
+**「Understanding Open Finance and Big Tech&\#x27;s Role」** Open finance refers to the use of technology to make financial services more accessible and efficient through customer-permissioned data sharing. This approach can foster competition, innovation, and financial inclusion. However, its long-term success depends on several factors, including incentives, liability allocation, and performance measurement. The paper &\#x27;The carrot, the stick and the yardstick: big techs’ implications for open finance&\#x27; delves into how big tech companies, which are actively participating in or expected to participate in open finance initiatives in 11 jurisdictions, might influence these critical conditions. This analysis is particularly relevant for a Chinese university student studying accounting and finance, as it offers insights into the evolving landscape of financial services and the potential impact on financial inclusion.
+
+**「Impact on Financial Inclusion and Innovation」** The analysis highlights that big tech&\#x27;s involvement in open finance can significantly influence financial inclusion and innovation. By promoting customer-permissioned data sharing, open finance can lead to increased competition and efficiency in the financial sector. This, in turn, can foster innovation and make financial services more accessible to a broader population, potentially impacting how accounting and finance students view the future of financial services.
+
+<details><summary>References</summary>
+<ul>
+<li><a href="https://www.jbs.cam.ac.uk/faculty-research/centres/alternative-finance/publications/the-global-state-of-open-banking-and-open-finance-report/">The Global State of Open Banking and Open Finance Report</a></li>
+<li><a href="https://ozoneapi.com/blog/8-countries-embracing-open-finance/">8 Countries Embracing Open Finance - Ozone API</a></li>
+<li><a href="https://www.statista.com/statistics/1558460/open-finance-jurisdictions-by-approach/">Open finance jurisdictions by approach | Statista</a></li>
+<li><a href="https://www.bis.org/publications/fsi-insight-79-carrot-stick-and-yardstick-big-techs-implications-open-finance">The carrot, the stick and the yardstick: big techs ...</a></li>
+<li><a href="https://www.bis.org/publications/working-paper-1129-big-techs-finance">Big techs in finance - Bank for International Settlements</a></li>
+<li><a href="https://www.congress.gov/crs_external_products/R/PDF/R47104/R47104.3.pdf">Big Tech in Financial Services - Congress.gov</a></li>
+<li><a href="https://www.sciencedirect.com/science/article/pii/S1544612324015290">Exploring the landscape of financial inclusion through the ...</a></li>
+<li><a href="https://www.sciencedirect.com/science/article/pii/S0165176526001254">Open banking and digital financial inclusion: Early evidence</a></li>
+<li><a href="https://www.bis.org/publications/fsi-insight-79-carrot-stick-and-yardstick-big-techs-implications-open-finance">The carrot, the stick and the yardstick: big techs ...</a></li>
+
+</ul>
+</details>
+
+**Tags**: `#Open Finance`, `#Big Tech`, `#Financial Services`, `#Innovation`, `#Financial Inclusion`
+
+---
+
+<a id="item-finance-news-3"></a>
+### [Updated Guidelines on Counterparty Credit Risk Management for Accounting Students](https://www.bis.org/publications/fsi-insight-guidelines-counterparty-credit-risk-management-executive-summary) ⭐️ 8.0/10
+
+New guidelines on counterparty credit risk management emphasize the importance of due diligence and credit risk mitigation for banks and financial institutions, offering valuable insights for accounting and finance students.
+
+rss · BIS 研究与金融稳定 · Nov 26, 00:00
+
+**「Basel Committee on Banking Supervision and Counterparty Credit Risk Management」** The Basel Committee on Banking Supervision \(BCBS\) is an international body that sets standards for banking supervision and regulation. It was established in 1974 in response to the failure of the Herstatt Bank, aiming to enhance financial stability by improving the quality of banking supervision worldwide. The BCBS is known for its Basel Accords, which are a set of recommendations for banks&\#x27; capital adequacy, risk management, and operational standards.
+
+Counterparty credit risk \(CCR\) refers to the risk that a counterparty to a transaction will default before the settlement of the transaction’s cash flows. This risk is influenced by the size of the exposure and the credit quality of the counterparty. The BCBS has issued guidelines on CCR management to address the need for effective risk assessment, mitigation, and exposure measurement. These guidelines were prompted by the collapse of Long-Term Capital Management in 1998 and subsequent events like the Archegos Capital Management default in 2021, which highlighted the complexities and challenges in managing CCR.
+
+The guidelines emphasize the importance of due diligence, credit risk mitigation strategies, and exposure measurement for banks and financial institutions. They cover a range of supervisory expectations, including those for non-banks whose activities could pose financial stability risks. The guidelines are designed to be broadly applicable, with proportional implementation based on the size and complexity of the institution.
+
+**「Impact on Ordinary Life」** These guidelines on counterparty credit risk management directly impact the stability of financial institutions. For an ordinary person, this means a more secure financial system, as banks and financial institutions are better equipped to handle risks associated with lending and investing. This could lead to more stable interest rates and financial products, ultimately affecting personal savings and investments.
+
+<details><summary>References</summary>
+<ul>
+<li><a href="https://en.wikipedia.org/wiki/Basel_Committee_on_Banking_Supervision">Basel Committee on Banking Supervision - Wikipedia</a></li>
+<li><a href="https://www.bis.org/committees/bcbs/history">BCBS history | Bank for International Settlements</a></li>
+<li><a href="https://www.bis.org/committees/bcbs/overview">Basel Committee on Banking Supervision | Bank for ...</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Long-Term_Capital_Management">Long - Term Capital Management - Wikipedia</a></li>
+<li><a href="https://www.youtube.com/watch?v=boCy670pSRM">The INSANE Story of How a Hedge Fund Collapsed the... - YouTube</a></li>
+<li><a href="https://www.thebalancemoney.com/long-term-capital-crisis-3306240">Long Term Capital Management Fund Crisis: Causes, Cures</a></li>
+<li><a href="https://corporatefinanceinstitute.com/resources/career-map/sell-side/risk-management/counterparty-credit-risk-definition-examples/">Counterparty Credit Risk: Guide to CCR Fundamentals | CFI</a></li>
+<li><a href="https://www.fsb.org/2024/12/final-guidelines-for-counterparty-credit-risk-management/">Final guidelines for counterparty credit risk management</a></li>
+<li><a href="https://www.federalreserve.gov/supervisionreg/srletters/sr1110.htm">Interagency Counterparty Credit Risk Management Guidance</a></li>
+
+</ul>
+</details>
+
+**Tags**: `#counterparty credit risk`, `#risk management`, `#banking supervision`, `#Basel Committee`, `#financial stability`, `#accounting`, `#finance`
+
+---
+
+<a id="item-finance-news-4"></a>
+### [Climate Change and Inflation Expectations: A Study for Accounting and Finance Students](https://www.bis.org/publications/working-paper-1399-inflation-expectations-context-climate-change-and-green-transition) ⭐️ 7.0/10
+
+A study reveals that households anticipate climate change and the green transition will raise both inflation levels and volatility over the next decade, with climate change having the most significant impact.
+
+rss · BIS 研究与金融稳定 · Nov 26, 00:00
+
+**「Understanding the Green Transition」** The green transition refers to the shift towards a more sustainable and environmentally friendly economy. It involves investing in industries that are already present in a region, with the goal of making them more sustainable and low-carbon. This transition is driven by various factors, including climate change and the need to reduce carbon emissions. It encompasses a wide range of sectors, including renewable energy, sustainable agriculture, and green technology. The green transition is a complex process that requires careful planning and coordination across different sectors and stakeholders.
+
+**「Impact on Inflation Expectations」** The study reveals that individuals anticipate a significant increase in both inflation levels and volatility due to climate change and the green transition over the next decade. This expectation is particularly pronounced for climate change, suggesting that as the green transition progresses, it may lead to economic shifts that affect inflation. For accounting and finance students, this insight underscores the importance of considering environmental factors in financial planning and risk assessment.
+
+<details><summary>References</summary>
+<ul>
+<li><a href="https://lapland.chamber.fi/wp-content/uploads/2023/02/Setting-the-steps-for-accelerating-the-green-transition-in-the-Northern-region.pdf">Setting the steps for accelerating the green transition in the Northern...</a></li>
+<li><a href="https://www.econstor.eu/bitstream/10419/331851/1/GLO-DP-1693.pdf">Understanding labor market transitions in the Green Economy...</a></li>
+<li><a href="https://www.careinternational.org.uk/news-stories/a-gender-just-green-transition-is-a-triple-win-for-people-the-planet-and-economies/">A gender-just green transition is a triple win for people, the planet and...</a></li>
+<li><a href="https://www.snb.ch/dam/jcr:d9af5319-e464-4d0c-9bae-dfe4bbff2641/sem_2023_09_29_fg.n.pdf">Discussion of &quot;Is the Green Transition Inflationary ?&quot;</a></li>
+<li><a href="https://www.tse-fr.eu/sites/default/files/TSE/documents/sem2025/bdf/2025_02_13_delnegro.pdf">Is the Green Transition Inflationary ?</a></li>
+<li><a href="https://www.bundesbank.de/resource/blob/937300/ce41ba81f2abcacdf3432f74e11a6c17/mL/2024-06-26-eltville-ferrero-paper-data.pdf">Paper: Monetary Policy for the Energy Transition</a></li>
+
+</ul>
+</details>
+
+**Tags**: `#Climate Change`, `#Inflation`, `#Green Transition`, `#Economic Trends`, `#Accounting`, `#Finance`
 
 ---
 
 ## Technology News
 
 <a id="item-tech-news-1"></a>
+### [Google&\#x27;s New Framework Evaluates AI Assistants&\#x27; Social Reasoning](https://research.google/blog/verifiable-social-reasoning-for-llm-assistants/) ⭐️ 8.0/10
+
+Google Research has developed a new evaluation framework for AI assistants that measures their understanding of social situations based on user narratives. This tool aims to assess how well AI can interpret social contexts in consultation settings, a crucial skill for everyday interactions.
+
+rss · Google Research · Nov 25, 17:10
+
+**「Understanding AI Assistants&\#x27; Social Reasoning」** Google Research has developed a new evaluation framework for AI assistants, focusing on their ability to understand social situations based on user narratives. This framework, which involves multi-agent social simulations, aims to quantify how well AI assistants can infer hidden motives in interactions. The research highlights the challenges in evaluating AI assistants&\#x27; social reasoning, especially in consultation settings where the assistant relies on subjective user narratives. This is crucial as AI assistants are increasingly used for personal support and advice, and their understanding of social contexts is vital for providing effective assistance. The framework is designed to address the lack of verifiable ground truth in social interactions and the complexity of social reasoning. It is open-sourced to encourage further research and development in this area.
+
+**「Impact on Everyday Life」** The introduction of this evaluation framework by Google Research could lead to more reliable and empathetic AI assistants. By understanding social situations better, these assistants might provide more nuanced and context-aware advice, reducing misunderstandings and improving user experiences in daily interactions.
+
+<details><summary>References</summary>
+<ul>
+<li><a href="https://research.google/blog/verifiable-social-reasoning-for-llm-assistants/">Verifiable Social Reasoning for LLM Assistants</a></li>
+<li><a href="https://numerous.ai/blog/examples-of-ai-in-everyday-life">15 Examples of AI in Everyday Life - Numerous. ai</a></li>
+<li><a href="https://wingital.com/en/revolutionizing-daily-life-the-rise-and-impact-of-ai-assistants/">Revolutionizing Daily Life : The Rise and Impact of AI Assistants</a></li>
+<li><a href="https://www.linkedin.com/pulse/future-ai-powered-virtual-assistants-daily-life-boosting-rehan-grover-co5lc">The Future of AI -Powered Virtual Assistants in Daily Life : Boosting...</a></li>
+
+</ul>
+</details>
+
+**Tags**: `#AI Research`, `#AI Assistants`, `#Social Reasoning`, `#Evaluation Framework`, `#Google`
+
+---
+
+<a id="item-tech-news-2"></a>
+### [Revolutionary Bionic Hands and the AI Natural Gas Boom](https://www.technologyreview.com/2026/11/26/1149934/the-download-better-bionic-hands-ai-natural-gas-boom/) ⭐️ 8.0/10
+
+A groundbreaking bionic hand that can feel pressure is being tested, offering hope for individuals with limb loss to regain dexterity and sensory feedback. This innovation could significantly improve daily life for those affected.
+
+rss · MIT 科技评论 · Nov 26, 13:10
+
+**「Understanding Bionic Hands and Their Impact」** Bionic hands, also known as prosthetic limbs, have been a part of technology for many years. However, a new generation of these hands is making headlines due to their ability to provide sensory feedback. This means they can not only move like a natural hand but also feel pressure, offering individuals with limb loss a significant improvement in dexterity and daily life. One notable example is the LUKE bionic arm developed at the University of Utah, which is currently undergoing a first-of-its-kind clinical trial. This trial involves a participant using the bionic arm at home for a year, providing valuable data on how such technology impacts everyday life. The advancements in bionic hands are a testament to the ongoing innovation in the field of prosthetics and their potential to transform the lives of those with limb loss.
+
+**「Real-Life Implications」** The development of bionic hands that can feel pressure marks a significant leap in prosthetic technology. This innovation could revolutionize the daily lives of individuals with limb loss, enabling them to perform tasks that were previously challenging or impossible. For example, being able to feel the texture of objects or the pressure of a handshake can greatly enhance social interactions and independence. This advancement not only restores physical functionality but also has the potential to improve mental health by reducing feelings of isolation and disability-related stress.
+
+<details><summary>References</summary>
+<ul>
+<li><a href="https://attheu.utah.edu/feature/from-lab-to-living-room-revolutionary-utah-bionic-arm-enters-first-home-trial/">From lab to living room: Revolutionary Utah bionic arm enters ...</a></li>
+<li><a href="https://healthcare.utah.edu/press-releases/2026/09/lab-living-room-revolutionary-utah-bionic-arm-enters-first-home-trial">From Lab to Living Room: Revolutionary Utah Bionic Arm Enters ...</a></li>
+<li><a href="https://www.news-medical.net/news/20260924/From-lab-to-living-room-Revolutionary-Utah-bionic-arm-enters-first-home-trial.aspx">From lab to living room: Revolutionary Utah bionic arm enters ...</a></li>
+<li><a href="https://www.aetherbiomedical.com/blog/benefits-bioinic-hand">The Benefits of Bionic Hand : Transforming Lives - My Framer Site</a></li>
+<li><a href="https://www.ganjingworld.com/news/1gqofaqi1rd6pudezlwK6pKZd1n71c">5 Benefits of Using Bionic Hands | Articles | wearevulcan</a></li>
+<li><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC10233657/">Restoration of sensory information via bionic hands - PMC</a></li>
+
+</ul>
+</details>
+
+**Tags**: `#Technology`, `#Innovation`, `#Prosthetics`, `#Bionics`, `#Health`
+
+---
+
+<a id="item-tech-news-3"></a>
+### [Intel One Mono Font: A Developer-Friendly, Accessible Typographic Tool](https://github.com/intel/intel-one-mono) ⭐️ 8.0/10
+
+Intel One Mono is a new monospaced font designed specifically for developers, offering enhanced readability and support for over 200 languages. This open-source font aims to reduce coding errors and eyestrain by catering to developers&\#x27; needs, especially those with low vision.
+
+hackernews · saikatsg · Nov 26, 10:11 · [Discussion](https://news.ycombinator.com/item?id=50653667)
+
+**「About Intel One Mono Font」** Intel One Mono is a monospaced font designed specifically for developers, focusing on clarity and legibility. Developed in partnership with Frere-Jones Type, the font was created with input from low-vision and legally blind developers to enhance readability and reduce coding errors. This font supports over 200 languages and is available in four weights \(Light, Regular, Medium, and Bold\) with matching italics. The open-source license allows for customization and the font is optimized for various platforms, including desktop, mobile apps, and web use. The design process involved a panel of low-vision and legally blind developers, ensuring the font meets the needs of a diverse user base.
+
+**「Impact on Daily Life」** Intel One Mono&\#x27;s focus on readability and support for over 200 languages can significantly impact daily life for developers. It can reduce eye strain and coding errors, making it easier for developers to work for longer periods without fatigue. This is particularly beneficial for those with low vision, as the font is designed to be more legible. Additionally, its open-source nature allows for customization, potentially leading to a more tailored experience for individual developers.
+
+<details><summary>References</summary>
+<ul>
+<li><a href="https://deepwiki.com/intel/intel-one-mono/4-font-design-and-development">Font Design and Development | intel/intel-one-mono | DeepWiki</a></li>
+<li><a href="https://www.intel.com/content/www/us/en/company-overview/one-monospace-font.html">Intel® One Mono</a></li>
+<li><a href="https://github.com/intel/intel-one-mono">GitHub - intel/intel-one-mono: Intel One Mono font repository Intel One Mono - Google Fonts intel/intel-one-mono | DeepWiki Intel One Mono: a legible coding typeface | Hysen Labs Intel | Intel One Mono | The One Club</a></li>
+<li><a href="https://typographysmith.com/fonts/intel-one-mono">Exploring Intel One Mono : Comprehensive Guide to Font ...</a></li>
+<li><a href="https://fonts.google.com/specimen/Intel+One+Mono">Intel One Mono - Google Fonts</a></li>
+<li><a href="https://github.com/intel/intel-one-mono">GitHub - intel/ intel - one - mono : Intel One Mono font repository · GitHub</a></li>
+
+</ul>
+</details>
+
+**Tags**: `#Technology`, `#Accessibility`, `#Typography`, `#Developer Tools`, `#Open Source`
+
+---
+
+<a id="item-tech-news-4"></a>
+### [AI&\#x27;s Breakthrough in Algorithms and Cryptography](https://scottaaronson.blog/?p=10379) ⭐️ 8.0/10
+
+A groundbreaking discovery in algorithms and AI has the potential to revolutionize cryptography and computing, with implications for young readers interested in technology&\#x27;s impact on society.
+
+hackernews · Kotlopou · Nov 25, 19:11 · [Discussion](https://news.ycombinator.com/item?id=50646108)
+
+**「Recent Breakthroughs in Algorithms and AI」** The field of algorithms and AI has recently witnessed significant breakthroughs, particularly in the areas of cryptography and mathematical complexity. OpenAI and Anthropic have independently produced AI-generated proofs that tackle fundamental mathematical problems, such as the Riemann hypothesis and the VP vs VNP problem. These advancements have not only provided new insights into long-standing mathematical mysteries but have also highlighted the growing role of AI in solving complex problems. The implications of these breakthroughs are vast, potentially affecting various aspects of technology and society, including cryptography and the development of new algorithms.
+
+**「Impact on Everyday Life」** The recent breakthroughs in algorithms and AI, particularly the proof by OpenAI that the matrix multiplication exponent is exactly 9/4 and the lower bound for the Fourier Transform computation, have significant implications for everyday life. These advancements could lead to more efficient algorithms, potentially impacting fields like cryptography and data processing. For ordinary individuals, this means that the technology we use daily might become faster and more secure, although the full implications of these breakthroughs may take years to unfold.
+
+<details><summary>References</summary>
+<ul>
+<li><a href="https://en.wikipedia.org/wiki/Alp%C3%B6ge&#x27;s_proof_of_the_Riemann_hypothesis">Alpöge&#x27; s proof of the Riemann hypothesis - Wikipedia</a></li>
+<li><a href="https://www.notebookcheck.net/Anthropic-and-OpenAI-claim-breakthroughs-on-a-47-year-old-fundamental-math-problem.1459160.0.html">Anthropic and OpenAI claim breakthroughs... - Notebookcheck News</a></li>
+<li><a href="https://www.youtube.com/watch?v=GPNMq4ZQk6o">VP vs VNP : Inside Claude&#x27; s Proof That Shattered a 47-Year... - YouTube</a></li>
+<li><a href="https://xenospectrum.com/en/matrix-multiplication-nine-fourths-lower-bound/">OpenAI Claims Proof That the Matrix Multiplication Exponent ...</a></li>
+<li><a href="https://arxiv.org/pdf/1404.1741v7.pdf">ATighterLowerBoundForFourierTransformComputation</a></li>
+
+</ul>
+</details>
+
+**Tags**: `#AI`, `#Algorithms`, `#Cryptography`, `#Breakthrough`, `#Technology`
+
+---
+
+<a id="item-tech-news-5"></a>
+### [Next Generation Bionic Hands: Feeling the Difference](https://www.technologyreview.com/2026/11/26/1149923/the-next-generation-of-bionic-hands-is-here-and-they-can-feel/) ⭐️ 8.0/10
+
+The first at-home user of a new bionic hand that feels pressure is changing lives for individuals with limb loss, marking a significant leap in prosthetic technology.
+
+rss · MIT 科技评论 · Nov 26, 09:59
+
+**「Understanding the Bionic LUKE Arm」** The Bionic LUKE arm, inspired by Luke Skywalker&\#x27;s prosthetic arm in Star Wars, is a significant advancement in prosthetic technology. Developed by the University of Utah, this arm was initially trialed in 2014 and received FDA approval the same year. The latest version of the arm, which allows users to feel pressure, is part of a clinical trial focusing on connecting the arm to a person&\#x27;s nervous system. This connection enables users to control movements and receive feedback on the pressure they are applying. The arm&\#x27;s development began in the 2000s and has been refined through extensive research and trials. The University of Utah&\#x27;s neurorobotics lab has been instrumental in this research, working on systems that can connect with the nerves of a residual limb, allowing amputees to control a bionic one. The arm&\#x27;s technology is a result of collaboration between engineers and surgeons, with a focus on creating a device that can be integrated into everyday life. For example, Avi Davidson, a trauma therapist who lost his left hand in an accident, has been using the bionic arm in his daily life, which includes tasks like cooking and writing. This trial is crucial for researchers to understand the practicality and limitations of the technology in real-world scenarios. 
+
+**「Impact on Daily Life」** The introduction of bionic hands that can feel pressure marks a significant leap in prosthetic technology. For individuals like Avi Davidson, who lost his hand in an accident, these advancements mean a newfound ability to perform everyday tasks with greater ease and sensitivity. This technology not only enhances physical functionality but also improves the emotional and psychological well-being of users by restoring a sense of touch. It raises the question of how such innovations could further integrate into society, potentially transforming the lives of many others with limb loss.
+
+<details><summary>References</summary>
+<ul>
+<li><a href="https://healthcare.utah.edu/press-releases/2026/09/lab-living-room-revolutionary-utah-bionic-arm-enters-first-home-trial">From Lab to Living Room: Revolutionary Utah Bionic Arm Enters ...</a></li>
+<li><a href="https://attheu.utah.edu/feature/from-lab-to-living-room-revolutionary-utah-bionic-arm-enters-first-home-trial/">From lab to living room: Revolutionary Utah bionic arm enters ...</a></li>
+<li><a href="https://www.edgepedia.org/utah-arm">Utah Arm — Edgepedia</a></li>
+<li><a href="https://builtin.com/articles/bionic-arm">What Is a Bionic Arm ? How Does It Work? | Built In</a></li>
+<li><a href="https://attheu.utah.edu/feature/from-lab-to-living-room-revolutionary-utah-bionic-arm-enters-first-home-trial/">From lab to living room: Revolutionary Utah bionic arm enters first...</a></li>
+<li><a href="https://www.linkedin.com/posts/nucleus-fund-utah_bionic-luke-arm-faces-first-test-in-day-to-day-activity-7315122423295614978-HaNw">&quot; LUKE Arm : A Bionic Breakthrough for Limb Loss &quot; | LinkedIn</a></li>
+
+</ul>
+</details>
+
+**Tags**: `#Technology`, `#Prosthetics`, `#Accessibility`, `#Medical Innovation`, `#Bionic Arms`
+
+---
+
+<a id="item-tech-news-6"></a>
 ### [European Spacecraft Captures Chaotic Scene After Asteroid Deflection Experiment](https://arstechnica.com/space/2026/11/europes-hera-mission-returns-to-the-chaotic-scene-of-a-cosmic-smashup/) ⭐️ 8.0/10
 
-A European spacecraft has captured the chaotic aftermath of a successful asteroid deflection experiment led by NASA. The Double Asteroid Redirection Test \(DART\) mission altered the trajectory of asteroid Dimorphos, and the European Space Agency&\#x27;s Hera spacecraft has now arrived to study the impact site.
+A European spacecraft has captured the chaotic aftermath of a successful asteroid deflection experiment, showing the potential to protect Earth from asteroid impacts.
 
 rss · Ars Technica · Nov 25, 22:36
 
-**「Understanding the Hera Mission」** The Hera mission, a significant project by the European Space Agency \(ESA\), is focused on studying the aftermath of the Double Asteroid Redirection Test \(DART\) conducted by NASA. DART was a groundbreaking experiment where a spacecraft intentionally collided with an asteroid to test the effectiveness of asteroid deflection techniques. Hera, following a two-year journey, has reached the Didymos binary asteroid system, which consists of two asteroids, Didymos and Dimorphos. This system is of particular interest as it resembles many near-Earth asteroids, though they pose no threat to Earth. Hera&\#x27;s objectives include measuring the size and morphology of the crater created by DART&\#x27;s impact and assessing the momentum transferred, providing valuable data for future asteroid defense strategies. For more information on Hera, you can visit the European Space Agency&\#x27;s official page on the mission.
+**「Understanding the Hera Spacecraft Mission」** The Hera spacecraft mission, a part of the European Space Agency&\#x27;s Space Safety Programme, is a significant milestone in space exploration. Hera&\#x27;s primary objective is to study the effects of the Double Asteroid Redirection Test \(DART\), a mission that successfully demonstrated the potential to deflect asteroids that could pose a threat to Earth. Launched in October 2024, Hera is currently en route to the Didymos binary asteroid system, which consists of two asteroids, Didymos and Dimorphos. The mission aims to measure the size and morphology of the crater created by DART&\#x27;s impact on Dimorphos, as well as the momentum transferred, providing valuable data on the efficiency of asteroid deflection techniques. This research is crucial for understanding how to protect our planet from potential asteroid impacts in the future.
 
-**「What It Means for Us」** The successful asteroid deflection experiment by NASA not only demonstrates the potential to protect Earth from future asteroid impacts but also highlights the importance of international collaboration in space exploration. It raises the question: How can we apply this technology to other space missions and what are the ethical considerations when altering celestial bodies?
+**「Revelation for Everyday Life」** The successful asteroid deflection experiment by the European Space Agency&\#x27;s Hera spacecraft and NASA&\#x27;s DART mission not only showcases the potential of humanity to protect Earth from asteroid impacts but also highlights the importance of understanding and predicting cosmic events. This could lead to a greater emphasis on space weather monitoring and its implications for everyday life, such as improved forecasting of potential disruptions to satellite communications and power grids.
 
 <details><summary>References</summary>
 <ul>
 <li><a href="https://en.wikipedia.org/wiki/Hera_%28space_mission%29">Hera (space mission) - Wikipedia</a></li>
 <li><a href="https://www.esa.int/Space_Safety/Hera">Hera - European Space Agency</a></li>
 <li><a href="https://www.esa.int/Space_Safety/Hera/Hera_mission_overview">ESA - Hera mission overview - European Space Agency</a></li>
-<li><a href="https://en.wikipedia.org/wiki/Double_Asteroid_Redirection_Test">Double Asteroid Redirection Test - Wikipedia</a></li>
-<li><a href="https://www.nature.com/articles/s41586-023-05878-z">Momentum transfer from the DART mission kinetic impact on ...</a></li>
-<li><a href="https://www.nasa.gov/news-release/nasa-confirms-dart-mission-impact-changed-asteroids-motion-in-space/">NASA Confirms DART Mission Impact Changed Asteroid’s Motion ...</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Dimorphos">Dimorphos - Wikipedia</a></li>
+<li><a href="https://scispace.com/pdf/momentum-transfer-from-the-dart-mission-kinetic-impact-on-p1xdv7b6.pdf">Momentum Transfer from the DART Mission Kinetic Impact</a></li>
+<li><a href="https://www.space.com/dart-asteroid-mission">NASA&#x27;s DART asteroid -smashing mission : The ultimate guide | Space</a></li>
 
 </ul>
 </details>
 
-**Tags**: `#Space Exploration`, `#Asteroid Deflection`, `#NASA`, `#Science`, `#Technology`
-
----
-
-<a id="item-tech-news-2"></a>
-### [Google Introduces Framework for Evaluating AI Assistants&\#x27; Social Reasoning](https://research.google/blog/verifiable-social-reasoning-for-llm-assistants/) ⭐️ 8.0/10
-
-Google Research has developed a new evaluation framework for AI assistants that measures their ability to understand social situations. This framework uses multi-agent social simulations to provide a verifiable ground truth for assessing AI assistants&\#x27; social reasoning skills.
-
-rss · Google Research · Nov 25, 17:10
-
-**「Understanding AI Assistants&\#x27; Social Reasoning」** Google Research has developed a new evaluation framework for AI assistants, focusing on their ability to understand social situations. This framework, based on multi-agent social simulations, aims to quantify how well AI assistants interpret social interactions from users&\#x27; perspectives. In this system, an AI assistant must infer the hidden motives of different agents, including the user, in a simulated environment. This approach addresses the challenge of evaluating AI assistants&\#x27; social reasoning in consultation settings, where the assistant learns about social situations from subjective user narratives. The framework is designed to be scalable and empirical, providing a verifiable ground truth for assessing AI assistants&\#x27; understanding of social situations. This research is significant for those interested in AI and technology, as it offers insights into how AI can better understand and interact with humans in social contexts. \[Learn more\]\(https://en.wikipedia.org/wiki/Multi-agent\_system\) about multi-agent systems and \[read the research paper\]\(https://arxiv.org/html/2601.12323v2\) for a deeper understanding of the approach.
-
-**「Impact on Everyday Life」** This new evaluation framework by Google Research could significantly impact how AI assistants understand and interact with users in social contexts. By focusing on the challenges of social reasoning in everyday scenarios, it could lead to AI assistants that are more empathetic and better equipped to handle nuanced social interactions. This could mean more accurate advice and support in personal and professional settings, potentially improving the quality of daily life for users who rely on these AI tools.
-
-<details><summary>References</summary>
-<ul>
-<li><a href="https://en.wikipedia.org/wiki/Multi-agent_system">Multi - agent system - Wikipedia</a></li>
-<li><a href="https://arxiv.org/html/2601.12323v2">MARO: Learning Stronger Reasoning from Social Interaction</a></li>
-<li><a href="https://research.google/blog/verifiable-social-reasoning-for-llm-assistants/">Verifiable Social Reasoning for LLM Assistants - Google Research</a></li>
-<li><a href="https://arxiv.org/html/2609.17496v1">Verifiable Social Reasoning for LLM Assistants - arXiv.org</a></li>
-<li><a href="https://www.sciencedirect.com/science/article/pii/S0306457324000256">AI for social science and social science of AI: A survey How AI is reshaping human skills and thinking Motivation, Social Emotion, and the Acceptance of Artificial ... Verifiable Social Reasoning for LLM Assistants | AI Research SocialReasoning-Bench: Measuring whether AI agents act in ...</a></li>
-
-</ul>
-</details>
-
-**Tags**: `#AI`, `#AI Assistants`, `#Social Reasoning`, `#Evaluation Framework`, `#Google Research`
-
----
-
-<a id="item-tech-news-3"></a>
-### [Nfs2root: A 12-year-old pre-auth remote root in the Linux kernel&\#x27;s NFS server](https://opensec.in/blog/nfs2root-cve-2026-99362) ⭐️ 8.0/10
-
-A critical security flaw in the Linux kernel&\#x27;s NFS server, discovered after 12 years, has been patched. This vulnerability could allow remote attackers to gain root access without authentication, emphasizing the importance of regular updates and security practices.
-
-hackernews · dm · Nov 25, 20:35 · [Discussion](https://news.ycombinator.com/item?id=50647161)
-
-**「Understanding the Linux NFS Server Vulnerability」** The Network File System \(NFS\) is a protocol used for sharing files over a network, allowing users to access files on remote computers as if they were on their own. The Linux kernel&\#x27;s NFS server, specifically the nfsd component, has recently been found to have a critical pre-authentication remote root vulnerability. This vulnerability, known as CVE-2026-99362, has been present for 12 years and affects Linux systems running NFSv4.1 or 4.2. It allows an attacker to execute arbitrary code with root privileges on a vulnerable system without needing authentication. The vulnerability was discovered by OpenSec&\#x27;s Antara, a white-box harness for testing software security. The fix for this vulnerability has been included in recent versions of the Linux kernel, and it is recommended that all affected systems be updated immediately to prevent potential exploitation.
-
-**「Impact on Ordinary Life」** This vulnerability serves as a stark reminder of the importance of keeping systems up-to-date, especially for those who manage servers or use Linux-based systems. It highlights the potential risks of not regularly updating software, as even a 12-year-old vulnerability can be exploited. For ordinary users, it underscores the need to be aware of the systems they use and to understand the importance of security patches.
-
-<details><summary>References</summary>
-<ul>
-<li><a href="https://opensec.in/blog/nfs2root-cve-2026-99362">NFS 2 ROOT (CVE-2026-99362): pre - auth root in Linux nfsd | OpenSec</a></li>
-<li><a href="https://opensec.in/blog/nfs2root-cve-2026-99362">NFS2ROOT ( CVE - 2026 - 99362 ): pre-auth root in Linux nfsd | OpenSec</a></li>
-
-</ul>
-</details>
-
-**Tags**: `#Linux Security`, `#NFS Vulnerability`, `#Cybersecurity`, `#Kernel Patch`, `#Root Access`
-
----
-
-<a id="item-tech-news-4"></a>
-### [AI Makes Breakthrough in Algorithms and Math](https://scottaaronson.blog/?p=10379) ⭐️ 8.0/10
-
-A groundbreaking discovery in algorithms and AI has been made, with significant implications for the future of technology. AI has proven that the exponent of matrix multiplication is exactly 9/4, solving a mystery in algorithms that dates back to the 1960s.
-
-hackernews · Kotlopou · Nov 25, 19:11 · [Discussion](https://news.ycombinator.com/item?id=50646108)
-
-**「OpenAI&\#x27;s Breakthroughs in Algorithms and AI」** OpenAI, a leading artificial intelligence research lab, has recently made significant breakthroughs in the field of algorithms and AI. These advancements include proving that the exponent of matrix multiplication is exactly 9/4, matching the upper bound that OpenAI had previously proved. Additionally, OpenAI has also proven that the true number of linear gates needed to compute the Fourier Transform is N\(log N\)1/2+o\(1\), improving upon the bounds set since the 1960s. These discoveries are not only significant for the field of mathematics and computer science but also indicate a new era of AI capabilities in solving complex problems. The use of AI in proving such mathematical theorems has been a topic of discussion and debate, with some experts expressing skepticism and others praising the advancements. These breakthroughs are a testament to the growing power and potential of AI in various domains.
-
-<details><summary>References</summary>
-<ul>
-<li><a href="https://officechai.com/ai/openai-vp-vnp-proof-hours-after-anthropic-claude/">Hours After Claude, OpenAI Posts Its Own Proof That VP ≠ VNP ...</a></li>
-<li><a href="https://shiftdelete.net/en/anthropic-openai-vp-vnp-proofs-ai-math">Anthropic and OpenAI Claim AI Proofs That VP and VNP Differ</a></li>
-<li><a href="https://github.com/az9713/openai-anthropic-vp-vnp-tutorial">GitHub - az9713/openai-anthropic-vp-vnp-tutorial: Tutorial ...</a></li>
-<li><a href="https://en.wikipedia.org/wiki/OpenAI_bulk_release_of_mathematical_papers">OpenAI bulk release of mathematical papers - Wikipedia</a></li>
-<li><a href="https://www.scientificamerican.com/article/anthropic-mathematician-claims-to-prove-riemann-hypothesis-most-famous-problem-in-all-of-math/">Anthropic mathematician proves Riemann hypothesis, most ...</a></li>
-<li><a href="https://www.nature.com/articles/d41586-026-03812-7">Mathematicians astounded by AI and human-written proofs of ...</a></li>
-<li><a href="https://interestingengineering.com/culture/openai-exact-2-25-matrix-multiplication-exponent">OpenAI establishes exact 2.25 exponent for matrix multiplication</a></li>
-<li><a href="https://www.scientificamerican.com/article/the-most-exciting-claims-from-openais-heap-of-new-proofs/">The most exciting claims from OpenAI ’s heap of new proofs</a></li>
-<li><a href="https://github.com/openai/math/blob/main/preprints/The-matrix-multiplication-exponent-is-nine-fourths-November-24-2026/README.md">math/preprints/The- matrix - multiplication -exponent-is...</a></li>
-
-</ul>
-</details>
-
-**Tags**: `#AI`, `#Algorithms`, `#Mathematics`, `#Innovation`, `#Technology`
-
----
-
-<a id="item-tech-news-5"></a>
-### [The Polynomial Hirsch Conjecture Disproven: A Breakthrough in Computational Complexity](https://github.com/openai/math/blob/main/preprints/Superpolynomial-graph-diameter-of-simple-polytopes-November-24-2026/paper.pdf) ⭐️ 8.0/10
-
-The polynomial Hirsch conjecture, a significant theory in computational complexity, has been disproven. This discovery impacts various algorithms and optimization problems, marking a major advancement in the field of mathematics.
-
-hackernews · acossta · Nov 25, 17:34 · [Discussion](https://news.ycombinator.com/item?id=50644980)
-
-**「Understanding the Polynomial Hirsch Conjecture」** The Polynomial Hirsch Conjecture is a significant concept in the field of computational complexity and algorithms. It revolves around the idea that for any given polytope, a geometric shape with flat facets, there exists a relationship between the number of facets and the number of steps required to move from one vertex to another. This conjecture has implications for various algorithms and optimization problems. The recent disproof of this conjecture by OpenAI marks a significant advancement in the field, challenging existing theories and opening new avenues for research. For those interested in the details, the original conjecture and its counterexample can be found in academic publications such as the one linked from Wikipedia and ResearchGate.
-
-**「Impact on Everyday Life」** The disproven polynomial Hirsch conjecture could lead to more efficient algorithms for solving complex problems, potentially affecting fields like logistics and optimization. This discovery might inspire new approaches to tackle real-world challenges, such as optimizing delivery routes or resource allocation, making everyday tasks more efficient.
-
-<details><summary>References</summary>
-<ul>
-<li><a href="https://en.wikipedia.org/wiki/Hirsch_conjecture">Hirsch conjecture - Wikipedia</a></li>
-<li><a href="https://annals.math.princeton.edu/wp-content/uploads/annals-v176-n1-p07-p.pdf">A counterexample to the Hirsch Conjecture</a></li>
-<li><a href="https://www.researchgate.net/publication/45923669_A_counterexample_to_the_Hirsch_Conjecture">(PDF) A counterexample to the Hirsch Conjecture</a></li>
-<li><a href="https://en.wikipedia.org/wiki/Hirsch_conjecture">Hirsch conjecture - Wikipedia</a></li>
-<li><a href="https://arxiv.org/pdf/2301.04060v1">A Formal Disproof of the Hirsch Conjecture - arXiv.org</a></li>
-<li><a href="https://arxiv.org/pdf/1006.2814v3">A counterexample to the Hirsch conjecture - arXiv.org</a></li>
-
-</ul>
-</details>
-
-**Tags**: `#Mathematics`, `#Computational Complexity`, `#Algorithms`, `#HackerNews`, `#OpenAI`
-
----
-
-<a id="item-tech-news-6"></a>
-### [Google&\#x27;s Math Research Papers Spark Community Interest](https://github.com/google-research/google-research/tree/master/cogentic_research_papers) ⭐️ 8.0/10
-
-Google&\#x27;s release of research papers on advanced mathematical topics, including integer factorization and discrete logs, has sparked significant interest and discussion in the community.
-
-hackernews · rgwohlbold · Nov 25, 13:33 · [Discussion](https://news.ycombinator.com/item?id=50642086)
-
-**「Understanding Cogentic and Google&\#x27;s Research Contributions」** Cogentic, a project by Google Research, focuses on automated proof discovery through multi-agent orchestration. This approach involves using multiple agents to work together in solving complex research problems. The research papers released by Cogentic delve into advanced mathematical topics such as integer factorization and discrete logs, which are significant in fields like cryptography. These papers represent a substantial contribution to the field of mathematics and could potentially impact various applications beyond pure research. The release of these papers has sparked considerable interest and discussion within the community, reflecting the relevance and excitement surrounding these advancements.
-
-**「Impact on Everyday Life」** The release of these research papers by Google&\#x27;s Cogentic team could potentially impact everyday life in several ways. For instance, advancements in integer factorization and discrete logarithms could lead to more secure cryptographic systems, which are essential for protecting sensitive data online. This means that your personal information, such as passwords and financial transactions, could be safer in the future. Additionally, these developments might pave the way for new technologies and applications that we haven&\#x27;t even imagined yet.
-
-<details><summary>References</summary>
-<ul>
-<li><a href="https://arxiv.org/abs/2609.40324">Cogentic : Multi-Agent Orchestration for Automated Proof Discovery</a></li>
-<li><a href="https://github.com/google-research/google-research/blob/master/cogentic_research_papers/deterministic_factoring_l34/paper.pdf">github.com/google- research /google- research /blob/master/ cogentic ...</a></li>
-<li><a href="https://news.ycombinator.com/item?id=50642086">Google releases Cogentic papers on integer... | Hacker News</a></li>
-<li><a href="https://en.wikipedia.org/wiki/Computational_hardness_assumption">Computational hardness assumption - Wikipedia</a></li>
-<li><a href="https://www.researchgate.net/publication/251344353_Integer_Factorization_and_Discrete_Logarithms">Integer Factorization and Discrete Logarithms</a></li>
-<li><a href="https://kzoacn.github.io/articles/TowardsIF.html">Towards Efficient Classical Integer Factorization</a></li>
-
-</ul>
-</details>
-
-**Tags**: `#Google Research`, `#Mathematics`, `#Cryptography`, `#Research Papers`, `#Community Interest`
+**Tags**: `#Space Exploration`, `#Asteroid Deflection`, `#Science Achievement`, `#Technology`, `#NASA`, `#DART Mission`
 
 ---
 
 <a id="item-tech-news-7"></a>
-### [FCC授权SpaceX部署100万颗卫星](https://arstechnica.com/space/2026/11/the-fcc-has-authorized-spacex-to-deploy-1-million-satellites/) ⭐️ 8.0/10
+### [Explore the Evolution of UI Design with a Historic Collection of Style Guides](https://aresluna.org/ui-style-guides/) ⭐️ 7.0/10
 
-美国联邦通信委员会（FCC）已授权SpaceX部署多达100万颗Starmind卫星，这将极大地增加轨道上的卫星数量，并可能彻底改变计算基础设施。
+Discover a treasure trove of UI style guides from the 1980s to today, showcasing the evolution of interface design across various platforms and companies.
 
-rss · Ars Technica · Nov 25, 18:22
+hackernews · sohkamyung · Nov 26, 00:40 · [Discussion](https://news.ycombinator.com/item?id=50649834)
 
-**「SpaceX&\#x27;s Authorization to Deploy 1 Million Satellites」** SpaceX, the company founded by Elon Musk, has been granted conditional authorization by the Federal Communications Commission \(FCC\) to deploy a constellation of up to 1 million Starmind satellites. These satellites are designed to serve as orbital data centers, which could significantly impact computing infrastructure. The approval is a major regulatory victory for SpaceX and represents a bold step towards creating new opportunities and driving investment. The Starmind satellites are planned to be solar-powered and are part of SpaceX&\#x27;s initiative to provide low-cost, high-performance AI compute for Earth. The authorization allows SpaceX to operate in six orbits and includes conditions for the disposal of retired satellites. This decision opens a new frontier for computing infrastructure and paves the way for potential economic and social benefits.
-
-**「What This Means for You」** The approval of SpaceX&\#x27;s plan to deploy 1 million satellites could lead to significant improvements in internet connectivity and data processing. Imagine a world where your data is processed in space, potentially reducing latency and improving speed. This could revolutionize how we use the internet, from streaming high-definition videos to online gaming, making these experiences smoother and more responsive.
+**「Understanding the Collection of Preserved UI Style Guides」** The collection of preserved UI style guides, available at \[aresluna.org\]\(https://aresluna.org/ui-style-guides/\), is a treasure trove for those interested in the evolution of interface design. This extensive archive spans from the early 1980s to the present day, featuring guidelines from various companies and operating systems. It includes notable entries like the Amiga User Interface Style Guide, Android Design, and the Apple Human Interface Guidelines. The collection is not just a historical document but also a practical resource for designers and developers looking to understand the evolution of user interface design over the years. It provides insights into how user interfaces have changed, reflecting technological advancements and shifting user expectations. The inclusion of diverse platforms such as Windows, Macintosh, and mobile operating systems like iOS and Android offers a comprehensive view of the field. This resource is particularly valuable for students and professionals in the field of technology and design, as it allows them to see the evolution of design principles and how they have been applied in different contexts.
 
 <details><summary>References</summary>
 <ul>
-<li><a href="https://en.wikipedia.org/wiki/Starmind_%28satellite%29">Starmind (satellite) - Wikipedia</a></li>
-<li><a href="https://www.spacex.com/spacexsi/starmind">SpaceX - AI Satellite</a></li>
-<li><a href="https://www.satellitetoday.com/connectivity/2026/11/25/fcc-approves-spacexs-1-million-satellite-orbital-data-center-constellation/">FCC Approves SpaceX’s 1-Million Satellite Orbital Data Center ...</a></li>
-<li><a href="https://www.cnbc.com/2026/11/25/spacex-fcc-satellite-approval.html">SpaceX wins FCC approval for 1 million orbital data center ...</a></li>
-<li><a href="https://www.geekwire.com/2026/fcc-clears-spacex-million-satellites-starmind-data-center/">FCC clears SpaceX to put a million data center satellites in ...</a></li>
-<li><a href="https://arstechnica.com/space/2026/11/the-fcc-has-authorized-spacex-to-deploy-1-million-satellites/">The FCC has authorized SpaceX to deploy 1 million satellites</a></li>
-<li><a href="https://www.cbsnews.com/news/spacex-fcc-approval-data-centers-space/">SpaceX gets FCC approval for 1 million satellites to build ...</a></li>
-<li><a href="https://www.usatoday.com/story/tech/space/2026/11/25/fcc-approves-spacex-data-center-satellites/92959168007/">FCC clears SpaceX to put 1 million data center satellites in ...</a></li>
-<li><a href="https://www.latimes.com/business/story/2026-11-25/spacex-gets-approval-for-1-million-data-center-satellites">SpaceX gets approval for 1 million data center satellites</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Carbon_Design_System">Carbon Design System - Wikipedia</a></li>
+<li><a href="https://www.ibm.com/design/language/">IBM Design Language</a></li>
+<li><a href="https://www.designsystems.one/design-systems/carbon-design">IBM Carbon Design System | DesignSystems.one</a></li>
 
 </ul>
 </details>
 
-**Tags**: `#SpaceX`, `#satellite technology`, `#FCC authorization`, `#computing infrastructure`, `#Elon Musk`, `#regulatory victory`
-
----
-
-<a id="item-tech-news-8"></a>
-### [FCC Approves SpaceX&\#x27;s Plan for Space AI Data Centers](https://techcrunch.com/2026/11/25/fcc-approves-spacex-plan-to-put-ai-data-centers-in-space/) ⭐️ 7.0/10
-
-The Federal Communications Commission \(FCC\) has approved SpaceX&\#x27;s ambitious plan to place AI data centers in space, a move that could revolutionize computing infrastructure. This decision, despite opposition from competitors and environmental groups, paves the way for a new era of space-based technology.
-
-rss · TechCrunch · Nov 25, 20:56
-
-**「SpaceX&\#x27;s Vision for AI Data Centers in Space」** SpaceX, the private aerospace company founded by Elon Musk, has been granted conditional approval by the Federal Communications Commission \(FCC\) to deploy a constellation of up to 1 million satellites for its orbital data center business. This approval marks a significant step towards SpaceX&\#x27;s ambitious plan to move AI data centers into space. The proposal faced objections from competitors like Amazon and environmental groups, who raised concerns about orbital debris, radiofrequency interference, and environmental consequences. Despite these concerns, the FCC dismissed some key issues, determining they fell outside its regulatory authority. SpaceX&\#x27;s plan involves deploying satellites known as Starmind, which would operate at altitudes ranging from 500 to 1,002 kilometers. The company aims to use these satellites to create a network of AI data centers that can tap into abundant solar energy and avoid many of the environmental challenges faced on Earth. However, SpaceX still faces technical and economic challenges, including reducing the cost of manufacturing and launching satellites, cooling processors in space, and securing financing for chips destined for orbit. The company must also clear other regulatory hurdles, such as handling orbital debris and obtaining a waiver of existing FCC rules. This approval gives SpaceX seven years to get its first operational satellite into orbit and 14 years to deploy the entire constellation.
-
-**「Impact on Everyday Life」** The approval of SpaceX&\#x27;s plan to put AI data centers in space raises questions about the future of data processing and its environmental impact. As AI becomes more powerful, the need for vast computing resources grows, potentially leading to a shift in where these resources are located. This could mean more efficient use of solar energy and reduced terrestrial energy consumption, but it also raises concerns about space debris and radiofrequency interference. For young readers interested in technology, this development highlights the complex interplay between innovation and environmental stewardship.
-
-<details><summary>References</summary>
-<ul>
-<li><a href="https://www.sciencedaily.com/releases/2026/06/260618041501.htm">SpaceX wants to build AI data centers in space. Will it work?</a></li>
-<li><a href="https://www.space.com/space-exploration/launches-spacecraft/spacex-wants-to-put-1-million-ai-satellites-in-orbit-what-would-that-do-to-earths-climate">SpaceX wants to put 1 million AI satellites in orbit. What ...</a></li>
-<li><a href="https://openthemagazine.com/technology/orbit-has-its-tolerance-limits">Space-Based Data Centers: Balancing Innovation and ...</a></li>
-<li><a href="https://www.space.com/space-exploration/launches-spacecraft/spacex-wants-to-put-1-million-ai-satellites-in-orbit-what-would-that-do-to-earths-climate">SpaceX wants to put 1 million AI satellites in orbit. What ...</a></li>
-<li><a href="https://www.space.com/space-exploration/satellites/spacexs-1-million-orbiting-ai-data-centers-could-ruin-astronomy-scientists-say">SpaceX plan for 1 million orbiting AI data centers could ruin ...</a></li>
-<li><a href="https://www.sciencedaily.com/releases/2026/06/260618041501.htm">SpaceX wants to build AI data centers in space. Will it work?</a></li>
-
-</ul>
-</details>
-
-**Tags**: `#SpaceX`, `#AI Data Centers`, `#FCC Approval`, `#Space Technology`, `#Regulatory Issues`
+**Tags**: `#UI Design`, `#Technology History`, `#Interface Guidelines`, `#Design Education`
 
 ---
 
 ## Research &amp; Ideas
 
 <a id="item-research-news-1"></a>
-### [Flax Seeds of Revolution](https://daily.jstor.org/flax-seeds-of-revolution/) ⭐️ 8.0/10
+### [Flax Seeds of Revolution: The Unseen Threads of the American Revolution](https://daily.jstor.org/flax-seeds-of-revolution/) ⭐️ 8.0/10
 
-The American Revolution was not just a battle for independence but also a fight for self-sufficiency, with flax and linen playing a crucial role in the cultural and economic life of the colonial period.
+Flax seeds and linen played a crucial role in the American Revolution, symbolizing resistance and self-sufficiency. This article explores how the production of linen from flax fibers became a significant cultural and economic force during the colonial period.
 
 rss · JSTOR Daily 跨学科阅读 · Nov 25, 14:33
 
-**「The Historical Significance of Flax in the American Revolution」** Flax, a plant with a rich history dating back to 5000 BCE, played a crucial role in the American Revolution. It was not just a source of linen, a durable and breathable textile, but also a symbol of resistance and independence for the American colonists. Flax was grown and processed by both men and women, with women often spinning the thread and men weaving it into cloth. This process became a significant part of colonial life, with spinning bees and weaving contests fostering a sense of community and self-sufficiency. The flax industry also contributed to other essential colonial industries, such as bookbinding and papermaking, with nearly every book printed in the thirteen colonies stitched with linen thread. The use of flax in these industries was a testament to the ingenuity and resilience of the colonists, as they sought to resist British rule and establish their own identity.
+**「The Historical Significance of Flax Seeds in the American Revolution」** Flax seeds, a versatile and ancient crop, played a crucial role in the American Revolution. They were not only a source of food and oil but also a key component in the production of linen, a durable and breathable textile. Linen was used to make clothing, bedding, and even the paper for the Declaration of Independence. The cultivation and processing of flax were integral to the colonial economy, providing a sense of self-sufficiency and resistance against British rule. Women, in particular, were actively involved in the production of linen, spinning and weaving flax fibers into cloth, which became a symbol of patriotism and independence. This connection between flax seeds, linen, and the American Revolution underscores the importance of agriculture and craftsmanship in the fight for freedom.
 
-**「Impact on Everyday Life」** The historical significance of flax and linen in the American Revolution extends into our daily lives in unexpected ways. For instance, the linen used in George Washington&\#x27;s tent, a symbol of American ingenuity and resistance, is still present today. Did you know that 25% of every American dollar bill is made from linen derived from flax? This connection highlights how the economic and symbolic impact of flax on the American story remains tangible in our everyday lives, even in the smallest details like currency.
+**「Impact on Everyday Life」** The role of flax seeds and linen in the American Revolution reveals a fascinating connection between historical events and everyday life. It shows how simple acts of spinning and weaving became powerful symbols of resistance and self-sufficiency. This insight encourages us to consider the deeper meanings behind everyday items and the stories they tell about our past.
 
 <details><summary>References</summary>
 <ul>
-<li><a href="https://www.nps.gov/jame/learn/historyculture/flax-production-in-the-seventeenth-century.htm">Flax Production in the Seventeenth Century - Historic ...</a></li>
-<li><a href="https://philadelphiaencyclopedia.org/essays/flax-and-linen/">Flaxseed and Linen - Encyclopedia of Greater Philadelphia</a></li>
-<li><a href="https://www.farmanddairy.com/columns/9-10-locher/928357.html">The grueling history of growing flax in early America</a></li>
+<li><a href="https://www.acefitness.org/resources/everyone/blog/6039/the-one-food-you-should-be-eating/">The One Food You Should Be Eating</a></li>
+<li><a href="https://www.wikihow.com/Prepare-Flax-Seeds">How to Prepare Flax Seeds &amp; Use Them in Cooking</a></li>
+<li><a href="https://www.healthline.com/nutrition/benefits-of-flaxseeds">8 Flaxseed Health Benefits, Precautions, How to Eat Them</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Homespun_movement">Homespun movement - Wikipedia</a></li>
 <li><a href="https://daily.jstor.org/flax-seeds-of-revolution/">Flax Seeds of Revolution - JSTOR Daily</a></li>
+<li><a href="https://philadelphiaencyclopedia.org/essays/flax-and-linen/">Flaxseed and Linen - Encyclopedia of Greater Philadelphia</a></li>
 
 </ul>
 </details>
 
-**Tags**: `#American Revolution`, `#Flax`, `#Linen`, `#Textiles`, `#Historical Significance`, `#Cultural History`
-
----
-
-<a id="item-research-news-2"></a>
-### [NASA&\#x27;s Asteroid Deflection Success: A Leap in Planetary Defense](https://www.theguardian.com/science/2026/nov/25/dimorphos-asteroid-spacecraft-crash-closeup-images) ⭐️ 8.0/10
-
-NASA&\#x27;s intentional impact on asteroid Dimorphos has led to the first closeup images of the aftermath, offering valuable data for future planetary defense systems.
-
-rss · The Guardian 科学 · Nov 25, 18:48
-
-**「Background on the Asteroid Impact」** In 2022, NASA intentionally collided a spacecraft with an asteroid named Dimorphos, which is about 160 meters wide. This action was part of a planetary defense strategy to understand the effects of such an impact and to develop methods for potentially deflecting asteroids that could pose a threat to Earth. Four years later, scientists have been analyzing the aftermath of this impact, which has provided valuable data for future planetary defense systems.
-
-**「The Real-World Implications of NASA&\#x27;s Asteroid Impact」** The successful impact by NASA on the asteroid Dimorphos has not only provided a unique opportunity to study the effects of such an event but also offers a glimpse into how we might protect our planet from future asteroid threats. This real-world test of planetary defense could lead to the development of more effective strategies for dealing with near-Earth objects, potentially saving lives and property in the future.
-
-<details><summary>References</summary>
-<ul>
-<li><a href="https://www.scientificamerican.com/article/in-2022-nasa-struck-an-asteroid-now-we-are-finally-seeing-the-massive-impact-up-close/">In 2022, NASA struck an asteroid. Now, we are finally seeing ...</a></li>
-<li><a href="https://www.theguardian.com/science/2026/nov/25/dimorphos-asteroid-spacecraft-crash-closeup-images">Nasa knocked an asteroid off course. New closeup photos may ...</a></li>
-<li><a href="https://ntrs.nasa.gov/citations/20230000707">Characterization of the Dart Impact Site on Dimorphos - NASA ...</a></li>
-<li><a href="https://en.wikipedia.org/wiki/Double_Asteroid_Redirection_Test">Double Asteroid Redirection Test - Wikipedia</a></li>
-<li><a href="https://science.nasa.gov/solar-system/asteroids/didymos/">Didymos &amp; Dimorphos - NASA Science</a></li>
-<li><a href="https://www.planetary.org/space-missions/dart">DART, NASA &#x27;s test to stop an asteroid from… | The Planetary Society</a></li>
-
-</ul>
-</details>
-
-**Tags**: `#Space Exploration`, `#Asteroid Impact`, `#Planetary Defense`, `#NASA`, `#Science`
+**Tags**: `#American Revolution`, `#Flax Seeds`, `#Linen`, `#Historical Textiles`, `#Cultural History`
 
 ---
 
 ## World News
 
 <a id="item-world-news-1"></a>
-### [Austin的小型免费面包店：邻里间的社区联系](https://www.npr.org/2026/11/25/nx-s1-6005522/little-free-bakery-austin-community-connection) ⭐️ 8.0/10
+### [Native American Cuisine at Albuquerque&\#x27;s Indian Pueblo Kitchen](https://www.npr.org/2026/11/26/nx-s1-5983712/indian-pueblo-kitchen-native-american-food-albuquerque) ⭐️ 8.0/10
 
-在奥斯汀的一个小型免费面包店，居民们为了免费糕点而来，为了社区联系而留下，这反映了社区参与度的一个积极趋势。
+At Albuquerque&\#x27;s Indian Pueblo Kitchen, Native American dishes are the highlight, offering a unique blend of culinary delights and cultural education, attracting both locals and tourists alike.
 
-rss · NPR 文化与新闻 · Nov 25, 21:02
+rss · NPR 文化与新闻 · Nov 26, 10:00
 
-**「Understanding the Little Free Bakery Movement」** The Little Free Bakery movement is a community-driven initiative that began in Seattle in 2021. It is inspired by the concept of Little Free Libraries, where small boxes in front yards allow people to share books. In the case of Little Free Bakeries, these are small structures where neighbors can find free baked goods. The movement aims to foster community engagement and social interaction. Bakers create a variety of pastries, from chocolate chip cookies to croissants, which are available at no cost. This initiative has spread to other cities like Austin, Nashville, and Salt Lake City, creating spaces for neighbors to connect and enjoy each other&\#x27;s company. The movement is driven by individuals like Lanne Stauffer, who started the first Little Free Bakery in Seattle, and Sarah Mason, who began the Free Bakery North Loop in Austin. It reflects a growing trend of community-focused initiatives that aim to bring people together and strengthen neighborhood bonds.
+**「Understanding Albuquerque&\#x27;s Indian Pueblo Kitchen」** The Indian Pueblo Kitchen, located in Albuquerque, New Mexico, is a unique dining destination that specializes in Native American cuisine. This restaurant is part of the Indian Pueblo Cultural Center, a museum and cultural hub founded by the 19 Pueblo tribes of New Mexico. The center is situated on land where the Albuquerque Indian School once operated, a boarding school that aimed to assimilate Native American children into mainstream culture. Today, the Indian Pueblo Cultural Center and its restaurant offer a space to celebrate Pueblo art, culture, and heritage. The menu features dishes like blue corn enchiladas, chile posole, and biscochitos, with a focus on traditional recipes and ingredients. This blend of culinary experience and cultural education makes the Indian Pueblo Kitchen a significant spot for those interested in Native American culture and culinary exploration.
 
-**「Impact on Daily Life」** The Little Free Bakery movement not only provides free pastries but also fosters a sense of community and social interaction. It encourages neighbors to connect, share conversations, and build relationships, which can have a positive impact on daily life by creating a more welcoming and engaged neighborhood environment.
+**「Impact on Cultural Awareness」** Indian Pueblo Kitchen&\#x27;s unique blend of Native American cuisine and cultural education offers a tangible way for people to connect with and learn about Native American heritage. This approach not only provides a delightful culinary experience but also serves as a platform for cultural exchange and understanding, fostering a deeper appreciation for the rich history and traditions of the Pueblo communities.
 
 <details><summary>References</summary>
 <ul>
-<li><a href="https://www.cascadepbs.org/culture/2025/05/theres-nothing-sweeter-seattles-little-free-bakeries/">There’s nothing sweeter than Seattle’s Little Free Bakeries</a></li>
-<li><a href="https://artsandvoices.com/articles/austin-s-little-free-bakery-turns-a-park-line-into-a-community-ritual">Austin&#x27;s Little Free Bakery Creates a Community Ritual</a></li>
-<li><a href="https://www.npr.org/2026/11/25/nx-s1-6005522/at-this-little-free-bakery-in-austin-neighbors-come-for-the-pastries-and-stay-for-community-connection">At this Little Free Bakery in Austin, neighbors come for the ...</a></li>
-<li><a href="https://www.scrippsnews.com/life/good-news/little-free-bakery-idea-bakes-kindness-into-communities">Little Free Bakery idea bakes kindness into communities</a></li>
-<li><a href="https://www.3pimpactconsulting.com/blog/how-a-small-bakery-enhanced-social-impact-through-sustainability">Small Bakery Social Impact Case Study | Sustainability — 3P ...</a></li>
+<li><a href="https://www.houstonpublicmedia.org/npr/2026/11/26/nx-s1-5983712/at-albuquerques-indian-pueblo-kitchen-native-american-dishes-are-the-main-course/">At Albuquerque&#x27;s Indian Pueblo Kitchen, Native American ...</a></li>
+<li><a href="https://www.vpm.org/npr-story/at-albuquerques-indian-pueblo-kitchen-native-american-dishes-are-the-main-course/">At Albuquerque&#x27;s Indian Pueblo Kitchen, Native American ...</a></li>
+<li><a href="https://smartlandscapenm.com/best-spots-authentic-native-american-cuisine-albuquerque/">4 Best Spots for Authentic Native Food in Albuquerque</a></li>
+<li><a href="https://www.npr.org/2026/11/26/nx-s1-5983712/indian-pueblo-kitchen-native-american-food-albuquerque">Indian Pueblo Kitchen serves Native American food on Route 66 ...</a></li>
+<li><a href="https://www.vpm.org/npr-story/at-albuquerques-indian-pueblo-kitchen-native-american-dishes-are-the-main-course/">At Albuquerque&#x27;s Indian Pueblo Kitchen, Native American ...</a></li>
+<li><a href="https://indianpueblokitchen.org/">Home - Indian Pueblo Kitchen</a></li>
 
 </ul>
 </details>
 
-**Tags**: `#Community Engagement`, `#Austin`, `#Little Free Bakery`, `#Social Interaction`, `#Community Building`
+**Tags**: `#Native American Cuisine`, `#Cultural Heritage`, `#Albuquerque`, `#Restaurant Experience`, `#Culinary Exploration`
 
 ---
